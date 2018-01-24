@@ -1,3 +1,9 @@
+# Ignore all large files
+*.wav
+*.h5
+*.h5py
+*.mp3
+
 # Prerequisites
 *.d
 
