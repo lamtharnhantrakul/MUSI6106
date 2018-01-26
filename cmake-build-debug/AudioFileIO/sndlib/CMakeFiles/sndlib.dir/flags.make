@@ -6,5 +6,5 @@ C_FLAGS = -g   -w
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib 
+C_INCLUDES = -I/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib 
 

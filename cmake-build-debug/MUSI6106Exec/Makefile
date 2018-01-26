@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106
+CMAKE_SOURCE_DIR = /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/MUSI6106Exec/CMakeFiles/progress.marks
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 MUSI6106Exec/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles 0
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/MUSI6106Exec/CMakeFiles/progress.marks
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 MUSI6106Exec/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 MUSI6106Exec/clean
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 MUSI6106Exec/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 MUSI6106Exec/preinstall
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 MUSI6106Exec/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 MUSI6106Exec/preinstall
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 MUSI6106Exec/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/rule:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/rule
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/rule
 .PHONY : MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ MUSI6106Exec: MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/rule
 
 # fast build rule for target.
 MUSI6106Exec/fast:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/build.make MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/build
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/build.make MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/build
 .PHONY : MUSI6106Exec/fast
 
 MUSI6106Exec.o: MUSI6106Exec.cpp.o
@@ -131,7 +131,7 @@ MUSI6106Exec.o: MUSI6106Exec.cpp.o
 
 # target to build an object file
 MUSI6106Exec.cpp.o:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/build.make MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.o
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/build.make MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.o
 .PHONY : MUSI6106Exec.cpp.o
 
 MUSI6106Exec.i: MUSI6106Exec.cpp.i
@@ -140,7 +140,7 @@ MUSI6106Exec.i: MUSI6106Exec.cpp.i
 
 # target to preprocess a source file
 MUSI6106Exec.cpp.i:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/build.make MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/build.make MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.i
 .PHONY : MUSI6106Exec.cpp.i
 
 MUSI6106Exec.s: MUSI6106Exec.cpp.s
@@ -149,7 +149,7 @@ MUSI6106Exec.s: MUSI6106Exec.cpp.s
 
 # target to generate assembly for a file
 MUSI6106Exec.cpp.s:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/build.make MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/build.make MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.s
 .PHONY : MUSI6106Exec.cpp.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

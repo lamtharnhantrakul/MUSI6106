@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106
+CMAKE_SOURCE_DIR = /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include AudioFileIO/sndlib/CMakeFiles/sndlib.dir/depend.make
@@ -59,16 +59,16 @@ include AudioFileIO/sndlib/CMakeFiles/sndlib.dir/flags.make
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/audio.c.o: AudioFileIO/sndlib/CMakeFiles/sndlib.dir/flags.make
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/audio.c.o: ../3rdparty/sndlib/audio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/audio.c.o"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/audio.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/audio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/audio.c.o"
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/audio.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/audio.c
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/audio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sndlib.dir/audio.c.i"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/audio.c > CMakeFiles/sndlib.dir/audio.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/audio.c > CMakeFiles/sndlib.dir/audio.c.i
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/audio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sndlib.dir/audio.c.s"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/audio.c -o CMakeFiles/sndlib.dir/audio.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/audio.c -o CMakeFiles/sndlib.dir/audio.c.s
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/audio.c.o.requires:
 
@@ -83,16 +83,16 @@ AudioFileIO/sndlib/CMakeFiles/sndlib.dir/audio.c.o.provides.build: AudioFileIO/s
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm.c.o: AudioFileIO/sndlib/CMakeFiles/sndlib.dir/flags.make
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm.c.o: ../3rdparty/sndlib/clm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm.c.o"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/clm.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm.c.o"
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/clm.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm.c
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sndlib.dir/clm.c.i"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm.c > CMakeFiles/sndlib.dir/clm.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm.c > CMakeFiles/sndlib.dir/clm.c.i
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sndlib.dir/clm.c.s"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm.c -o CMakeFiles/sndlib.dir/clm.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm.c -o CMakeFiles/sndlib.dir/clm.c.s
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm.c.o.requires:
 
@@ -107,16 +107,16 @@ AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm.c.o.provides.build: AudioFileIO/snd
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm2xen.c.o: AudioFileIO/sndlib/CMakeFiles/sndlib.dir/flags.make
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm2xen.c.o: ../3rdparty/sndlib/clm2xen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm2xen.c.o"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/clm2xen.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm2xen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm2xen.c.o"
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/clm2xen.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm2xen.c
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm2xen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sndlib.dir/clm2xen.c.i"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm2xen.c > CMakeFiles/sndlib.dir/clm2xen.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm2xen.c > CMakeFiles/sndlib.dir/clm2xen.c.i
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm2xen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sndlib.dir/clm2xen.c.s"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm2xen.c -o CMakeFiles/sndlib.dir/clm2xen.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm2xen.c -o CMakeFiles/sndlib.dir/clm2xen.c.s
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm2xen.c.o.requires:
 
@@ -131,16 +131,16 @@ AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm2xen.c.o.provides.build: AudioFileIO
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/headers.c.o: AudioFileIO/sndlib/CMakeFiles/sndlib.dir/flags.make
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/headers.c.o: ../3rdparty/sndlib/headers.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/headers.c.o"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/headers.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/headers.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/headers.c.o"
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/headers.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/headers.c
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/headers.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sndlib.dir/headers.c.i"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/headers.c > CMakeFiles/sndlib.dir/headers.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/headers.c > CMakeFiles/sndlib.dir/headers.c.i
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/headers.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sndlib.dir/headers.c.s"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/headers.c -o CMakeFiles/sndlib.dir/headers.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/headers.c -o CMakeFiles/sndlib.dir/headers.c.s
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/headers.c.o.requires:
 
@@ -155,16 +155,16 @@ AudioFileIO/sndlib/CMakeFiles/sndlib.dir/headers.c.o.provides.build: AudioFileIO
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/io.c.o: AudioFileIO/sndlib/CMakeFiles/sndlib.dir/flags.make
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/io.c.o: ../3rdparty/sndlib/io.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/io.c.o"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/io.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/io.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/io.c.o"
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/io.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/io.c
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/io.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sndlib.dir/io.c.i"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/io.c > CMakeFiles/sndlib.dir/io.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/io.c > CMakeFiles/sndlib.dir/io.c.i
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/io.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sndlib.dir/io.c.s"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/io.c -o CMakeFiles/sndlib.dir/io.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/io.c -o CMakeFiles/sndlib.dir/io.c.s
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/io.c.o.requires:
 
@@ -179,16 +179,16 @@ AudioFileIO/sndlib/CMakeFiles/sndlib.dir/io.c.o.provides.build: AudioFileIO/sndl
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/s7.c.o: AudioFileIO/sndlib/CMakeFiles/sndlib.dir/flags.make
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/s7.c.o: ../3rdparty/sndlib/s7.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/s7.c.o"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/s7.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/s7.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/s7.c.o"
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/s7.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/s7.c
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/s7.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sndlib.dir/s7.c.i"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/s7.c > CMakeFiles/sndlib.dir/s7.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/s7.c > CMakeFiles/sndlib.dir/s7.c.i
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/s7.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sndlib.dir/s7.c.s"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/s7.c -o CMakeFiles/sndlib.dir/s7.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/s7.c -o CMakeFiles/sndlib.dir/s7.c.s
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/s7.c.o.requires:
 
@@ -203,16 +203,16 @@ AudioFileIO/sndlib/CMakeFiles/sndlib.dir/s7.c.o.provides.build: AudioFileIO/sndl
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sndlib2xen.c.o: AudioFileIO/sndlib/CMakeFiles/sndlib.dir/flags.make
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sndlib2xen.c.o: ../3rdparty/sndlib/sndlib2xen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sndlib2xen.c.o"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/sndlib2xen.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sndlib2xen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sndlib2xen.c.o"
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/sndlib2xen.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sndlib2xen.c
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sndlib2xen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sndlib.dir/sndlib2xen.c.i"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sndlib2xen.c > CMakeFiles/sndlib.dir/sndlib2xen.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sndlib2xen.c > CMakeFiles/sndlib.dir/sndlib2xen.c.i
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sndlib2xen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sndlib.dir/sndlib2xen.c.s"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sndlib2xen.c -o CMakeFiles/sndlib.dir/sndlib2xen.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sndlib2xen.c -o CMakeFiles/sndlib.dir/sndlib2xen.c.s
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sndlib2xen.c.o.requires:
 
@@ -227,16 +227,16 @@ AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sndlib2xen.c.o.provides.build: AudioFil
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sound.c.o: AudioFileIO/sndlib/CMakeFiles/sndlib.dir/flags.make
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sound.c.o: ../3rdparty/sndlib/sound.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sound.c.o"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/sound.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sound.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sound.c.o"
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/sound.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sound.c
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sound.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sndlib.dir/sound.c.i"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sound.c > CMakeFiles/sndlib.dir/sound.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sound.c > CMakeFiles/sndlib.dir/sound.c.i
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sound.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sndlib.dir/sound.c.s"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sound.c -o CMakeFiles/sndlib.dir/sound.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sound.c -o CMakeFiles/sndlib.dir/sound.c.s
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sound.c.o.requires:
 
@@ -251,16 +251,16 @@ AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sound.c.o.provides.build: AudioFileIO/s
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/vct.c.o: AudioFileIO/sndlib/CMakeFiles/sndlib.dir/flags.make
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/vct.c.o: ../3rdparty/sndlib/vct.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/vct.c.o"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/vct.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/vct.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/vct.c.o"
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/vct.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/vct.c
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/vct.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sndlib.dir/vct.c.i"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/vct.c > CMakeFiles/sndlib.dir/vct.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/vct.c > CMakeFiles/sndlib.dir/vct.c.i
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/vct.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sndlib.dir/vct.c.s"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/vct.c -o CMakeFiles/sndlib.dir/vct.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/vct.c -o CMakeFiles/sndlib.dir/vct.c.s
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/vct.c.o.requires:
 
@@ -275,16 +275,16 @@ AudioFileIO/sndlib/CMakeFiles/sndlib.dir/vct.c.o.provides.build: AudioFileIO/snd
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/xen.c.o: AudioFileIO/sndlib/CMakeFiles/sndlib.dir/flags.make
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/xen.c.o: ../3rdparty/sndlib/xen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/xen.c.o"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/xen.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/xen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object AudioFileIO/sndlib/CMakeFiles/sndlib.dir/xen.c.o"
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sndlib.dir/xen.c.o   -c /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/xen.c
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/xen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sndlib.dir/xen.c.i"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/xen.c > CMakeFiles/sndlib.dir/xen.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/xen.c > CMakeFiles/sndlib.dir/xen.c.i
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/xen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sndlib.dir/xen.c.s"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/xen.c -o CMakeFiles/sndlib.dir/xen.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/xen.c -o CMakeFiles/sndlib.dir/xen.c.s
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/xen.c.o.requires:
 
@@ -325,9 +325,9 @@ sndlib_EXTERNAL_OBJECTS =
 ../lib/debug/libsndlib.a: AudioFileIO/sndlib/CMakeFiles/sndlib.dir/xen.c.o
 ../lib/debug/libsndlib.a: AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make
 ../lib/debug/libsndlib.a: AudioFileIO/sndlib/CMakeFiles/sndlib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C static library ../../../lib/debug/libsndlib.a"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && $(CMAKE_COMMAND) -P CMakeFiles/sndlib.dir/cmake_clean_target.cmake
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sndlib.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C static library ../../../lib/debug/libsndlib.a"
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && $(CMAKE_COMMAND) -P CMakeFiles/sndlib.dir/cmake_clean_target.cmake
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sndlib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build: ../lib/debug/libsndlib.a
@@ -348,10 +348,10 @@ AudioFileIO/sndlib/CMakeFiles/sndlib.dir/requires: AudioFileIO/sndlib/CMakeFiles
 .PHONY : AudioFileIO/sndlib/CMakeFiles/sndlib.dir/requires
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clean:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib && $(CMAKE_COMMAND) -P CMakeFiles/sndlib.dir/cmake_clean.cmake
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib && $(CMAKE_COMMAND) -P CMakeFiles/sndlib.dir/cmake_clean.cmake
 .PHONY : AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clean
 
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/depend:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106 /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106 /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : AudioFileIO/sndlib/CMakeFiles/sndlib.dir/depend
 

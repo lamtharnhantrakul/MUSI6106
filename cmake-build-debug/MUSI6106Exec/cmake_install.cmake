@@ -1,4 +1,4 @@
-# Install script for directory: /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/MUSI6106Exec
+# Install script for directory: /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/MUSI6106Exec
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

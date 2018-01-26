@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/inc -I/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/inc -I/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/inc 
+CXX_INCLUDES = -I/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/inc -I/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/inc -I/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/inc 
 

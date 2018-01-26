@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106
+CMAKE_SOURCE_DIR = /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include AudioFileIO/CMakeFiles/AudioFileIO.dir/depend.make
@@ -59,16 +59,16 @@ include AudioFileIO/CMakeFiles/AudioFileIO.dir/flags.make
 
 AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFile.cpp.o: AudioFileIO/CMakeFiles/AudioFileIO.dir/flags.make
 AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFile.cpp.o: ../src/AudioFileIO/AudioFile.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFile.cpp.o"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AudioFileIO.dir/AudioFile.cpp.o -c /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/AudioFile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFile.cpp.o"
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AudioFileIO.dir/AudioFile.cpp.o -c /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/AudioFile.cpp
 
 AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AudioFileIO.dir/AudioFile.cpp.i"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/AudioFile.cpp > CMakeFiles/AudioFileIO.dir/AudioFile.cpp.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/AudioFile.cpp > CMakeFiles/AudioFileIO.dir/AudioFile.cpp.i
 
 AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AudioFileIO.dir/AudioFile.cpp.s"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/AudioFile.cpp -o CMakeFiles/AudioFileIO.dir/AudioFile.cpp.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/AudioFile.cpp -o CMakeFiles/AudioFileIO.dir/AudioFile.cpp.s
 
 AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFile.cpp.o.requires:
 
@@ -83,16 +83,16 @@ AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFile.cpp.o.provides.build: AudioFile
 
 AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.o: AudioFileIO/CMakeFiles/AudioFileIO.dir/flags.make
 AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.o: ../src/AudioFileIO/AudioFileIf.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.o"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.o -c /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/AudioFileIf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.o"
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.o -c /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/AudioFileIf.cpp
 
 AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.i"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/AudioFileIf.cpp > CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/AudioFileIf.cpp > CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.i
 
 AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.s"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/AudioFileIf.cpp -o CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/AudioFileIf.cpp -o CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.s
 
 AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.o.requires:
 
@@ -117,9 +117,9 @@ AudioFileIO_EXTERNAL_OBJECTS =
 ../lib/debug/libAudioFileIO.a: AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.o
 ../lib/debug/libAudioFileIO.a: AudioFileIO/CMakeFiles/AudioFileIO.dir/build.make
 ../lib/debug/libAudioFileIO.a: AudioFileIO/CMakeFiles/AudioFileIO.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../lib/debug/libAudioFileIO.a"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO && $(CMAKE_COMMAND) -P CMakeFiles/AudioFileIO.dir/cmake_clean_target.cmake
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AudioFileIO.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../lib/debug/libAudioFileIO.a"
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO && $(CMAKE_COMMAND) -P CMakeFiles/AudioFileIO.dir/cmake_clean_target.cmake
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AudioFileIO.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 AudioFileIO/CMakeFiles/AudioFileIO.dir/build: ../lib/debug/libAudioFileIO.a
@@ -132,10 +132,10 @@ AudioFileIO/CMakeFiles/AudioFileIO.dir/requires: AudioFileIO/CMakeFiles/AudioFil
 .PHONY : AudioFileIO/CMakeFiles/AudioFileIO.dir/requires
 
 AudioFileIO/CMakeFiles/AudioFileIO.dir/clean:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO && $(CMAKE_COMMAND) -P CMakeFiles/AudioFileIO.dir/cmake_clean.cmake
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO && $(CMAKE_COMMAND) -P CMakeFiles/AudioFileIO.dir/cmake_clean.cmake
 .PHONY : AudioFileIO/CMakeFiles/AudioFileIO.dir/clean
 
 AudioFileIO/CMakeFiles/AudioFileIO.dir/depend:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106 /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/CMakeFiles/AudioFileIO.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106 /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/CMakeFiles/AudioFileIO.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : AudioFileIO/CMakeFiles/AudioFileIO.dir/depend
 

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/AudioFile.cpp" "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFile.cpp.o"
-  "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/AudioFileIf.cpp" "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.o"
+  "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/AudioFile.cpp" "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFile.cpp.o"
+  "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/AudioFileIf.cpp" "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
@@ -19,7 +19,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/DependInfo.cmake"
+  "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

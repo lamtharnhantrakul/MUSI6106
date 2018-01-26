@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106
+CMAKE_SOURCE_DIR = /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/depend.make
@@ -59,16 +59,16 @@ include MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/flags.make
 
 MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.o: MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/flags.make
 MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.o: ../src/MUSI6106Exec/MUSI6106Exec.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.o"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/MUSI6106Exec && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.o -c /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/MUSI6106Exec/MUSI6106Exec.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.o"
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/MUSI6106Exec && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.o -c /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/MUSI6106Exec/MUSI6106Exec.cpp
 
 MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.i"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/MUSI6106Exec && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/MUSI6106Exec/MUSI6106Exec.cpp > CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/MUSI6106Exec && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/MUSI6106Exec/MUSI6106Exec.cpp > CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.i
 
 MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.s"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/MUSI6106Exec && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/MUSI6106Exec/MUSI6106Exec.cpp -o CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/MUSI6106Exec && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/MUSI6106Exec/MUSI6106Exec.cpp -o CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.s
 
 MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/MUSI6106Exec.cpp.o.requires:
 
@@ -93,8 +93,8 @@ MUSI6106Exec_EXTERNAL_OBJECTS =
 ../bin/debug/MUSI6106Exec: ../lib/debug/libAudioFileIO.a
 ../bin/debug/MUSI6106Exec: ../lib/debug/libsndlib.a
 ../bin/debug/MUSI6106Exec: MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/debug/MUSI6106Exec"
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/MUSI6106Exec && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MUSI6106Exec.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/debug/MUSI6106Exec"
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/MUSI6106Exec && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MUSI6106Exec.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/build: ../bin/debug/MUSI6106Exec
@@ -106,10 +106,10 @@ MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/requires: MUSI6106Exec/CMakeFiles/MUSI6
 .PHONY : MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/requires
 
 MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/clean:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/MUSI6106Exec && $(CMAKE_COMMAND) -P CMakeFiles/MUSI6106Exec.dir/cmake_clean.cmake
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/MUSI6106Exec && $(CMAKE_COMMAND) -P CMakeFiles/MUSI6106Exec.dir/cmake_clean.cmake
 .PHONY : MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/clean
 
 MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/depend:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106 /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/MUSI6106Exec /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/MUSI6106Exec /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106 /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/MUSI6106Exec /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/MUSI6106Exec /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/depend
 

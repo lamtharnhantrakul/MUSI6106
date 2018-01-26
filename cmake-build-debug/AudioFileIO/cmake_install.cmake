@@ -1,4 +1,4 @@
-# Install script for directory: /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO
+# Install script for directory: /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib/cmake_install.cmake")
+  include("/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib/cmake_install.cmake")
 
 endif()
 

@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106
+CMAKE_SOURCE_DIR = /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/progress.marks
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 AudioFileIO/sndlib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles 0
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/progress.marks
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 AudioFileIO/sndlib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 AudioFileIO/sndlib/clean
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 AudioFileIO/sndlib/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 AudioFileIO/sndlib/preinstall
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 AudioFileIO/sndlib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 AudioFileIO/sndlib/preinstall
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 AudioFileIO/sndlib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/rule:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/rule
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/rule
 .PHONY : AudioFileIO/sndlib/CMakeFiles/sndlib.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ sndlib: AudioFileIO/sndlib/CMakeFiles/sndlib.dir/rule
 
 # fast build rule for target.
 sndlib/fast:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build
 .PHONY : sndlib/fast
 
 audio.o: audio.c.o
@@ -131,7 +131,7 @@ audio.o: audio.c.o
 
 # target to build an object file
 audio.c.o:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/audio.c.o
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/audio.c.o
 .PHONY : audio.c.o
 
 audio.i: audio.c.i
@@ -140,7 +140,7 @@ audio.i: audio.c.i
 
 # target to preprocess a source file
 audio.c.i:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/audio.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/audio.c.i
 .PHONY : audio.c.i
 
 audio.s: audio.c.s
@@ -149,7 +149,7 @@ audio.s: audio.c.s
 
 # target to generate assembly for a file
 audio.c.s:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/audio.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/audio.c.s
 .PHONY : audio.c.s
 
 clm.o: clm.c.o
@@ -158,7 +158,7 @@ clm.o: clm.c.o
 
 # target to build an object file
 clm.c.o:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm.c.o
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm.c.o
 .PHONY : clm.c.o
 
 clm.i: clm.c.i
@@ -167,7 +167,7 @@ clm.i: clm.c.i
 
 # target to preprocess a source file
 clm.c.i:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm.c.i
 .PHONY : clm.c.i
 
 clm.s: clm.c.s
@@ -176,7 +176,7 @@ clm.s: clm.c.s
 
 # target to generate assembly for a file
 clm.c.s:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm.c.s
 .PHONY : clm.c.s
 
 clm2xen.o: clm2xen.c.o
@@ -185,7 +185,7 @@ clm2xen.o: clm2xen.c.o
 
 # target to build an object file
 clm2xen.c.o:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm2xen.c.o
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm2xen.c.o
 .PHONY : clm2xen.c.o
 
 clm2xen.i: clm2xen.c.i
@@ -194,7 +194,7 @@ clm2xen.i: clm2xen.c.i
 
 # target to preprocess a source file
 clm2xen.c.i:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm2xen.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm2xen.c.i
 .PHONY : clm2xen.c.i
 
 clm2xen.s: clm2xen.c.s
@@ -203,7 +203,7 @@ clm2xen.s: clm2xen.c.s
 
 # target to generate assembly for a file
 clm2xen.c.s:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm2xen.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm2xen.c.s
 .PHONY : clm2xen.c.s
 
 headers.o: headers.c.o
@@ -212,7 +212,7 @@ headers.o: headers.c.o
 
 # target to build an object file
 headers.c.o:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/headers.c.o
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/headers.c.o
 .PHONY : headers.c.o
 
 headers.i: headers.c.i
@@ -221,7 +221,7 @@ headers.i: headers.c.i
 
 # target to preprocess a source file
 headers.c.i:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/headers.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/headers.c.i
 .PHONY : headers.c.i
 
 headers.s: headers.c.s
@@ -230,7 +230,7 @@ headers.s: headers.c.s
 
 # target to generate assembly for a file
 headers.c.s:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/headers.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/headers.c.s
 .PHONY : headers.c.s
 
 io.o: io.c.o
@@ -239,7 +239,7 @@ io.o: io.c.o
 
 # target to build an object file
 io.c.o:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/io.c.o
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/io.c.o
 .PHONY : io.c.o
 
 io.i: io.c.i
@@ -248,7 +248,7 @@ io.i: io.c.i
 
 # target to preprocess a source file
 io.c.i:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/io.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/io.c.i
 .PHONY : io.c.i
 
 io.s: io.c.s
@@ -257,7 +257,7 @@ io.s: io.c.s
 
 # target to generate assembly for a file
 io.c.s:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/io.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/io.c.s
 .PHONY : io.c.s
 
 s7.o: s7.c.o
@@ -266,7 +266,7 @@ s7.o: s7.c.o
 
 # target to build an object file
 s7.c.o:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/s7.c.o
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/s7.c.o
 .PHONY : s7.c.o
 
 s7.i: s7.c.i
@@ -275,7 +275,7 @@ s7.i: s7.c.i
 
 # target to preprocess a source file
 s7.c.i:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/s7.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/s7.c.i
 .PHONY : s7.c.i
 
 s7.s: s7.c.s
@@ -284,7 +284,7 @@ s7.s: s7.c.s
 
 # target to generate assembly for a file
 s7.c.s:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/s7.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/s7.c.s
 .PHONY : s7.c.s
 
 sndlib2xen.o: sndlib2xen.c.o
@@ -293,7 +293,7 @@ sndlib2xen.o: sndlib2xen.c.o
 
 # target to build an object file
 sndlib2xen.c.o:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sndlib2xen.c.o
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sndlib2xen.c.o
 .PHONY : sndlib2xen.c.o
 
 sndlib2xen.i: sndlib2xen.c.i
@@ -302,7 +302,7 @@ sndlib2xen.i: sndlib2xen.c.i
 
 # target to preprocess a source file
 sndlib2xen.c.i:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sndlib2xen.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sndlib2xen.c.i
 .PHONY : sndlib2xen.c.i
 
 sndlib2xen.s: sndlib2xen.c.s
@@ -311,7 +311,7 @@ sndlib2xen.s: sndlib2xen.c.s
 
 # target to generate assembly for a file
 sndlib2xen.c.s:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sndlib2xen.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sndlib2xen.c.s
 .PHONY : sndlib2xen.c.s
 
 sound.o: sound.c.o
@@ -320,7 +320,7 @@ sound.o: sound.c.o
 
 # target to build an object file
 sound.c.o:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sound.c.o
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sound.c.o
 .PHONY : sound.c.o
 
 sound.i: sound.c.i
@@ -329,7 +329,7 @@ sound.i: sound.c.i
 
 # target to preprocess a source file
 sound.c.i:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sound.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sound.c.i
 .PHONY : sound.c.i
 
 sound.s: sound.c.s
@@ -338,7 +338,7 @@ sound.s: sound.c.s
 
 # target to generate assembly for a file
 sound.c.s:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sound.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sound.c.s
 .PHONY : sound.c.s
 
 vct.o: vct.c.o
@@ -347,7 +347,7 @@ vct.o: vct.c.o
 
 # target to build an object file
 vct.c.o:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/vct.c.o
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/vct.c.o
 .PHONY : vct.c.o
 
 vct.i: vct.c.i
@@ -356,7 +356,7 @@ vct.i: vct.c.i
 
 # target to preprocess a source file
 vct.c.i:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/vct.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/vct.c.i
 .PHONY : vct.c.i
 
 vct.s: vct.c.s
@@ -365,7 +365,7 @@ vct.s: vct.c.s
 
 # target to generate assembly for a file
 vct.c.s:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/vct.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/vct.c.s
 .PHONY : vct.c.s
 
 xen.o: xen.c.o
@@ -374,7 +374,7 @@ xen.o: xen.c.o
 
 # target to build an object file
 xen.c.o:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/xen.c.o
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/xen.c.o
 .PHONY : xen.c.o
 
 xen.i: xen.c.i
@@ -383,7 +383,7 @@ xen.i: xen.c.i
 
 # target to preprocess a source file
 xen.c.i:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/xen.c.i
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/xen.c.i
 .PHONY : xen.c.i
 
 xen.s: xen.c.s
@@ -392,7 +392,7 @@ xen.s: xen.c.s
 
 # target to generate assembly for a file
 xen.c.s:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/xen.c.s
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/xen.c.s
 .PHONY : xen.c.s
 
 # Help Target
@@ -445,6 +445,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

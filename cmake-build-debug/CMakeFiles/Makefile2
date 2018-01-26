@@ -54,10 +54,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106
+CMAKE_SOURCE_DIR = /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for directory MUSI6106Exec
@@ -85,7 +85,7 @@ MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/all: AudioFileIO/CMakeFiles/AudioFileIO
 MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/all: AudioFileIO/sndlib/CMakeFiles/sndlib.dir/all
 	$(MAKE) -f MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/build.make MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/depend
 	$(MAKE) -f MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/build.make MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles --progress-num=4,5 "Built target MUSI6106Exec"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles --progress-num=4,5 "Built target MUSI6106Exec"
 .PHONY : MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/all
 
 # Include target in all.
@@ -95,9 +95,9 @@ all: MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/all
 
 # Build rule for subdir invocation for target.
 MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles 0
 .PHONY : MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/rule
 
 # Convenience name for target.
@@ -142,7 +142,7 @@ AudioFileIO/preinstall: AudioFileIO/sndlib/preinstall
 AudioFileIO/CMakeFiles/AudioFileIO.dir/all: AudioFileIO/sndlib/CMakeFiles/sndlib.dir/all
 	$(MAKE) -f AudioFileIO/CMakeFiles/AudioFileIO.dir/build.make AudioFileIO/CMakeFiles/AudioFileIO.dir/depend
 	$(MAKE) -f AudioFileIO/CMakeFiles/AudioFileIO.dir/build.make AudioFileIO/CMakeFiles/AudioFileIO.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target AudioFileIO"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target AudioFileIO"
 .PHONY : AudioFileIO/CMakeFiles/AudioFileIO.dir/all
 
 # Include target in all.
@@ -152,9 +152,9 @@ all: AudioFileIO/CMakeFiles/AudioFileIO.dir/all
 
 # Build rule for subdir invocation for target.
 AudioFileIO/CMakeFiles/AudioFileIO.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 AudioFileIO/CMakeFiles/AudioFileIO.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles 0
 .PHONY : AudioFileIO/CMakeFiles/AudioFileIO.dir/rule
 
 # Convenience name for target.
@@ -197,7 +197,7 @@ AudioFileIO/sndlib/preinstall:
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/all:
 	$(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/depend
 	$(MAKE) -f AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles --progress-num=6,7,8,9,10,11,12,13,14,15,16 "Built target sndlib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles --progress-num=6,7,8,9,10,11,12,13,14,15,16 "Built target sndlib"
 .PHONY : AudioFileIO/sndlib/CMakeFiles/sndlib.dir/all
 
 # Include target in all.
@@ -207,9 +207,9 @@ all: AudioFileIO/sndlib/CMakeFiles/sndlib.dir/all
 
 # Build rule for subdir invocation for target.
 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 AudioFileIO/sndlib/CMakeFiles/sndlib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/CMakeFiles 0
 .PHONY : AudioFileIO/sndlib/CMakeFiles/sndlib.dir/rule
 
 # Convenience name for target.

@@ -75,6 +75,15 @@ int main(int argc, char* argv[])
     cout << "reading/writing done in: \t"    << (clock()-time)*1.F/CLOCKS_PER_SEC << " seconds." << endl;
     //////////////////////////////////////////////////////////////////////////////
     // get audio info and print it to stdout
+    std::string sFileSpecContents;
+    string*
+    phAudioFile->getFileSpec(sFileSpecContents);
+
+    //phAudioFile->getFileSpec(sFileSpecContents);
+
+    phAudioFile->getLength(iInFileLength);
+    cout << iInFileLength << endl;
+
 
     //////////////////////////////////////////////////////////////////////////////
     // do processing
@@ -82,6 +91,8 @@ int main(int argc, char* argv[])
 
     //////////////////////////////////////////////////////////////////////////////
     // clean-up
+
+    phAudioFile->closeFile(); // close the file
 
     // DESTROY ARRAY
     // delete second dimension of array

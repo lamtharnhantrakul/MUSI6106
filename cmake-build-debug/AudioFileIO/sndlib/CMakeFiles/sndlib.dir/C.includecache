@@ -12,7 +12,7 @@ unix-config.h
 
 ../3rdparty/sndlib/unix-config.h
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/_sndlib.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/_sndlib.h
 mus-config.h
 -
 unistd.h
@@ -22,17 +22,17 @@ sys/types.h
 stdio.h
 -
 sndlib.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sndlib.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sndlib.h
 xen.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/xen.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/xen.h
 vct.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/vct.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/vct.h
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/audio.c
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/audio.c
 mus-config.h
 -
 snd.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/snd.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/snd.h
 math.h
 -
 stdio.h
@@ -52,9 +52,9 @@ CoreServices/CoreServices.h
 CoreAudio/CoreAudio.h
 -
 _sndlib.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/_sndlib.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/_sndlib.h
 sndlib-strings.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sndlib-strings.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sndlib-strings.h
 sys/ioctl.h
 -
 sys/soundcard.h
@@ -114,13 +114,13 @@ pulse/gccmacro.h
 portaudio.h
 -
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm-strings.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm-strings.h
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm.c
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm.c
 mus-config.h
 -
 snd.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/snd.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/snd.h
 stddef.h
 -
 math.h
@@ -140,11 +140,11 @@ unistd.h
 io.h
 -
 _sndlib.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/_sndlib.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/_sndlib.h
 clm.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm.h
 clm-strings.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm-strings.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm-strings.h
 gsl/gsl_complex.h
 -
 gsl/gsl_complex_math.h
@@ -154,7 +154,7 @@ fftw3.h
 complex.h
 -
 xen.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/xen.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/xen.h
 gsl/gsl_sf_bessel.h
 -
 gsl/gsl_version.h
@@ -164,19 +164,19 @@ gsl/gsl_math.h
 gsl/gsl_eigen.h
 -
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm.h
 sndlib.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sndlib.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sndlib.h
 sys/param.h
 -
 complex.h
 -
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm2xen.c
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm2xen.c
 mus-config.h
 -
 snd.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/snd.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/snd.h
 stddef.h
 -
 math.h
@@ -198,33 +198,33 @@ unistd.h
 io.h
 -
 _sndlib.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/_sndlib.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/_sndlib.h
 xen.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/xen.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/xen.h
 clm.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm.h
 sndlib2xen.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sndlib2xen.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sndlib2xen.h
 vct.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/vct.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/vct.h
 clm2xen.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm2xen.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm2xen.h
 clm-strings.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm-strings.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm-strings.h
 time.h
 -
 sys/time.h
 -
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm2xen.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm2xen.h
 vct.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/vct.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/vct.h
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/headers.c
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/headers.c
 mus-config.h
 -
 snd.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/snd.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/snd.h
 math.h
 -
 stdio.h
@@ -240,15 +240,15 @@ unistd.h
 io.h
 -
 _sndlib.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/_sndlib.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/_sndlib.h
 sndlib-strings.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sndlib-strings.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sndlib-strings.h
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/io.c
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/io.c
 mus-config.h
 -
 snd.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/snd.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/snd.h
 math.h
 -
 stdio.h
@@ -274,11 +274,11 @@ direct.h
 sys/stat.h
 -
 _sndlib.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/_sndlib.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/_sndlib.h
 byteswap.h
 -
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/s7.c
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/s7.c
 mus-config.h
 -
 unistd.h
@@ -318,7 +318,7 @@ complex.h
 setjmp.h
 -
 s7.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/s7.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/s7.h
 time.h
 -
 sys/time.h
@@ -338,7 +338,7 @@ readline/readline.h
 curses.h
 -
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/s7.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/s7.h
 stdio.h
 -
 stdbool.h
@@ -350,9 +350,9 @@ mpfr.h
 mpc.h
 -
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sndlib-strings.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sndlib-strings.h
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sndlib.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sndlib.h
 stdio.h
 -
 time.h
@@ -362,15 +362,15 @@ sys/types.h
 stdbool.h
 -
 xen.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/xen.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/xen.h
 vct.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/vct.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/vct.h
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sndlib2xen.c
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sndlib2xen.c
 mus-config.h
 -
 snd.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/snd.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/snd.h
 stddef.h
 -
 math.h
@@ -386,27 +386,27 @@ string.h
 errno.h
 -
 _sndlib.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/_sndlib.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/_sndlib.h
 sndlib-strings.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sndlib-strings.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sndlib-strings.h
 vct.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/vct.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/vct.h
 clm.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm.h
 sndlib2xen.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sndlib2xen.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sndlib2xen.h
 clm2xen.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm2xen.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm2xen.h
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sndlib2xen.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sndlib2xen.h
 xen.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/xen.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/xen.h
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sound.c
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sound.c
 mus-config.h
 -
 snd.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/snd.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/snd.h
 math.h
 -
 stdio.h
@@ -432,15 +432,15 @@ io.h
 string.h
 -
 _sndlib.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/_sndlib.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/_sndlib.h
 sndlib-strings.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sndlib-strings.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sndlib-strings.h
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/vct.c
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/vct.c
 mus-config.h
 -
 snd.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/snd.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/snd.h
 stddef.h
 -
 math.h
@@ -452,21 +452,21 @@ stdio.h
 string.h
 -
 _sndlib.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/_sndlib.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/_sndlib.h
 xen.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/xen.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/xen.h
 clm.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm.h
 sndlib2xen.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sndlib2xen.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sndlib2xen.h
 clm2xen.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm2xen.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm2xen.h
 vct.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/vct.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/vct.h
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/vct.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/vct.h
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/xen.c
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/xen.c
 mus-config.h
 -
 ctype.h
@@ -492,9 +492,9 @@ readline/readline.h
 readline/history.h
 -
 xen.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/xen.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/xen.h
 s7.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/s7.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/s7.h
 curses.h
 -
 unistd.h
@@ -508,7 +508,7 @@ fcntl.h
 direct.h
 -
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/xen.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/xen.h
 sys/types.h
 -
 stdbool.h
@@ -518,5 +518,5 @@ ruby.h
 fth.h
 -
 s7.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/s7.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/s7.h
 

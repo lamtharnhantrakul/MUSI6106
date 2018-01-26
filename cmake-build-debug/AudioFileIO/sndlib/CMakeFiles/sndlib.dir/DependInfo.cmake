@@ -4,16 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/audio.c" "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/audio.c.o"
-  "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm.c" "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm.c.o"
-  "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/clm2xen.c" "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm2xen.c.o"
-  "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/headers.c" "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/headers.c.o"
-  "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/io.c" "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/io.c.o"
-  "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/s7.c" "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/s7.c.o"
-  "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sndlib2xen.c" "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sndlib2xen.c.o"
-  "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/sound.c" "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sound.c.o"
-  "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/vct.c" "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/vct.c.o"
-  "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/3rdparty/sndlib/xen.c" "/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/xen.c.o"
+  "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/audio.c" "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/audio.c.o"
+  "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm.c" "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm.c.o"
+  "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/clm2xen.c" "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/clm2xen.c.o"
+  "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/headers.c" "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/headers.c.o"
+  "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/io.c" "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/io.c.o"
+  "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/s7.c" "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/s7.c.o"
+  "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sndlib2xen.c" "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sndlib2xen.c.o"
+  "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/sound.c" "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/sound.c.o"
+  "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/vct.c" "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/vct.c.o"
+  "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/3rdparty/sndlib/xen.c" "/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/xen.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

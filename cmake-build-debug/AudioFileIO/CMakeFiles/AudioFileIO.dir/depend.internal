@@ -10,11 +10,11 @@ AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFile.cpp.o
  ../src/inc/AudioFileIf.h
  ../src/inc/Util.h
  ../src/inc/Vector.h
- /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/AudioFile.cpp
- /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/AudioFile.h
+ /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/AudioFile.cpp
+ /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/AudioFile.h
 AudioFileIO/CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.o
  ../inc/ErrorDef.h
  ../src/inc/AudioFileIf.h
  ../src/inc/Util.h
- /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/AudioFile.h
- /Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/AudioFileIf.cpp
+ /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/AudioFile.h
+ /Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/AudioFileIf.cpp

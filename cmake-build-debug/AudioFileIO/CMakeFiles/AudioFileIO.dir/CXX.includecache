@@ -76,33 +76,33 @@ limits
 cmath
 -
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/AudioFile.cpp
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/AudioFile.cpp
 cassert
 -
 iostream
 -
 Util.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/Util.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/Util.h
 Vector.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/Vector.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/Vector.h
 AudioFile.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/AudioFile.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/AudioFile.h
 sndlib.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/sndlib.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/sndlib.h
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/AudioFile.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/AudioFile.h
 AudioFileIf.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/AudioFileIf.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/AudioFileIf.h
 
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/AudioFileIf.cpp
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/AudioFileIf.cpp
 cassert
 -
 iostream
 -
 Util.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/Util.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/Util.h
 AudioFileIf.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/AudioFileIf.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/AudioFileIf.h
 AudioFile.h
-/Users/lamtharnhantrakul/code/GTCMT/2018-MUSI6106/src/AudioFileIO/AudioFile.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106_Assignments/MUSI6106/src/AudioFileIO/AudioFile.h
 
