@@ -15,34 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0a67d97a-4552-4e83-8b23-fa407a4db437" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/bin/debug/MUSI6106Exec" afterPath="$PROJECT_DIR$/bin/debug/MUSI6106Exec" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/CMakeFiles/AudioFileIO.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/CMakeFiles/AudioFileIO.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/CMakeFiles/AudioFileIO.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/CMakeFiles/AudioFileIO.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/CMakeFiles/AudioFileIO.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/CMakeFiles/AudioFileIO.dir/flags.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/Makefile" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/sndlib/CMakeFiles/sndlib.dir/flags.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/sndlib/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/sndlib/Makefile" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/sndlib/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/AudioFileIO/sndlib/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/MUSI6106.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/MUSI6106.cbp" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/MUSI6106Exec/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/MUSI6106Exec/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/MUSI6106Exec/CMakeFiles/MUSI6106Exec.dir/flags.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/MUSI6106Exec/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/MUSI6106Exec/Makefile" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/MUSI6106Exec/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/MUSI6106Exec/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
       <change beforePath="$PROJECT_DIR$/src/MUSI6106Exec/MUSI6106Exec.cpp" afterPath="$PROJECT_DIR$/src/MUSI6106Exec/MUSI6106Exec.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -61,11 +33,41 @@
           <file leaf-file-name="MUSI6106Exec.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/MUSI6106Exec/MUSI6106Exec.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="290">
-                  <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                <state relative-caret-position="158">
+                  <caret line="85" column="58" lean-forward="false" selection-start-line="85" selection-start-column="58" selection-end-line="85" selection-end-column="58" />
                   <folding>
                     <element signature="e#1#20#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="txtCheck.m" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/txtCheck.m">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sweep.wav.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sweep.wav.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1984008">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -77,8 +79,8 @@
           <file leaf-file-name="AudioFile.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/AudioFileIO/AudioFile.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="189">
+                  <caret line="362" column="12" lean-forward="false" selection-start-line="362" selection-start-column="12" selection-end-line="362" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -87,28 +89,28 @@
           <file leaf-file-name="AudioFileIf.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/AudioFileIO/AudioFileIf.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="75">
+                  <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AudioFile.h" pinned="false" current-in-tab="false">
+          <file leaf-file-name="AudioFile.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/AudioFileIO/AudioFile.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="189">
+                  <caret line="15" column="84" lean-forward="false" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="84" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AudioFileIf.h" pinned="false" current-in-tab="true">
+          <file leaf-file-name="AudioFileIf.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/inc/AudioFileIf.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="266">
-                  <caret line="91" column="23" lean-forward="false" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="23" />
+                <state relative-caret-position="-174">
+                  <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -117,6 +119,12 @@
         </leaf>
       </split-second>
     </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ocde</find>
+      <find>code</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -134,10 +142,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="4" />
     <option name="width" value="1436" />
-    <option name="height" value="900" />
+    <option name="height" value="661" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -215,7 +223,7 @@
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MUSI6106" RUN_TARGET_NAME="MUSI6106Exec" EXPLICIT_BUILD_TARGET_NAME="all">
       <envs />
     </configuration>
-    <configuration name="MUSI6106Exec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MUSI6106" TARGET_NAME="MUSI6106Exec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MUSI6106" RUN_TARGET_NAME="MUSI6106Exec">
+    <configuration name="MUSI6106Exec" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$PROJECT_DIR$/sweep.wav" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MUSI6106" TARGET_NAME="MUSI6106Exec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MUSI6106" RUN_TARGET_NAME="MUSI6106Exec">
       <envs />
     </configuration>
     <configuration name="sndlib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MUSI6106" TARGET_NAME="sndlib" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MUSI6106" RUN_TARGET_NAME="MUSI6106Exec">
@@ -242,26 +250,26 @@
       <option name="presentableId" value="Default" />
       <updated>1516935085217</updated>
       <workItem from="1516935087771" duration="35000" />
-      <workItem from="1516935602551" duration="1173000" />
+      <workItem from="1516935602551" duration="5094000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1208000" />
+    <option name="totallyTimeSpent" value="5129000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="0" width="1436" height="900" extended-state="0" />
+    <frame x="4" y="0" width="1436" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15668523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15738161" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971016" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32971016" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23429951" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971016" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -280,7 +288,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -294,9 +304,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AudioFileIO/AudioFileIf.cpp">
+    <entry file="file://$PROJECT_DIR$/src/inc/AudioFileIf.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-174">
+          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txtCheck.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sweep.wav.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1984008">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -304,32 +338,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AudioFileIO/AudioFile.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="189">
+          <caret line="362" column="12" lean-forward="false" selection-start-line="362" selection-start-column="12" selection-end-line="362" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AudioFileIO/AudioFileIf.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AudioFileIO/AudioFile.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/inc/AudioFileIf.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="91" column="23" lean-forward="false" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="23" />
+        <state relative-caret-position="189">
+          <caret line="15" column="84" lean-forward="false" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="84" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MUSI6106Exec/MUSI6106Exec.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="158">
+          <caret line="85" column="58" lean-forward="false" selection-start-line="85" selection-start-column="58" selection-end-line="85" selection-end-column="58" />
           <folding>
             <element signature="e#1#20#0" expanded="true" />
           </folding>
