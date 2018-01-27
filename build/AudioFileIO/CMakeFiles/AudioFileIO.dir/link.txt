@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc ../../lib/libAudioFileIO.a  CMakeFiles/AudioFileIO.dir/AudioFile.cpp.o CMakeFiles/AudioFileIO.dir/AudioFileIf.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib ../../lib/libAudioFileIO.a
