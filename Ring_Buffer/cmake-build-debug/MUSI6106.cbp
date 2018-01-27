@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="MUSI6106"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake.modules\;CMake Files\src\;CMake Files\src\MUSI6106Exec\;CMake Files\src\AudioFileIO\;CMake Files\3rdparty\;CMake Files\3rdparty\sndlib\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MUSI6106Exec">
+				<Option output="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/bin/debug/MUSI6106Exec" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/inc"/>
+					<Add directory="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/inc"/>
+					<Add directory="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/MUSI6106Exec/Makefile&quot;  VERBOSE=1 MUSI6106Exec"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/MUSI6106Exec/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/MUSI6106Exec/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/MUSI6106Exec/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MUSI6106Exec/fast">
+				<Option output="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/bin/debug/MUSI6106Exec" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/inc"/>
+					<Add directory="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/inc"/>
+					<Add directory="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/MUSI6106Exec/Makefile&quot;  VERBOSE=1 MUSI6106Exec/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/MUSI6106Exec/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/MUSI6106Exec/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/MUSI6106Exec/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AudioFileIO">
+				<Option output="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/lib/debug/libAudioFileIO.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/inc"/>
+					<Add directory="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/inc"/>
+					<Add directory="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/inc"/>
+					<Add directory="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO/Makefile&quot;  VERBOSE=1 AudioFileIO"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AudioFileIO/fast">
+				<Option output="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/lib/debug/libAudioFileIO.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/inc"/>
+					<Add directory="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/inc"/>
+					<Add directory="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/inc"/>
+					<Add directory="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO/Makefile&quot;  VERBOSE=1 AudioFileIO/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sndlib">
+				<Option output="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/lib/debug/libsndlib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO/sndlib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO/sndlib/Makefile&quot;  VERBOSE=1 sndlib"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO/sndlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO/sndlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO/sndlib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sndlib/fast">
+				<Option output="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/lib/debug/libsndlib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO/sndlib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO/sndlib/Makefile&quot;  VERBOSE=1 sndlib/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO/sndlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO/sndlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake-build-debug/AudioFileIO/sndlib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/CMakeLists.txt">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/_sndlib.h">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/audio.c">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/clm-strings.h">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/clm.c">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/clm.h">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/clm2xen.c">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/clm2xen.h">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/headers.c">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/io.c">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/mus-config.h">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/s7.c">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/s7.h">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/sndlib-strings.h">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/sndlib.h">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/sndlib2xen.c">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/sndlib2xen.h">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/sound.c">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/unix-config.h">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/vct.c">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/vct.h">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/xen.c">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/xen.h">
+			<Option target="sndlib"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/AudioFileIO/AudioFile.cpp">
+			<Option target="AudioFileIO"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/AudioFileIO/AudioFile.h">
+			<Option target="AudioFileIO"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/AudioFileIO/AudioFileIf.cpp">
+			<Option target="AudioFileIO"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/AudioFileIO/CMakeLists.txt">
+			<Option target="AudioFileIO"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/MUSI6106Exec/CMakeLists.txt">
+			<Option target="MUSI6106Exec"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/MUSI6106Exec/MUSI6106Exec.cpp">
+			<Option target="MUSI6106Exec"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/inc/AudioFileIf.h">
+			<Option target="MUSI6106Exec"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/inc/RingBuffer.h">
+			<Option target="MUSI6106Exec"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/inc/Util.h">
+			<Option target="MUSI6106Exec"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/inc/Vector.h">
+			<Option target="MUSI6106Exec"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake.modules/SetPlatform.cmake">
+			<Option virtualFolder="CMake Files\cmake.modules\"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake.modules/SetOutputDir.cmake">
+			<Option virtualFolder="CMake Files\cmake.modules\"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake.modules/SetOsLibs.cmake">
+			<Option virtualFolder="CMake Files\cmake.modules\"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake.modules/AddSrcDirectories.cmake">
+			<Option virtualFolder="CMake Files\cmake.modules\"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/cmake.modules/AddIncDirectories.cmake">
+			<Option virtualFolder="CMake Files\cmake.modules\"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/MUSI6106Config.h.in">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/MUSI6106Exec/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\MUSI6106Exec\"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/AudioFileIO/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\AudioFileIO\"/>
+		</Unit>
+		<Unit filename="/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/3rdparty/sndlib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rdparty\sndlib\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

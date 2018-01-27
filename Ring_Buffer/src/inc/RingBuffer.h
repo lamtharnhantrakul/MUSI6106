@@ -5,6 +5,9 @@
 #include <algorithm>
 #include <cmath>
 
+using std::cout;
+using std::endl;
+
 /*! \brief implement a circular buffer of type T
 */
 template <class T> 
@@ -36,6 +39,8 @@ public:
     void put(T tNewValue)
     {
         // to be implemented
+        m_ptBuff[m_iWriteIdx] = tNewValue;
+        // *(m_ptBuff + m_iWriteIdx) = tNewValue;  // NOTE: this is the same thing as above
     }
     
     /*! return the value at the current read index
@@ -44,6 +49,7 @@ public:
     T get () const
     {
         // to be implemented
+        return  m_ptBuff[m_iReadIdx];
     }
 
     /*! return the current index for writing/put
@@ -51,7 +57,7 @@ public:
     */
     int getWriteIdx () const
     {
-        // to be implemented
+        return m_iWriteIdx;
     }
 
     /*! move the write index to a new position
@@ -60,7 +66,13 @@ public:
     */
     void setWriteIdx (int iNewWriteIdx)
     {
-        // to be implemented
+        if (isValidIdx(iNewWriteIdx)) {
+            m_iWriteIdx = iNewWriteIdx;
+        }
+        else
+        {
+            cout << "Invalid Write Index" << endl ;
+        }
     }
 
     /*! return the current index for reading/get
@@ -68,7 +80,7 @@ public:
     */
     int getReadIdx () const
     {
-        // to be implemented
+        return m_iReadIdx;
     }
 
     /*! move the read index to a new position
@@ -77,7 +89,14 @@ public:
     */
     void setReadIdx (int iNewReadIdx)
     {
-        // to be implemented
+        if (isValidIdx(iNewReadIdx))
+        {
+            m_iReadIdx = iNewReadIdx;
+        }
+        else
+        {
+            cout << "Invalid Read Index" << endl;
+        }
     }
 
     /*! add a new value of type T to write index and increment write index
@@ -86,7 +105,12 @@ public:
     */
     void putPostInc (T tNewValue)
     {
-        // to be implemented
+        m_ptBuff[m_iWriteIdx] = tNewValue;
+        m_iWriteIdx++;
+        if (m_iWriteIdx >= m_iBuffLength)
+        {
+            m_iWriteIdx = 0;  // wrap the index around the ring buffer
+        }
     }
 
     /*! return the value at the current read index and increment the read pointer
@@ -95,15 +119,27 @@ public:
     T getPostInc ()
     {
         // to be implemented
+        int iTempIdx = m_iReadIdx;
+        m_iReadIdx++;
+        if (m_iReadIdx >= m_iBuffLength)
+        {
+            m_iReadIdx = 0;  // wrap the index around the ring buffer
+        }
+        return  m_ptBuff[iTempIdx];
     }
 
     /*! return the value at the index with an arbitrary offset
     \param iOffset: read at offset from read index
     \return type T the value from the read index
     */
-    T get (int iOffset = 0) const
+    T get (int iOffset) const
     {
-        // to be implemented
+        // if `iOffset` is positive and greater than `m_iBuffLength`, then "wrap around" to the start of the buffer
+        // if `iOffset` is negative and smaller than 0, then "wrap around" to the end of the buffer
+        // These two scenarious can be elegantly handled with an add and modulo.
+        int iTempIdx = (m_iReadIdx + iOffset) % m_iBuffLength;
+
+        return  m_ptBuff[iTempIdx];
     }
     
     /*! set buffer content and indices to 0
@@ -140,5 +176,21 @@ private:
         m_iWriteIdx;                //!< current write index
 
     T   *m_ptBuff;                  //!< data buffer
+
+    bool isValidIdx(int iIdx)
+    {
+        if ((iIdx < 0) || (iIdx > m_iBuffLength)) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    bool isValidValue(T value)
+    {
+        cout << typeid(value).name() << endl;
+    }
+
 };
 #endif // __RingBuffer_hdr__

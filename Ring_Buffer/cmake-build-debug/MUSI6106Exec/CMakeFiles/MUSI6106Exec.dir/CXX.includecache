@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../inc/ErrorDef.h
+
+../src/inc/AudioFileIf.h
+string
+-
+fstream
+-
+algorithm
+-
+ErrorDef.h
+../src/inc/ErrorDef.h
+
+../src/inc/RingBuffer.h
+cassert
+-
+algorithm
+-
+cmath
+-
+
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/MUSI6106Exec/MUSI6106Exec.cpp
+iostream
+-
+ctime
+-
+MUSI6106Config.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/MUSI6106Exec/MUSI6106Config.h
+AudioFileIf.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/MUSI6106Exec/AudioFileIf.h
+RingBuffer.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Ring_Buffer/src/MUSI6106Exec/RingBuffer.h
+
+inc/MUSI6106Config.h
+
