@@ -42,7 +42,7 @@ public:
         m_ptBuff[m_iWriteIdx] = tNewValue;
         // *(m_ptBuff + m_iWriteIdx) = tNewValue;  // NOTE: this is the same thing as above
     }
-    
+
     /*! return the value at the current read index
     \return type T the value from the read index
     */
@@ -134,12 +134,15 @@ public:
     */
     T get (int iOffset) const
     {
-        // if `iOffset` is positive and greater than `m_iBuffLength`, then "wrap around" to the start of the buffer
-        // if `iOffset` is negative and smaller than 0, then "wrap around" to the end of the buffer
-        // These two scenarious can be elegantly handled with an add and modulo.
-        int iTempIdx = (m_iReadIdx + iOffset) % m_iBuffLength;
+        if (isValidOffset(iOffset))
+        {
+            // if `iOffset` is positive and greater than `m_iBuffLength`, then "wrap around" to the start of the buffer
+            // if `iOffset` is negative and smaller than 0, then "wrap around" to the end of the buffer
+            // These two scenarious can be elegantly handled with an add and modulo.
+            int iTempIdx = (m_iReadIdx + iOffset) % m_iBuffLength;
 
-        return  m_ptBuff[iTempIdx];
+            return m_ptBuff[iTempIdx];
+        }
     }
     
     /*! set buffer content and indices to 0
@@ -187,9 +190,16 @@ private:
         }
     }
 
-    bool isValidValue(T value)
+    bool isValidOffset(T value) const
     {
-        cout << typeid(value).name() << endl;
+        if (value >= m_iBuffLength || value <= -m_iBuffLength)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 
 };
