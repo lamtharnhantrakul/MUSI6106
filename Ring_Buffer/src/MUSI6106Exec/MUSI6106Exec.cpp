@@ -20,8 +20,8 @@ void testRingBufferReadHardcode(CRingBuffer<float> *, float *, int, int);
 void testRingBufferReadHelper(CRingBuffer<float> *, int , int );
 void testOffsetHardcode(CRingBuffer<float> *, float *, int, int);
 void testOffsetHelper(CRingBuffer<float> * r, int, int);
+void testPostIncHardcode(CRingBuffer<float> *, float * , int);
 void testPutGet(CRingBuffer<float> * , float );
-
 
 /////////////////////////////////////////////////////////////////////////////////
 // main function
@@ -57,7 +57,13 @@ int main(int argc, char* argv[])
 
     pCRingBuffer = new CRingBuffer<float>(iRingBufferLength);
 
+    // Test `put()` and `get()` functions
+    cout << "____\n" << endl;
+    testPutGet(pCRingBuffer, 100.4);
+    testPutGet(pCRingBuffer, 10);
+
     // Generate Test signal - we hardcode `iTestSignalLength` to 16 to generate a ramp 0 - 15
+    // All proceeding test functions assume this ramp of 0-15
     generateTestSignal(pfTestSignal, iTestSignalLength, true);
 
     // Test ring buffer read using hardcoded values that we expect with the test signal
@@ -66,16 +72,8 @@ int main(int argc, char* argv[])
     // Test ring buffer offset with hardcoded values that we expect from the test signal
     testOffsetHardcode(pCRingBuffer, pfTestSignal, iRingBufferLength, iTestSignalLength);
 
-    // Test `put()` and `get()` functions
-    testPutGet(pCRingBuffer, 100.4);
-    testPutGet(pCRingBuffer, 10);
-
-    //Test Reading and Writing (generic test script that Taka warned was complicated)
-    testRingBufferRead(pCRingBuffer, pfTestSignal, iRingBufferLength, iTestSignalLength);
-
-    //Test offset (generic test script that Taka warned was complicated)
-    testOffset(pCRingBuffer, pfTestSignal, iRingBufferLength, iTestSignalLength, 4);
-    testOffset(pCRingBuffer, pfTestSignal, iRingBufferLength, iTestSignalLength, -4);
+    // Test postInc() functions with hardcoded signal and expected values
+    testPostIncHardcode(pCRingBuffer, pfTestSignal, iRingBufferLength);
 
     cout << "processing done in: \t"    << (clock()-time)*1.F/CLOCKS_PER_SEC << " seconds." << endl;
 
@@ -86,7 +84,11 @@ int main(int argc, char* argv[])
 }
 
 // Define Test functions
+/*
+ * Generate a ramp
+ */
 void generateTestSignal(float*& pfTestSignal, int iTestSignalLength, bool bAutoPrint){
+    cout << "____\n" << endl;
     // fill the test signal, e.g a ramp from 0 - 15
     pfTestSignal = new float [iTestSignalLength];
 
@@ -96,18 +98,21 @@ void generateTestSignal(float*& pfTestSignal, int iTestSignalLength, bool bAutoP
     }
 
     if (bAutoPrint) {
-        cout << "----- \n Test Signal: " ;
+        cout << "Test Signal: ";
         for (int i = 0; i < iTestSignalLength; i++)
         {
             cout << pfTestSignal[i] << " ";
         }
-        cout << "\n-----" << endl;
+        cout << endl;
     }
-
 }
 
+/*
+ * Test "wrap around" of Ring Buffer
+ */
 void testRingBufferReadHardcode(CRingBuffer<float> * pCRingBuffer, float * pfTestSignal, int iRingBufferLength, int iTestSignalLength)
 {
+    cout << "____\n" << endl;
     pCRingBuffer->reset();
 
     //Read test signal into array
@@ -133,8 +138,12 @@ void testRingBufferReadHelper(CRingBuffer<float> * pCRingBuffer, int iReadIdx, i
     cout << "`testRingBufferReadHardcode()` | Status: " << sTest <<" | Check  value of `pCRingBuffer` at read idx: " << iReadIdx << endl;
 }
 
+/*
+ * Test "offset" of ring buffer
+ */
 void testOffsetHardcode(CRingBuffer<float> * pCRingBuffer, float * pfTestSignal, int iRingBufferLength, int iTestSignalLength)
 {
+    cout << "____\n" << endl;
     pCRingBuffer->reset();
     // Buffer contents should be `[0,1,2,3,4,5,7]` after this operation
     for (int i=0; i<iRingBufferLength; i++)
@@ -145,7 +154,7 @@ void testOffsetHardcode(CRingBuffer<float> * pCRingBuffer, float * pfTestSignal,
     // Set index
     pCRingBuffer->setReadIdx(3);
 
-    //Run tests based from this index
+    //Run offeset test based from this index
     testOffsetHelper(pCRingBuffer, 0, 3);
     testOffsetHelper(pCRingBuffer, -4, 7);
     testOffsetHelper(pCRingBuffer, -12, 5);
@@ -162,6 +171,34 @@ void testOffsetHelper(CRingBuffer<float> * pCRingBuffer, int iOffset, int iExpec
     cout << "`testOffsetHardcode()` | Status: " << sTest <<" | Check get() with offset: " << iOffset << endl;
 }
 
+/*
+ * Test operation of putPostInc() and getPostInc()
+ */
+void testPostIncHardcode(CRingBuffer<float> * pCRingBuffer, float * pfTestSignal, int iRingBufferLength){
+    cout << "____\n" << endl;
+    pCRingBuffer->reset();
+    // Buffer contents should be `[0,1,2,3,4,5,7]` after this operation
+    for (int i=0; i<iRingBufferLength; i++)
+    {
+        pCRingBuffer->putPostInc(pfTestSignal[i]);
+    }
+
+    // Read the contents, the value at an index should just be equal to the index because this is a ramp function
+    std::string sTest = "Fail";
+    for (int i=0; i<iRingBufferLength; i++)
+    {
+        if (pCRingBuffer->getPostInc() == i)
+        {
+            sTest = "Pass";
+        }
+    }
+    cout << "`testPostIncHardcode()` | Status: " << sTest <<" | `putPostInc()` and `getPostInc()` behave as expected "<< endl;
+
+}
+
+/*
+ * Test basic put() and get() functions
+ */
 void testPutGet(CRingBuffer<float> * pCRingBuffer, float value){
     pCRingBuffer->reset();
 
