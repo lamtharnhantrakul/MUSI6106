@@ -28,8 +28,8 @@
       <file leaf-file-name="MUSI6106Exec.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MUSI6106Exec/MUSI6106Exec.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+            <state relative-caret-position="213">
+              <caret line="196" column="39" lean-forward="true" selection-start-line="196" selection-start-column="39" selection-end-line="196" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -48,7 +48,7 @@
       <file leaf-file-name="RingBuffer.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/inc/RingBuffer.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-444">
+            <state relative-caret-position="1234">
               <caret line="146" column="24" lean-forward="true" selection-start-line="146" selection-start-column="24" selection-end-line="146" selection-end-column="24" />
               <folding>
                 <element signature="e#61#79#0" expanded="true" />
@@ -183,12 +183,12 @@
       <workItem from="1517081242146" duration="9942000" />
       <workItem from="1517256752819" duration="471000" />
       <workItem from="1517328716669" duration="5450000" />
-      <workItem from="1517407539616" duration="6309000" />
+      <workItem from="1517407539616" duration="8546000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22172000" />
+    <option name="totallyTimeSpent" value="24409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="0" width="1436" height="900" extended-state="6" />
@@ -278,7 +278,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/inc/RingBuffer.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-444">
+        <state relative-caret-position="1234">
           <caret line="146" column="24" lean-forward="true" selection-start-line="146" selection-start-column="24" selection-end-line="146" selection-end-column="24" />
           <folding>
             <element signature="e#61#79#0" expanded="true" />
@@ -289,8 +289,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MUSI6106Exec/MUSI6106Exec.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+        <state relative-caret-position="213">
+          <caret line="196" column="39" lean-forward="true" selection-start-line="196" selection-start-column="39" selection-end-line="196" selection-end-column="39" />
           <folding />
         </state>
       </provider>
