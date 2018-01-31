@@ -16,6 +16,11 @@ void    showClInfo ();
 
 // Declare test functions
 void generateTestSignal(float*&, int, bool);
+void testRingBufferReadHardcode(CRingBuffer<float> *, float *, int, int);
+void testRingBufferReadHelper(CRingBuffer<float> *, int , int );
+void testOffsetHardcode(CRingBuffer<float> *, float *, int, int);
+void testOffsetHelper(CRingBuffer<float> * r, int, int);
+
 void testPutGet(CRingBuffer<float> * , float );
 void testRingBufferRead(CRingBuffer<float> *, float *, int, int);
 void testOffset(CRingBuffer<float> *, float *, int,  int, int);
@@ -52,56 +57,27 @@ int main(int argc, char* argv[])
     //////////////////////////////////////////////////////////////////////////////
     // do processing and tests
 
-    // For our tests, we will use the same RingBuffer, but call the `->reset()` method on it
-
-
     pCRingBuffer = new CRingBuffer<float>(iRingBufferLength);
+
+    // Generate Test signal - we hardcode `iTestSignalLength` to 16 to generate a ramp 0 - 15
+    generateTestSignal(pfTestSignal, iTestSignalLength, true);
+
+    // Test ring buffer read using hardcoded values that we expect with the test signal
+    testRingBufferReadHardcode(pCRingBuffer, pfTestSignal, iRingBufferLength, iTestSignalLength);
+
+    // Test ring buffer offset with hardcoded values that we expect from the test signal
+    testOffsetHardcode(pCRingBuffer, pfTestSignal, iRingBufferLength, iTestSignalLength);
 
     // Test `put()` and `get()` functions
     testPutGet(pCRingBuffer, 100.4);
     testPutGet(pCRingBuffer, 10);
 
-    // Test `setWriteIdx()` and `get(offset)`
-
-
-    // Generate Test signal
-    generateTestSignal(pfTestSignal, iTestSignalLength, true);
-
-    //Test Reading and Writing
+    //Test Reading and Writing (generic test script that Taka warned was complicated)
     testRingBufferRead(pCRingBuffer, pfTestSignal, iRingBufferLength, iTestSignalLength);
 
-    //Test offset
+    //Test offset (generic test script that Taka warned was complicated)
     testOffset(pCRingBuffer, pfTestSignal, iRingBufferLength, iTestSignalLength, 4);
     testOffset(pCRingBuffer, pfTestSignal, iRingBufferLength, iTestSignalLength, -4);
-
-    /*
-
-    // Testing `setWriteIdx()` function
-    cout << "------ \n Testing get() and setWriteIdx()" << endl;
-    pCRingBuffer->setWriteIdx(6);
-    pCRingBuffer->put(65);
-    cout << "result: " << pCRingBuffer->get(6) << "\t expected: " << 65<< endl; // should be `65`
-    cout << "result: " << pCRingBuffer->getWriteIdx() << "\t expected: " << 6 << endl; // should be `6`
-
-    cout << "------ \n Testing putPostInc() and getPostInc()" << endl;
-    pCRingBuffer->reset(); // Reset Buffer
-    cout << "result: ";
-    for (int i=0; i<iTestSignalLength; i++)
-    {
-        pCRingBuffer->putPostInc(pfTestSignal[i]);
-        cout << pCRingBuffer->getPostInc() << ' ';
-    }
-    cout <<endl << "expected: " << "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15" << endl;
-
-    cout << "------ \n Testing Contents of Buffer" << endl;
-    pCRingBuffer->setReadIdx(0);
-    cout << "result: ";
-    for (int i=0; i<8; i++)
-    {
-        cout << pCRingBuffer->getPostInc() << ' ';
-    }
-    cout << endl << "expected: " << "8 9 10 11 12 13 14 15" << endl;
-    */
 
     cout << "processing done in: \t"    << (clock()-time)*1.F/CLOCKS_PER_SEC << " seconds." << endl;
 
@@ -113,7 +89,7 @@ int main(int argc, char* argv[])
 
 // Define Test functions
 void generateTestSignal(float*& pfTestSignal, int iTestSignalLength, bool bAutoPrint){
-    // fill the test signal - a ramp function from 0 - 2047
+    // fill the test signal, e.g a ramp from 0 - 15
     pfTestSignal = new float [iTestSignalLength];
 
     for (int i = 0; i < iTestSignalLength; i++)
@@ -132,51 +108,101 @@ void generateTestSignal(float*& pfTestSignal, int iTestSignalLength, bool bAutoP
 
 }
 
+void testRingBufferReadHardcode(CRingBuffer<float> * pCRingBuffer, float * pfTestSignal, int iRingBufferLength, int iTestSignalLength)
+{
+    pCRingBuffer->reset();
+
+    //Read test signal into array
+    for (int i=0; i<iTestSignalLength; i++)
+    {
+        pCRingBuffer->putPostInc(pfTestSignal[i]);  // increment `write_idx`
+    }
+
+    // After wrap around, we expect idx=0 in the ring buffer to be `8`
+    testRingBufferReadHelper(pCRingBuffer, 0, 8);
+    // After wrap around, we expect idx=3 in the ring buffer to be `11`
+    testRingBufferReadHelper(pCRingBuffer, 3, 11);
+    // After wrap around we, expect the last value in the ring buffer to be `15`
+    testRingBufferReadHelper(pCRingBuffer, iRingBufferLength-1, 15);
+}
+
+void testRingBufferReadHelper(CRingBuffer<float> * pCRingBuffer, int iReadIdx, int iExpected)
+{
+    std::string sTest = "Fail";
+    if (pCRingBuffer->get(iReadIdx) == iExpected) {
+        sTest="Pass";
+    }
+    cout << "`testRingBufferReadHardcode()` | Status: " << sTest <<" | Check  value of `pCRingBuffer` at read idx: " << iReadIdx << endl;
+}
+
+void testOffsetHardcode(CRingBuffer<float> * pCRingBuffer, float * pfTestSignal, int iRingBufferLength, int iTestSignalLength)
+{
+    pCRingBuffer->reset();
+    // Buffer contents should be `[0,1,2,3,4,5,7]` after this operation
+    for (int i=0; i<iRingBufferLength; i++)
+    {
+        pCRingBuffer->putPostInc(pfTestSignal[i]);
+    }
+
+    // Set index
+    pCRingBuffer->setReadIdx(3);
+
+    //Run tests based from this index
+    testOffsetHelper(pCRingBuffer, 0, 3);
+    testOffsetHelper(pCRingBuffer, -4, 7);
+    testOffsetHelper(pCRingBuffer, -12, 5);
+    testOffsetHelper(pCRingBuffer, 2, 5);
+    testOffsetHelper(pCRingBuffer, 7, 2);
+    testOffsetHelper(pCRingBuffer, 12, 2);
+}
+
+void testOffsetHelper(CRingBuffer<float> * pCRingBuffer, int iOffset, int iExpected) {
+    std::string sTest = "Fail";
+    if (pCRingBuffer->get(iOffset) == iExpected) {
+        sTest = "Pass";
+    }
+    cout << "`testOffsetHardcode()` | Status: " << sTest <<" | Check get() with offset: " << iOffset << endl;
+}
+
 void testPutGet(CRingBuffer<float> * pCRingBuffer, float value){
+    pCRingBuffer->reset();
+
+    std::string sTest1 = "Fail";
     pCRingBuffer->put(value);
     if (pCRingBuffer->get() == value) {
-        cout << "`testPutGet` passed using value: " << value << endl;
-    } else {
-        cout << "`testPutGet` failed using value: " << value << endl;
+        sTest1 = "Pass";
     }
+    cout << "`testPutGet()` | Status: " << sTest1 << " | `put()` and `get()` using value: " << value << endl;
 }
 
 void testRingBufferRead(CRingBuffer<float> * pCRingBuffer, float * pfTestSignal, int iRingBufferLength, int iTestSignalLength)
 {
     pCRingBuffer->reset();
 
-    bool arrayPass = true;
+    std::string sTest1 = "Pass";
     for (int i=0; i<iTestSignalLength; i++)
     {
         pCRingBuffer->putPostInc(pfTestSignal[i]);  // increment `write_idx`
         //cout << pCRingBuffer->getPostInc() << ' '; // increment `read_idx`
         if (pCRingBuffer->getPostInc() != pfTestSignal[i]) {
-            cout << "`testRingBufferRead()` Failed" << endl;
-            arrayPass = false;
+            sTest1 = "Fail";
             break;
         }
     }
-    if (arrayPass){
-        cout << "`testRingBufferRead()` individual Read/Write of values Passed" << endl;
-    }
+    cout << "`testRingBufferRead()` | Status: " << sTest1 << " | Compare Read/Write of values in `pCRingBuffer`  with true values from `pfTestSignal`" << endl;
 
-    bool bufferPass = true;
+
+    std::string sTest2 = "Pass";
     pCRingBuffer->setReadIdx(0); // Need to set `read_idx` back to 0
     for (int i=0; i<iRingBufferLength; i++)
     {
-        //cout << pCRingBuffer->getPostInc() << ' ';
         int iTestSignalOffset = iTestSignalLength - iRingBufferLength;  // `iTestSignalOffset` shifts the index
-        //cout << pfTestSignal[iTestSignalOffset + i] << ' ';
-
         if (pCRingBuffer->getPostInc() != pfTestSignal[iTestSignalOffset + i]) {
-            cout << "`testRingBufferRead()` Failed" << endl;
-            bufferPass = false;
+            sTest2 = "Fail";
             break;
         }
     }
-    if (bufferPass){
-        cout << "`testRingBufferRead()` most recent buffer contents Passed " << endl;
-    }
+    cout << "`testRingBufferRead()` | Status: " << sTest2 << " | Compare most recent values in `pCRingBuffer` with the last elements in `pfTestSignal`" << endl;
 
 }
 
@@ -195,22 +221,12 @@ void testOffset(CRingBuffer<float> * pCRingBuffer, float * pfTestSignal, int iRi
     pCRingBuffer->setReadIdx((iRingBufferLength/2 - offset) % iRingBufferLength); // I am testing the idea implemented in `setReadIdx()` with the exact idea of modulo
     float val2 = pCRingBuffer->get();
 
-    // This is the hard coded version
-    // pCRingBuffer->setReadIdx(4)
-    // pCRingBuffer->get(-2)
-    //
-    // pCRingBuffer->setReadIdx(2)
-    // pCRingBuffer->get()
-
-    cout << val1 << "\t" << val2 << endl;
-
-    if (val1 == val2) {
-        cout << "`testOffset()` passed" << endl;
-    } else {
-        cout << "`testOffset()` failed" << endl;
+    std::string sTest1 = "Pass";
+    if (val1 != val2) {
+        sTest1 = "Fail";
     }
+    cout << "`testOffset()` | Status: " << sTest1 << " | Test offset: " << offset << endl;
 }
-
 
 void     showClInfo()
 {

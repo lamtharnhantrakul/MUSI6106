@@ -43,14 +43,7 @@ public:
         // *(m_ptBuff + m_iWriteIdx) = tNewValue;  // NOTE: this is the same thing as above
     }
 
-    /*! return the value at the current read index
-    \return type T the value from the read index
-    */
-    T get () const
-    {
-        // to be implemented
-        return  m_ptBuff[m_iReadIdx];
-    }
+    //Removed redundant `get()`
 
     /*! return the current index for writing/put
     \return int
@@ -132,16 +125,16 @@ public:
     \param iOffset: read at offset from read index
     \return type T the value from the read index
     */
-    T get (int iOffset) const
+    T get (int iOffset = 0) const
     {
-        if (isValidOffset(iOffset))
-        {
+        if (isValidOffset(iOffset)) {
             // if `iOffset` is positive and greater than `m_iBuffLength`, then "wrap around" to the start of the buffer
             // if `iOffset` is negative and smaller than 0, then "wrap around" to the end of the buffer
             // These two scenarious can be elegantly handled with an add and modulo.
-            int iTempIdx = (m_iReadIdx + iOffset) % m_iBuffLength;
-
+            int iTempIdx = modulo((m_iReadIdx + iOffset), m_iBuffLength);  // c++ `%` did not behave as we expected with negative numbers
             return m_ptBuff[iTempIdx];
+        } else {
+            cout << "Invalid offset value" << endl;
         }
     }
     
@@ -200,6 +193,12 @@ private:
         {
             return true;
         }
+    }
+
+    // c++ `%` is a remainder function and does make negative numbers positive!
+    int modulo(int x,int N) const
+    {
+        return (x % N + N) %N;
     }
 
 };
