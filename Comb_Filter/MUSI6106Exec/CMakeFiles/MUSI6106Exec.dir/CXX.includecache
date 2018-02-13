@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Comb_Filter/src/MUSI6106Exec/MUSI6106Exec.cpp
+iostream
+-
+ctime
+-
+MUSI6106Config.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Comb_Filter/src/MUSI6106Exec/MUSI6106Config.h
+AudioFileIf.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Comb_Filter/src/MUSI6106Exec/AudioFileIf.h
+CombFilterIf.h
+/Users/lamtharnhantrakul/code/GTCMT/MUSI6106/Comb_Filter/src/MUSI6106Exec/CombFilterIf.h
+
+inc/ErrorDef.h
+
+inc/MUSI6106Config.h
+
+src/inc/AudioFileIf.h
+string
+-
+fstream
+-
+algorithm
+-
+ErrorDef.h
+src/inc/ErrorDef.h
+
+src/inc/CombFilterIf.h
+ErrorDef.h
+src/inc/ErrorDef.h
+
