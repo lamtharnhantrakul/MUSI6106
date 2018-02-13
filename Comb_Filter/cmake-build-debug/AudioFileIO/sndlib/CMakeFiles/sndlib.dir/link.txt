@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../../lib/debug/libsndlib.a  CMakeFiles/sndlib.dir/audio.c.o CMakeFiles/sndlib.dir/clm.c.o CMakeFiles/sndlib.dir/clm2xen.c.o CMakeFiles/sndlib.dir/headers.c.o CMakeFiles/sndlib.dir/io.c.o CMakeFiles/sndlib.dir/s7.c.o CMakeFiles/sndlib.dir/sndlib2xen.c.o CMakeFiles/sndlib.dir/sound.c.o CMakeFiles/sndlib.dir/vct.c.o CMakeFiles/sndlib.dir/xen.c.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../../lib/debug/libsndlib.a
