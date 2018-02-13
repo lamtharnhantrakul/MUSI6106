@@ -118,7 +118,11 @@ int main(int argc, char* argv[])
         output[k] = new float[100]();
     }
 
+
     input[0][0] = input[1][0] = 1;
+    input[0][1] = input[1][1] = 1;
+    input[0][2] = input[1][2] = 1;
+    input[0][3] = input[1][3] = 1;
 
 //    for (int m = 0; m < 100; ++m) {
 //        input[0][m] = input[1][m] = m;
@@ -133,9 +137,9 @@ int main(int argc, char* argv[])
         cout << endl;
     }
     CCombFilterIf::create(pInstance);
-    pInstance->init(CCombFilterIf::kCombFIR, 4.0f, 1.0f, 2);
-    pInstance->setParam(CCombFilterIf::kParamDelay, 4);
-    pInstance->setParam(CCombFilterIf::kParamGain, 0.5);
+    pInstance->init(CCombFilterIf::kCombFIR, 8.0f, 1.0f, 2);
+    pInstance->setParam(CCombFilterIf::kParamDelay, 8);
+    pInstance->setParam(CCombFilterIf::kParamGain, 0.8);
     pInstance->process(input, output, iTestSignalLength);
 
 

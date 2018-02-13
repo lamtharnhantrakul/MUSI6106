@@ -65,6 +65,8 @@ Error_t CCombFilterBase::setParam( CCombFilterIf::FilterParam_t eParam, float fP
     if (!isInParamRange(eParam, fParamValue))
         return kFunctionInvalidArgsError;
     m_afParam[eParam] = fParamValue;
+
+    // If user is setting `kParamDelay` then clear the ring buffer with zeros up new read index
     if (eParam == CCombFilterIf::kParamDelay) {
         for (int i = 0; i < m_iNumChannels; ++i) {
             m_ppCRingBuffer[i]->setWriteIdx(m_ppCRingBuffer[i]->getReadIdx());
@@ -96,8 +98,8 @@ bool CCombFilterBase::isInParamRange( CCombFilterIf::FilterParam_t eParam, float
 
 Error_t CCombFilterFir::process( float **ppfInputBuffer, float **ppfOutputBuffer, int iNumberOfFrames )
 {
-    for (int i = 0; i < m_iNumChannels; ++i) {
-        for (int j = 0; j < iNumberOfFrames; ++j) {
+    for (int j = 0; j < iNumberOfFrames; ++j) {
+        for (int i = 0; i < m_iNumChannels; ++i) {
             ppfOutputBuffer[i][j] = ppfInputBuffer[i][j]
                                     + getParam(CCombFilterIf::kParamGain)
                                       * m_ppCRingBuffer[i]->getPostInc();
@@ -117,8 +119,8 @@ CCombFilterIir::CCombFilterIir (int iMaxDelayInFrames, int iNumChannels) : CComb
 
 Error_t CCombFilterIir::process( float **ppfInputBuffer, float **ppfOutputBuffer, int iNumberOfFrames )
 {
-    for (int i = 0; i < m_iNumChannels; ++i) {
-        for (int j = 0; j < iNumberOfFrames; ++j) {
+    for (int j = 0; j < iNumberOfFrames; ++j) {
+        for (int i = 0; i < m_iNumChannels; ++i) {
             ppfOutputBuffer[i][j] = ppfInputBuffer[i][j]
                                     + getParam(CCombFilterIf::kParamGain)
                                     * m_ppCRingBuffer[i]->getPostInc();
