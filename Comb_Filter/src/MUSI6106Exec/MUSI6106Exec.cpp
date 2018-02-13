@@ -16,7 +16,7 @@ void    showClInfo ();
 void    initOutput(float**& ppfOutputSignal, int iNumChannels, int iTestSignalLength, bool bAutoPrint);
 void    generateTestImpulseSignal(float**& ppfInputSignal, int iNumChannels, int iTestSignalLength, bool bAutoPrint);
 void    printOutput(float**& ppfOutputSignal, int iNumChannels, int iTestSignalLength);
-void    testImpulseOutput(float**& ppfOutputSignal, int iNumChannels, int delay, float gain);
+void    testImpulseOutputFIR(float**& ppfOutputSignal, int iNumChannels, int delay, float gain);
 /////////////////////////////////////////////////////////////////////////////////
 // main function
 int main(int argc, char* argv[])
@@ -56,17 +56,19 @@ int main(int argc, char* argv[])
     CCombFilterIf::create(pInstance);
     iDelay = 1; iGain = 0.8;
     pInstance->init(CCombFilterIf::kCombFIR, 10.0f, 1.0f, iNumChannels);
-    cout << pInstance->setParam(CCombFilterIf::kParamDelay, iDelay) << endl;
+    pInstance->setParam(CCombFilterIf::kParamDelay, iDelay);
     pInstance->setParam(CCombFilterIf::kParamGain, iGain);
     pInstance->process(ppfInputSignal, ppfOutputSignal, iTestSignalLength);
 
     printOutput(ppfOutputSignal, iNumChannels, iTestSignalLength);
-    testImpulseOutput(ppfOutputSignal, iNumChannels, iDelay, iGain);
+    testImpulseOutputFIR(ppfOutputSignal, iNumChannels, iDelay, iGain);
 
-    //
-    pInstance->reset();
     initOutput(ppfOutputSignal, iNumChannels, iTestSignalLength, false);
 
+    pInstance->init(CCombFilterIf::kCombFIR, 10.0f, 1.0f, iNumChannels);
+    pInstance->setParam(CCombFilterIf::kParamDelay, iDelay);
+    pInstance->setParam(CCombFilterIf::kParamGain, iGain);
+    pInstance->process(ppfInputSignal, ppfOutputSignal, iTestSignalLength);
 
 
     /*
@@ -150,7 +152,7 @@ void printOutput(float**& ppfOutputSignal, int iNumChannels, int iTestSignalLeng
 /*
  * Tests if a simple unit impulse through the delay line yields a delayed `1*iGain` at a location offset by `iDelay`
  */
-void testImpulseOutput(float**& ppfOutputSignal, int iNumChannels, int iDelay, float iGain) {
+void testImpulseOutputFIR(float**& ppfOutputSignal, int iNumChannels, int iDelay, float iGain) {
     for (int c = 0; c < iNumChannels; c++) {
         assert(ppfOutputSignal[c][iDelay] = iGain*ppfOutputSignal[c][0]);
     }
