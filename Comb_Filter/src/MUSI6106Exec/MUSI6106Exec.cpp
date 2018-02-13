@@ -3,6 +3,7 @@
 #include <ctime>
 
 #include "MUSI6106Config.h"
+#include "assert.h"
 
 #include "AudioFileIf.h"
 #include "CombFilterIf.h"
@@ -12,7 +13,10 @@ using std::endl;
 
 // local function declarations
 void    showClInfo ();
-
+void    initOutput(float**& ppfOutputSignal, int iNumChannels, int iTestSignalLength, bool bAutoPrint);
+void    generateTestImpulseSignal(float**& ppfInputSignal, int iNumChannels, int iTestSignalLength, bool bAutoPrint);
+void    printOutput(float**& ppfOutputSignal, int iNumChannels, int iTestSignalLength);
+void    testImpulseOutput(float**& ppfOutputSignal, int iNumChannels, int delay, float gain);
 /////////////////////////////////////////////////////////////////////////////////
 // main function
 int main(int argc, char* argv[])
@@ -34,118 +38,41 @@ int main(int argc, char* argv[])
     CCombFilterIf::create(pInstance);
     showClInfo();
 
-    //////////////////////////////////////////////////////////////////////////////
-    // parse command line arguments
-//    if (argc < 2)
-//    {
-//        cout << "Missing audio input path!";
-//        return -1;
-//    }
-//    else
-//    {
-//        sInputFilePath = argv[1];
-//        sOutputFilePath = sInputFilePath + ".txt";
-//    }
+    float                   **ppfInputSignal = 0;
+    int                     iTestSignalLength = 10;
+    float                   **ppfOutputSignal = 0;
+    int                     iNumChannels = 2;
+    int                     iDelay = 0;
+    float                   iGain = 0.0;
 
-    //////////////////////////////////////////////////////////////////////////////
-    // open the input wave file
-//    CAudioFileIf::create(phAudioFile);
-//    phAudioFile->openFile(sInputFilePath, CAudioFileIf::kFileRead);
-//    if (!phAudioFile->isOpen())
-//    {
-//        cout << "Wave file open error!";
-//        return -1;
-//    }
-//    phAudioFile->getFileSpec(stFileSpec);
+    /////////////////////////////////////////////////////////////////////////////
 
-    //////////////////////////////////////////////////////////////////////////////
-    // open the output text file
-//    hOutputFile.open(sOutputFilePath.c_str(), std::ios::out);
-//    if (!hOutputFile.is_open())
-//    {
-//        cout << "Text file open error!";
-//        return -1;
-//    }
+    initOutput(ppfOutputSignal, iNumChannels, iTestSignalLength, false);
+    printOutput(ppfOutputSignal, iNumChannels, iTestSignalLength);
 
-    //////////////////////////////////////////////////////////////////////////////
-    // allocate memory
-//    ppfAudioData = new float*[stFileSpec.iNumChannels];
-//    for (int i = 0; i < stFileSpec.iNumChannels; i++)
-//        ppfAudioData[i] = new float[kBlockSize];
-//
-//    time = clock();
-    //////////////////////////////////////////////////////////////////////////////
-    // get audio data and write it to the output file
-//    while (!phAudioFile->isEof())
-//    {
-//        long long iNumFrames = kBlockSize;
-//        phAudioFile->readData(ppfAudioData, iNumFrames);
-//
-//        cout << "\r" << "reading and writing";
-//
-//        for (int i = 0; i < iNumFrames; i++)
-//        {
-//            for (int c = 0; c < stFileSpec.iNumChannels; c++)
-//            {
-//                hOutputFile << ppfAudioData[c][i] << "\t";
-//            }
-//            hOutputFile << endl;
-//        }
-//    }
-//
-//    cout << "\nreading/writing done in: \t" << (clock() - time)*1.F / CLOCKS_PER_SEC << " seconds." << endl;
+    generateTestImpulseSignal(ppfInputSignal, iNumChannels, iTestSignalLength, true);
 
-    //////////////////////////////////////////////////////////////////////////////
-    // clean-up
-//    CAudioFileIf::destroy(phAudioFile);
-//    hOutputFile.close();
-//
-//    for (int i = 0; i < stFileSpec.iNumChannels; i++)
-//        delete[] ppfAudioData[i];
-//    delete[] ppfAudioData;
-//    ppfAudioData = 0;
-
-    // simple test
-
-//    float input[2][100], output[2][100];
-
-    float **input, **output;
-
-    input = new float*[2];
-    output = new float*[2];
-    for (int k = 0; k < 2; ++k) {
-        input[k] = new float[100]();
-        output[k] = new float[100]();
-    }
-
-
-    input[0][0] = input[1][0] = 1;
-    input[0][1] = input[1][1] = 1;
-    input[0][2] = input[1][2] = 1;
-    input[0][3] = input[1][3] = 1;
-
-//    for (int m = 0; m < 100; ++m) {
-//        input[0][m] = input[1][m] = m;
-//    }
-
-    int iTestSignalLength = 10;
-
-    for (int j = 0; j < 2; ++j) {
-        for (int i = 0; i < iTestSignalLength; ++i) {
-            cout << input[j][i] << ' ';
-        }
-        cout << endl;
-    }
+    // Define a simple delay line where the sampling rate is 1 Hz
     CCombFilterIf::create(pInstance);
-    pInstance->init(CCombFilterIf::kCombFIR, 8.0f, 1.0f, 2);
-    pInstance->setParam(CCombFilterIf::kParamDelay, 8);
-    pInstance->setParam(CCombFilterIf::kParamGain, 0.8);
-    pInstance->process(input, output, iTestSignalLength);
+    iDelay = 1; iGain = 0.8;
+    pInstance->init(CCombFilterIf::kCombFIR, 10.0f, 1.0f, iNumChannels);
+    cout << pInstance->setParam(CCombFilterIf::kParamDelay, iDelay) << endl;
+    pInstance->setParam(CCombFilterIf::kParamGain, iGain);
+    pInstance->process(ppfInputSignal, ppfOutputSignal, iTestSignalLength);
+
+    printOutput(ppfOutputSignal, iNumChannels, iTestSignalLength);
+    testImpulseOutput(ppfOutputSignal, iNumChannels, iDelay, iGain);
+
+    //
+    pInstance->reset();
+    initOutput(ppfOutputSignal, iNumChannels, iTestSignalLength, false);
 
 
+
+    /*
     for (int l = 0; l < 2; ++l) {
         for (int i = 0; i < iTestSignalLength; ++i) {
-            cout << output[l][i] << ' ';
+            cout << ppfOutputSignal[l][i] << ' ';
         }
         cout << endl;
     }
@@ -153,18 +80,80 @@ int main(int argc, char* argv[])
     pInstance->init(CCombFilterIf::kCombIIR, 10.0f, 1.0f, 2);
     pInstance->setParam(CCombFilterIf::kParamDelay, 1);
     pInstance->setParam(CCombFilterIf::kParamGain, 0.5);
-    pInstance->process(input, output, 100);
+    pInstance->process(ppfInputSignal, ppfOutputSignal, 100);
 
     cout << "********************" << endl;
     for (int l = 0; l < 2; ++l) {
         for (int i = 0; i < 100; ++i) {
-            cout << output[l][i] << ' ';
+            cout << ppfOutputSignal[l][i] << ' ';
         }
         cout << endl;
     }
 
     return 0;
+    */
+}
 
+void initOutput(float**& ppfOutputSignal, int iNumChannels, int iTestSignalLength, bool bAutoPrint) {
+    ppfOutputSignal = new float*[iNumChannels];
+    for (int c = 0; c < iNumChannels; c++) {
+        ppfOutputSignal[c] = new float[iTestSignalLength]();
+    }
+    if (bAutoPrint) {
+        cout << "Init Output Signal: " << endl;
+        for (int c = 0; c < iNumChannels; c++) {
+            for (int i = 0; i < iTestSignalLength; i++) {
+                cout << ppfOutputSignal[c][i] << " ";
+            }
+            cout << endl;
+        }
+        cout << endl;
+    }
+}
+
+void generateTestImpulseSignal(float**& ppfInputSignal, int iNumChannels, int iTestSignalLength, bool bAutoPrint) {
+
+    ppfInputSignal = new float *[iNumChannels];
+
+    // init to 0
+    for (int c = 0; c < iNumChannels; c++) {
+        ppfInputSignal[c] = new float[iTestSignalLength]();
+    }
+    // put a 1 at start for impulse
+    for (int c = 0; c < iNumChannels; c++) {
+        ppfInputSignal[c][0] = 1;
+    }
+
+    if (bAutoPrint) {
+        cout << "Test Signal: " << endl;
+        for (int c = 0; c < iNumChannels; c++) {
+            for (int i = 0; i < iTestSignalLength; i++) {
+                cout << ppfInputSignal[c][i] << " ";
+            }
+            cout << endl;
+        }
+        cout << endl;
+    }
+}
+
+void printOutput(float**& ppfOutputSignal, int iNumChannels, int iTestSignalLength){
+    cout << "Current Output Signal: " << endl;
+    for (int c = 0; c < iNumChannels; c++) {
+        for (int i = 0; i < iTestSignalLength; i++) {
+            cout << ppfOutputSignal[c][i] << " ";
+        }
+        cout << endl;
+    }
+    cout << endl;
+}
+
+/*
+ * Tests if a simple unit impulse through the delay line yields a delayed `1*iGain` at a location offset by `iDelay`
+ */
+void testImpulseOutput(float**& ppfOutputSignal, int iNumChannels, int iDelay, float iGain) {
+    for (int c = 0; c < iNumChannels; c++) {
+        assert(ppfOutputSignal[c][iDelay] = iGain*ppfOutputSignal[c][0]);
+    }
 }
 
 
@@ -174,6 +163,5 @@ void     showClInfo()
     cout << "(c) 2014-2018 by Alexander Lerch" << endl;
     cout  << endl;
 
-    return;
 }
 
