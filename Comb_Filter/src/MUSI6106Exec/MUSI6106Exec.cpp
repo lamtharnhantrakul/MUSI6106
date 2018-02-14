@@ -28,9 +28,11 @@ struct TestSpec_t
 } structTestSpec;
 
 void    showClInfo ();
+
 void    initOutput(float**& ppfOutputSignal,TestSpec_t structTestSpec);
 void    processCombFilter(CCombFilterIf*& pInstance, CCombFilterIf::CombFilterType_t eFilterType, float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec);
 void    printOutput(float**& ppfOutputSignal, TestSpec_t structTestSpec);
+void    autoPrint(float **& ppfSignal, TestSpec_t structTestSpec, const std::string& title);
 
 void    generateTestImpulseSignal(float**& ppfInputSignal, TestSpec_t structTestSpec);
 void    testImpulseOutputFIR(float**& ppfOutputSignal, TestSpec_t structTestSpec);
@@ -76,6 +78,7 @@ int main(int argc, char* argv[])
     /*
      *  READING AUDIO FILE
      */
+
     // parse command line arguments
     if (argc < 2)
     {
@@ -165,6 +168,11 @@ int main(int argc, char* argv[])
 
 
     /////////////////////////////////////////////////////////////////////////////
+
+    /*
+     * TESTING ON SIMPLE SIGNALS
+     */
+
     // Configure `structTestSpec` with parameters for reading for test signals
     structTestSpec.iTestSignalLength = 10;
     structTestSpec.iNumChannels = 3;
@@ -172,7 +180,7 @@ int main(int argc, char* argv[])
     structTestSpec.fGain = 0.8;
     structTestSpec.fMaxDelay = 15.0f;
     structTestSpec.fSamplingRate = 1.0f;
-    structTestSpec.bAutoPrint = true;
+    structTestSpec.bAutoPrint = false;
 
     /*
      * TEST 1: IMPULSE SIGNAL
@@ -275,6 +283,21 @@ int main(int argc, char* argv[])
     // Struct will be automatically deleted when it is no longer in scope
 }
 
+///////////////////////////////////////////////////////////////////////////////////
+/*
+ * TEST FUNCTION DEFINITIONS
+ */
+
+/*
+ * Execute the processing steps on the test signal using specified type of comb filter
+ */
+void processCombFilter(CCombFilterIf*& pInstance, CCombFilterIf::CombFilterType_t eFilterType, float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec){
+    pInstance->init(eFilterType, structTestSpec.fMaxDelay, structTestSpec.fSamplingRate, structTestSpec.iNumChannels);
+    pInstance->setParam(CCombFilterIf::kParamDelay, structTestSpec.iDelay);
+    pInstance->setParam(CCombFilterIf::kParamGain, structTestSpec.fGain);
+    pInstance->process(ppfInputSignal, ppfOutputSignal, structTestSpec.iTestSignalLength);
+}
+
 /*
  * Debugging function to initialize output buffer with dummy zeros
  */
@@ -284,18 +307,14 @@ void initOutput(float**& ppfOutputSignal, TestSpec_t structTestSpec) {
         ppfOutputSignal[c] = new float[structTestSpec.iTestSignalLength]();
     }
     if (structTestSpec.bAutoPrint) {
-        cout << "Init Output Signal: " << endl;
-        for (int c = 0; c < structTestSpec.iNumChannels; c++) {
-            for (int i = 0; i < structTestSpec.iTestSignalLength; i++) {
-                cout << ppfOutputSignal[c][i] << " ";
-            }
-            cout << endl;
-        }
-        cout << endl;
+        autoPrint(ppfOutputSignal, structTestSpec, "Init Output Signal");
     }
 }
 
-void autoPrint(float **& ppfSignal, TestSpec_t structTestSpec, std::string title){
+/*
+ * Debugging function to print values to console for debugging
+ */
+void autoPrint(float **& ppfSignal, TestSpec_t structTestSpec, const std::string& title){
     if (structTestSpec.bAutoPrint) {
         cout << title << ": " << endl;
         for (int c = 0; c < structTestSpec.iNumChannels; c++) {
@@ -308,6 +327,9 @@ void autoPrint(float **& ppfSignal, TestSpec_t structTestSpec, std::string title
     }
 }
 
+/*
+ * Generate Impulse Signal using variables defined in `structTestSpec`
+ */
 void generateTestImpulseSignal(float**& ppfInputSignal, TestSpec_t structTestSpec) {
     ppfInputSignal = new float *[structTestSpec.iNumChannels];
     // init to 0
@@ -320,17 +342,13 @@ void generateTestImpulseSignal(float**& ppfInputSignal, TestSpec_t structTestSpe
     }
 
     if (structTestSpec.bAutoPrint) {
-        cout << "Test Signal: " << endl;
-        for (int c = 0; c < structTestSpec.iNumChannels; c++) {
-            for (int i = 0; i < structTestSpec.iTestSignalLength; i++) {
-                cout << ppfInputSignal[c][i] << " ";
-            }
-            cout << endl;
-        }
-        cout << endl;
+        autoPrint(ppfInputSignal, structTestSpec, "Test Signal");
     }
 }
 
+/*
+ * Generate Impulse Trail using variables defined in `structTestSpec`
+ */
 void generateTestImpulseTrailSignal(float**& ppfInputSignal, TestSpec_t structTestSpec) {
     ppfInputSignal = new float *[structTestSpec.iNumChannels];
 
@@ -346,17 +364,15 @@ void generateTestImpulseTrailSignal(float**& ppfInputSignal, TestSpec_t structTe
     }
 
     if (structTestSpec.bAutoPrint) {
-        cout << "Test Signal: " << endl;
-        for (int c = 0; c < structTestSpec.iNumChannels; c++) {
-            for (int i = 0; i < structTestSpec.iTestSignalLength; i++) {
-                cout << ppfInputSignal[c][i] << " ";
-            }
-            cout << endl;
+        if (structTestSpec.bAutoPrint) {
+            autoPrint(ppfInputSignal, structTestSpec, "Test Signal");
         }
-        cout << endl;
     }
 }
 
+/*
+ * Generate Impulse Trail with spaces in between using variables defined in `structTestSpec`
+ */
 void generateTestSpacedImpulseTrailSignal(float**& ppfInputSignal, int iSpace, TestSpec_t structTestSpec){
     ppfInputSignal = new float *[structTestSpec.iNumChannels];
 
@@ -372,14 +388,7 @@ void generateTestSpacedImpulseTrailSignal(float**& ppfInputSignal, int iSpace, T
     }
 
     if (structTestSpec.bAutoPrint) {
-        cout << "Test Signal: " << endl;
-        for (int c = 0; c < structTestSpec.iNumChannels; c++) {
-            for (int i = 0; i < structTestSpec.iTestSignalLength; i++) {
-                cout << ppfInputSignal[c][i] << " ";
-            }
-            cout << endl;
-        }
-        cout << endl;
+        autoPrint(ppfInputSignal, structTestSpec, "Test Signal");
     }
 }
 
@@ -409,7 +418,7 @@ void testImpulseOutputFIR(float**& ppfOutputSignal, TestSpec_t structTestSpec) {
 }
 
 /*
- * Tests if a simple unit impulse produces the first few expected values in the output
+ * Tests if a simple unit impulse through the IIR produces the first few expected values in the output
  */
 void testImpulseOutputIIR(float**& ppfOutputSignal, TestSpec_t structTestSpec) {
     if (structTestSpec.iDelay < structTestSpec.iTestSignalLength) {
@@ -421,7 +430,7 @@ void testImpulseOutputIIR(float**& ppfOutputSignal, TestSpec_t structTestSpec) {
 }
 
 /*
- * Tests if a simple unit impulse trail produces the an impulse trail superposed with a delayed impulse trail
+ * Tests if a simple unit impulse trail through FIR produces the an impulse trail superposed with a delayed impulse trail
  */
 void testImpulseTrailOutputFIR(float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec) {
     if (structTestSpec.iDelay < structTestSpec.iTestSignalLength) {
@@ -433,9 +442,8 @@ void testImpulseTrailOutputFIR(float**& ppfInputSignal, float**& ppfOutputSignal
     }
 }
 
-
 /*
- * Tests if a simple unit impulse generates the first 2 expected groups of values
+ * Tests if a simple unit impulse through IIR generates the first 2 expected groups of values
  */
 void testImpulseTrailOutputIIR(float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec) {
     if (structTestSpec.iDelay < structTestSpec.iTestSignalLength) {
@@ -453,7 +461,7 @@ void testImpulseTrailOutputIIR(float**& ppfInputSignal, float**& ppfOutputSignal
 }
 
 /*
- * Tests if a simple spaced unit impulse trail produces the an impulse trail superposed with a delayed impulse trail
+ * Tests if a simple spaced unit impulse trail through FIR produces the an impulse trail superposed with a delayed impulse trail
  */
 void testSpacedImpulseTrailOutputFIR(float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec) {
     if (structTestSpec.iDelay < structTestSpec.iTestSignalLength) {
@@ -466,7 +474,7 @@ void testSpacedImpulseTrailOutputFIR(float**& ppfInputSignal, float**& ppfOutput
 
 
 /*
- * Tests if a simple spaced unit impulse generates an out with "spaces" in between the superposed signals
+ * Tests if a simple spaced unit impulse through IIR generates an out with "spaces" in between the superposed signals
  */
 void testSpacedImpulseTrailOutputIIR(float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec) {
     if (structTestSpec.iDelay < structTestSpec.iTestSignalLength) {
@@ -476,16 +484,6 @@ void testSpacedImpulseTrailOutputIIR(float**& ppfInputSignal, float**& ppfOutput
             }
         }
     }
-}
-
-/*
- * Process test signal using specified type of comb filter
- */
-void processCombFilter(CCombFilterIf*& pInstance, CCombFilterIf::CombFilterType_t eFilterType, float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec){
-    pInstance->init(eFilterType, structTestSpec.fMaxDelay, structTestSpec.fSamplingRate, structTestSpec.iNumChannels);
-    pInstance->setParam(CCombFilterIf::kParamDelay, structTestSpec.iDelay);
-    pInstance->setParam(CCombFilterIf::kParamGain, structTestSpec.fGain);
-    pInstance->process(ppfInputSignal, ppfOutputSignal, structTestSpec.iTestSignalLength);
 }
 
 void     showClInfo()
