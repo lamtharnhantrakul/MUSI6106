@@ -12,6 +12,8 @@ using std::cout;
 using std::endl;
 
 // local function declarations
+
+// Define a struct data structure to hold all testing variables
 struct TestSpec_t
 {
     int                     iTestSignalLength;
@@ -27,15 +29,20 @@ struct TestSpec_t
 
 void    showClInfo ();
 void    initOutput(float**& ppfOutputSignal,TestSpec_t structTestSpec);
-void    generateTestImpulseSignal(float**& ppfInputSignal, TestSpec_t structTestSpec);
+void    processCombFilter(CCombFilterIf*& pInstance, CCombFilterIf::CombFilterType_t eFilterType, float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec);
 void    printOutput(float**& ppfOutputSignal, TestSpec_t structTestSpec);
+
+void    generateTestImpulseSignal(float**& ppfInputSignal, TestSpec_t structTestSpec);
 void    testImpulseOutputFIR(float**& ppfOutputSignal, TestSpec_t structTestSpec);
 void    testImpulseOutputIIR(float**& ppfOutputSignal, TestSpec_t structTestSpec);
 
 void    generateTestImpulseTrailSignal(float**& ppfInputSignal, TestSpec_t structTestSpec);
 void    testImpulseTrailOutputFIR(float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec);
 void    testImpulseTrailOutputIIR(float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec);
-void    processCombFilter(CCombFilterIf*& pInstance, CCombFilterIf::CombFilterType_t eFilterType, float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec);
+
+void    generateTestSpacedImpulseTrailSignal(float**& ppfInputSignal, int iSpace, TestSpec_t structTestSpec);
+void    testSpacedImpulseTrailOutputFIR(float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec);
+void    testSpacedImpulseTrailOutputIIR(float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec);
 /////////////////////////////////////////////////////////////////////////////////
 // main function
 int main(int argc, char* argv[])
@@ -203,8 +210,20 @@ int main(int argc, char* argv[])
     testImpulseTrailOutputIIR(ppfInputSignal, ppfOutputSignal, structTestSpec);
 
     /*
-    * TEST 3:
+    * TEST 3: IMPULSE TRAIL WITH SPACES IN BETWEEN
     */
+    int iSpaceBetweenImpulse = 5;  // Make this different from delay. If not, the test becomes trivial.
+    generateTestSpacedImpulseTrailSignal(ppfInputSignal, iSpaceBetweenImpulse, structTestSpec);
+
+    initOutput(ppfOutputSignal, structTestSpec);
+    processCombFilter(pInstance, CCombFilterIf::kCombFIR, ppfInputSignal, ppfOutputSignal, structTestSpec);
+    if (structTestSpec.bAutoPrint) {printOutput(ppfOutputSignal, structTestSpec);}
+    testSpacedImpulseTrailOutputFIR(ppfInputSignal, ppfOutputSignal, structTestSpec);
+
+    initOutput(ppfOutputSignal, structTestSpec);
+    processCombFilter(pInstance, CCombFilterIf::kCombIIR, ppfInputSignal, ppfOutputSignal, structTestSpec);
+    if (structTestSpec.bAutoPrint) {printOutput(ppfOutputSignal, structTestSpec);}
+    testSpacedImpulseTrailOutputIIR(ppfInputSignal, ppfOutputSignal, structTestSpec);
 
 
     //////////////////////////////////////////////////
@@ -276,6 +295,19 @@ void initOutput(float**& ppfOutputSignal, TestSpec_t structTestSpec) {
     }
 }
 
+void autoPrint(float **& ppfSignal, TestSpec_t structTestSpec, std::string title){
+    if (structTestSpec.bAutoPrint) {
+        cout << title << ": " << endl;
+        for (int c = 0; c < structTestSpec.iNumChannels; c++) {
+            for (int i = 0; i < structTestSpec.iTestSignalLength; i++) {
+                cout << ppfSignal[c][i] << " ";
+            }
+            cout << endl;
+        }
+        cout << endl;
+    }
+}
+
 void generateTestImpulseSignal(float**& ppfInputSignal, TestSpec_t structTestSpec) {
     ppfInputSignal = new float *[structTestSpec.iNumChannels];
     // init to 0
@@ -306,9 +338,35 @@ void generateTestImpulseTrailSignal(float**& ppfInputSignal, TestSpec_t structTe
     for (int c = 0; c < structTestSpec.iNumChannels; c++) {
         ppfInputSignal[c] = new float[structTestSpec.iTestSignalLength];
     }
-    // put a 1 at start for impulse
+    // put a 1 everywhere
     for (int c = 0; c < structTestSpec.iNumChannels; c++) {
         for (int i = 0; i < structTestSpec.iTestSignalLength; i++){
+            ppfInputSignal[c][i] = 1;
+        }
+    }
+
+    if (structTestSpec.bAutoPrint) {
+        cout << "Test Signal: " << endl;
+        for (int c = 0; c < structTestSpec.iNumChannels; c++) {
+            for (int i = 0; i < structTestSpec.iTestSignalLength; i++) {
+                cout << ppfInputSignal[c][i] << " ";
+            }
+            cout << endl;
+        }
+        cout << endl;
+    }
+}
+
+void generateTestSpacedImpulseTrailSignal(float**& ppfInputSignal, int iSpace, TestSpec_t structTestSpec){
+    ppfInputSignal = new float *[structTestSpec.iNumChannels];
+
+    // init to 0
+    for (int c = 0; c < structTestSpec.iNumChannels; c++) {
+        ppfInputSignal[c] = new float[structTestSpec.iTestSignalLength];
+    }
+    // put a 1 with spaces in between
+    for (int c = 0; c < structTestSpec.iNumChannels; c++) {
+        for (int i = 0; i < structTestSpec.iTestSignalLength; i = i + iSpace){
             ppfInputSignal[c][i] = 1;
         }
     }
@@ -389,6 +447,32 @@ void testImpulseTrailOutputIIR(float**& ppfInputSignal, float**& ppfOutputSignal
 
                 assert(ppfOutputSignal[c][2 * idx + i]     == ppfInputSignal[c][2 * idx] + structTestSpec.fGain * ppfOutputSignal[c][idx]);
                 assert(ppfOutputSignal[c][2 * idx + i + 1] == ppfInputSignal[c][2 * idx + i] + structTestSpec.fGain * ppfOutputSignal[c][idx + i + 1]);
+            }
+        }
+    }
+}
+
+/*
+ * Tests if a simple spaced unit impulse trail produces the an impulse trail superposed with a delayed impulse trail
+ */
+void testSpacedImpulseTrailOutputFIR(float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec) {
+    if (structTestSpec.iDelay < structTestSpec.iTestSignalLength) {
+        for (int c = 0; c < structTestSpec.iNumChannels; c++) {
+            int idx = structTestSpec.iDelay;
+            assert(ppfOutputSignal[c][idx] == structTestSpec.fGain*ppfOutputSignal[c][0] + ppfInputSignal[c][idx]);
+        }
+    }
+}
+
+
+/*
+ * Tests if a simple spaced unit impulse generates an out with "spaces" in between the superposed signals
+ */
+void testSpacedImpulseTrailOutputIIR(float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec) {
+    if (structTestSpec.iDelay < structTestSpec.iTestSignalLength) {
+        for (int c = 0; c < structTestSpec.iNumChannels; c++) {
+            for (int i = structTestSpec.iDelay; i < structTestSpec.iTestSignalLength; i = i + structTestSpec.iDelay) {
+                assert(ppfOutputSignal[c][i] == ppfInputSignal[c][i] + (structTestSpec.fGain * ppfOutputSignal[c][i - structTestSpec.iDelay]));
             }
         }
     }
