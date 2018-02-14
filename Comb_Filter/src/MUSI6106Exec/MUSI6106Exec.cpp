@@ -41,7 +41,8 @@ void    processCombFilter(CCombFilterIf*& pInstance, CCombFilterIf::CombFilterTy
 int main(int argc, char* argv[])
 {
     std::string             sInputFilePath,                 //!< file paths
-        sOutputFilePath;
+                            sOutputFilePath,
+                            sOutputAudioPath;
 
     static const int        kBlockSize = 1024;
 
@@ -51,6 +52,7 @@ int main(int argc, char* argv[])
     float                   **ppfAudioDataOutput = 0;
 
     CAudioFileIf            *phAudioFile = 0;
+    CAudioFileIf            *phAudioFIleOutput = 0;
     std::fstream            hOutputFile;
     CAudioFileIf::FileSpec_t stFileSpec;
 
@@ -77,7 +79,10 @@ int main(int argc, char* argv[])
     {
         sInputFilePath = argv[1];
         sOutputFilePath = sInputFilePath + ".txt";
+//        sOutputAudioPath = sInputFilePath + "wav";
+        sOutputAudioPath = argv[2];
     }
+
     // open the input wave file
     CAudioFileIf::create(phAudioFile);
     phAudioFile->openFile(sInputFilePath, CAudioFileIf::kFileRead);
@@ -93,6 +98,15 @@ int main(int argc, char* argv[])
     if (!hOutputFile.is_open())
     {
         cout << "Text file open error!";
+        return -1;
+    }
+
+    // open the output wave file
+    CAudioFileIf::create(phAudioFIleOutput);
+    phAudioFIleOutput->openFile(sOutputAudioPath, CAudioFileIf::kFileWrite, &stFileSpec);
+    if (!phAudioFile->isOpen())
+    {
+        cout << "Wave file open error!";
         return -1;
     }
 
@@ -128,6 +142,7 @@ int main(int argc, char* argv[])
 
         cout << "\r" << "reading and writing";
         pInstance->process(ppfAudioData, ppfAudioDataOutput, iNumFrames);
+        phAudioFIleOutput->writeData(ppfAudioDataOutput, iNumFrames);
 
         for (int i = 0; i < iNumFrames; i++)
         {
@@ -211,6 +226,7 @@ int main(int argc, char* argv[])
     delete[] ppfAudioDataOutput;
     ppfAudioDataOutput = 0;
     CAudioFileIf::destroy(phAudioFile);
+    CAudioFileIf::destroy(phAudioFIleOutput);
     CCombFilterIf::destroy(pInstance);
     phAudioFile = 0;
 
@@ -395,4 +411,3 @@ void     showClInfo()
     cout  << endl;
 
 }
-

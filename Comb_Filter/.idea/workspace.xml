@@ -52,8 +52,8 @@
             <file leaf-file-name="MUSI6106Exec.cpp" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/MUSI6106Exec/MUSI6106Exec.cpp">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="518">
-                    <caret line="363" column="81" lean-forward="false" selection-start-line="363" selection-start-column="81" selection-end-line="363" selection-end-column="81" />
+                  <state relative-caret-position="332">
+                    <caret line="208" column="0" lean-forward="true" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
                     <folding>
                       <element signature="e#1#20#0" expanded="true" />
                     </folding>
@@ -92,8 +92,8 @@
       <file leaf-file-name="CombFilterIf.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CombFilter/CombFilterIf.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="510">
+              <caret line="41" column="46" lean-forward="true" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -201,7 +201,7 @@
     <configuration name="CombFilter" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MUSI6106" TARGET_NAME="CombFilter" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="MUSI6106" RUN_TARGET_NAME="MUSI6106Exec">
       <envs />
     </configuration>
-    <configuration name="MUSI6106Exec" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$USER_HOME$/Desktop/sweep.wav" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MUSI6106" TARGET_NAME="MUSI6106Exec" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="MUSI6106" RUN_TARGET_NAME="MUSI6106Exec">
+    <configuration name="MUSI6106Exec" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$USER_HOME$/Desktop/sweep.wav $USER_HOME$/Desktop/sweep_output.wav" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MUSI6106" TARGET_NAME="MUSI6106Exec" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="MUSI6106" RUN_TARGET_NAME="MUSI6106Exec">
       <envs />
     </configuration>
     <configuration name="sndlib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MUSI6106" TARGET_NAME="sndlib" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="MUSI6106" RUN_TARGET_NAME="MUSI6106Exec">
@@ -233,12 +233,12 @@
       <workItem from="1518493642666" duration="9218000" />
       <workItem from="1518541095973" duration="152000" />
       <workItem from="1518553331114" duration="8692000" />
-      <workItem from="1518564213461" duration="13597000" />
+      <workItem from="1518564213461" duration="20081000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32824000" />
+    <option name="totallyTimeSpent" value="39308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="0" width="958" height="1080" extended-state="0" />
@@ -271,7 +271,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -444,16 +446,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CombFilter/CombFilterIf.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="510">
+          <caret line="41" column="46" lean-forward="true" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MUSI6106Exec/MUSI6106Exec.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="363" column="81" lean-forward="false" selection-start-line="363" selection-start-column="81" selection-end-line="363" selection-end-column="81" />
+        <state relative-caret-position="332">
+          <caret line="208" column="0" lean-forward="true" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
           <folding>
             <element signature="e#1#20#0" expanded="true" />
           </folding>
