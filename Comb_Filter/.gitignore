@@ -7,7 +7,7 @@
 # Precompiled Headers
 *.gch
 *.pch
-
+git
 # Compiled Dynamic libraries
 *.so
 *.dylib
