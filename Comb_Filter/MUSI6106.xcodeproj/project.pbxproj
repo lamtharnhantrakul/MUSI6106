@@ -1,0 +1,2175 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		40BD4823E36A424AA83BF038 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 957B425F84BF416E845E7A90 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				0754FE774E994F369883DD8A /* CMake Rules */,
+			);
+			dependencies = (
+				D05C3C26142B49F0927436B3 /* PBXTargetDependency */,
+				9AECFD41E64E48229350249F /* PBXTargetDependency */,
+				AC32952AA97A4008AE6D1A90 /* PBXTargetDependency */,
+				6521A2E7E71D45DD8B8B6FBA /* PBXTargetDependency */,
+				0F763C13E5A443BCBAA9DEC3 /* PBXTargetDependency */,
+				BD026DB1A0F8436C8F4B060D /* PBXTargetDependency */,
+				25528FC6118D439491FC4494 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		9975908991F0433380A2EE0C /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 94D3B377EA17479091CB87F1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				D3EF881240994EF49EA706BD /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		9F5CBB531B5C445FBE362738 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 466FE99AE1E546B895768F06 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				770668F1AC324CD9AED6652F /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		000FE2E3D8A64765B3C86B79 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/CombFilter/CombFilter.cpp */ = {isa = PBXBuildFile; fileRef = CED881C7E46A462BAB76879D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/CombFilter/CombFilter.cpp */; };
+		00382F46D7DD4E6DBFA09DC0 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/AudioFileIf.h */ = {isa = PBXBuildFile; fileRef = C9E6E984D0E24BDBB41B0031 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/AudioFileIf.h */; };
+		0062324B97294C369A15A143 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/vct.h */ = {isa = PBXBuildFile; fileRef = 6C3CFA395AB343F681675469 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/vct.h */; };
+		0594CC3802274410B9E3C4F1 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckTestReporter.h */ = {isa = PBXBuildFile; fileRef = 41AE636724C745DFB1CD2EF4 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckTestReporter.h */; };
+		05AA04304C3A48E897348937 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sndlib2xen.h */ = {isa = PBXBuildFile; fileRef = F302C4015C4942D0BA9B1765 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sndlib2xen.h */; };
+		0606011577D44E69AA0D79FC /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ReportAssertImpl.h */ = {isa = PBXBuildFile; fileRef = F238B638699340ECB76F5755 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ReportAssertImpl.h */; };
+		0D227265878244F3AC6E4393 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm2xen.h */ = {isa = PBXBuildFile; fileRef = 7A2E274E2E394DE9823ECC19 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm2xen.h */; };
+		11A062D818A94917AB98C897 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/XmlTestReporter.cpp */ = {isa = PBXBuildFile; fileRef = 9A817D9CC5914DF5B88AB79F /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/XmlTestReporter.cpp */; };
+		144C31EB2EC648BDBBE39627 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/mus-config.h */ = {isa = PBXBuildFile; fileRef = 5656EE64695A469FB2843459 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/mus-config.h */; };
+		15B764A4184F4850B2A6A1EC /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/UnitTestPP.h */ = {isa = PBXBuildFile; fileRef = 4DD04A5787704F0594D7E089 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/UnitTestPP.h */; };
+		1638E86A98CA443B9DD68198 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/AudioFileIO/AudioFile.cpp */ = {isa = PBXBuildFile; fileRef = BDE710BEA3D34280BCA5DBD0 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/AudioFileIO/AudioFile.cpp */; };
+		181ABD265638483189530F0A /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/AudioFileIO/AudioFileIf.cpp */ = {isa = PBXBuildFile; fileRef = F12FE39DD792447CBC5A6CED /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/AudioFileIO/AudioFileIf.cpp */; };
+		1C2314822942449CB830FA43 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/Tests/Test_AudioIO.cpp */ = {isa = PBXBuildFile; fileRef = 163E6690C69647DB9541E1EB /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/Tests/Test_AudioIO.cpp */; };
+		1F04977F74B24CE18C0B264C /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sndlib-strings.h */ = {isa = PBXBuildFile; fileRef = 10BCE3C7AAD1411BAC850E40 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sndlib-strings.h */; };
+		236DF0E4D04A4838A8FCD951 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm-strings.h */ = {isa = PBXBuildFile; fileRef = BD9446ABCD684C82824A8FAE /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm-strings.h */; };
+		2653564B867348DDA1CEDA24 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestDetails.cpp */ = {isa = PBXBuildFile; fileRef = FC423A8614A44228A42F3A15 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestDetails.cpp */; };
+		2A7F26C0662C40B0A85D8667 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ExecuteTest.h */ = {isa = PBXBuildFile; fileRef = AB13A04A42284DD58FB8D5B9 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ExecuteTest.h */; };
+		2B0EF72B08484073B86B60B0 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Vector.h */ = {isa = PBXBuildFile; fileRef = 0349B3BBDF5B48878456427A /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Vector.h */; };
+		2BE6B565EE4C494390B49090 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Vector.h */ = {isa = PBXBuildFile; fileRef = 2023F4989D914D46A3A77EBA /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Vector.h */; };
+		2CBB0B7986F44FCE91C5564F /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckException.h */ = {isa = PBXBuildFile; fileRef = B4D9075A77C1423A820E0F8B /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckException.h */; };
+		2DD4289EEB6B48FC89D25D24 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/DeferredTestReporter.h */ = {isa = PBXBuildFile; fileRef = B36D254A189249B5B0A9386C /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/DeferredTestReporter.h */; };
+		3319A3739D8E4DFCBBABA838 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Synthesis.h */ = {isa = PBXBuildFile; fileRef = 804E6185F78840C3A158FDEF /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Synthesis.h */; };
+		3465508115C54B958EE8E995 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Checks.cpp */ = {isa = PBXBuildFile; fileRef = 43F857E641C345F08B4767DF /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Checks.cpp */; };
+		353E0FDEF81841F48DFFD29A /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/TestExec/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = EA624A7C66B344BBBDBB5CE1 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/TestExec/CMakeLists.txt */; };
+		35596BCA953D4A018FC596C1 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/DeferredTestReporter.cpp */ = {isa = PBXBuildFile; fileRef = 0398AF279418490B91DBB573 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/DeferredTestReporter.cpp */; };
+		35B1BCD626B34C3384749FEC /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/AudioFileIO/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 0B343A59889C452883B0E757 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/AudioFileIO/CMakeLists.txt */; };
+		370C5E01EB1E47718043BD54 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/headers.c */ = {isa = PBXBuildFile; fileRef = FCC773A48BAF44968EB7195E /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/headers.c */; };
+		3C6028F8D7274011A0AE42F8 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/MUSI6106Exec/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = E7EFCD65CEAD420C927F82C3 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/MUSI6106Exec/CMakeLists.txt */; };
+		3E5FE9E0CF96482589F48A03 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/CombFilter/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 88970A90F81F40EC95236534 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/CombFilter/CMakeLists.txt */; };
+		3E7E39276DE1467895347384 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/HelperMacros.h */ = {isa = PBXBuildFile; fileRef = 46BB2ADD2336460A89BAAD64 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/HelperMacros.h */; };
+		3F04871E1CBD4245AE018318 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Synthesis.h */ = {isa = PBXBuildFile; fileRef = 8588AA3999AE4244A4EAA433 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Synthesis.h */; };
+		428E555B92324606B021E7B1 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestResults.cpp */ = {isa = PBXBuildFile; fileRef = 95EFA2064DA6419495F0531F /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestResults.cpp */; };
+		4466DDD6AAC14667BE7FFBED /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ThrowingTestReporter.h */ = {isa = PBXBuildFile; fileRef = C1B0014010974735A70D2685 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ThrowingTestReporter.h */; };
+		4568C99B20F5485EA83164D8 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Posix/TimeHelpers.cpp */ = {isa = PBXBuildFile; fileRef = 9866D20015D342BDAF03CA84 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Posix/TimeHelpers.cpp */; };
+		463DA448E3204D6DBB4D16EA /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm.h */ = {isa = PBXBuildFile; fileRef = 5F18A05BED2A422DA9BA1730 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm.h */; };
+		4945D6DD0B3F421AB17570F4 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CurrentTest.h */ = {isa = PBXBuildFile; fileRef = 3D2FF304E4BE4F34B8E74280 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CurrentTest.h */; };
+		4EF1EEB17AF34E53BD9C7377 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckTestReporter.cpp */ = {isa = PBXBuildFile; fileRef = 15565A4D0B16457F87D9E491 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckTestReporter.cpp */; };
+		564304BDAFF04F06974D5E45 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Test.cpp */ = {isa = PBXBuildFile; fileRef = E8997F677EB84ACD9332EB26 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Test.cpp */; };
+		56790EC9AB3949D4BF41C541 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sndlib2xen.c */ = {isa = PBXBuildFile; fileRef = D31A1462BC7B4EB385FA2489 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sndlib2xen.c */; };
+		592E0CFE6EFC4FDA919CD3AD /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Posix/SignalTranslator.cpp */ = {isa = PBXBuildFile; fileRef = 5E65ECD645254E2C887D6610 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Posix/SignalTranslator.cpp */; };
+		5DC221D5EABD4210A1D6BF14 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/MemoryOutStream.h */ = {isa = PBXBuildFile; fileRef = B3C90556C83143C4A9F5C874 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/MemoryOutStream.h */; };
+		5E4970521A204F49B258A4BC /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestResults.h */ = {isa = PBXBuildFile; fileRef = A9EC022987764F5691A1CCA1 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestResults.h */; };
+		63D86F69B2FE49B18CA94F79 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sndlib.h */ = {isa = PBXBuildFile; fileRef = BB5786CB1A274152A632B5FA /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sndlib.h */; };
+		6473DFCA283347B3B020AA7D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Util.h */ = {isa = PBXBuildFile; fileRef = 75FD8AB3AE734841BB95F606 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Util.h */; };
+		6621D533E53246868A966313 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TimeConstraint.cpp */ = {isa = PBXBuildFile; fileRef = 9C4D7BD945D84E7CBE8B7B1E /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TimeConstraint.cpp */; };
+		708877D04233481087E47891 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Util.h */ = {isa = PBXBuildFile; fileRef = E57200E11B264DB7B24A1BC8 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Util.h */; };
+		749C9BF320274628AEE1E66D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Test.h */ = {isa = PBXBuildFile; fileRef = 66510C904738436EBD2EBCA9 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Test.h */; };
+		74F46DC9231D44628123CEAB /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequireMacros.h */ = {isa = PBXBuildFile; fileRef = EB29565CE5584A69BFE3BB7A /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequireMacros.h */; };
+		75B497AD159A4B1F93EF6F40 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CurrentTest.cpp */ = {isa = PBXBuildFile; fileRef = E99D6B2B925F48468B89D9E5 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CurrentTest.cpp */; };
+		76BF3B78646045B4A0FDDD8E /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestList.h */ = {isa = PBXBuildFile; fileRef = 67B4BEB4D71149BA8EA32B00 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestList.h */; };
+		7BA09910CAA74F2B8C4DD6BA /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckException.cpp */ = {isa = PBXBuildFile; fileRef = 29417225884E40FA972499D4 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckException.cpp */; };
+		7BD672A4AAF64355990EFA5D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/TestExec/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 5CD8BDD992044E879D8281A5 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/TestExec/CMakeLists.txt */; };
+		817E143B67B542B5B6CB9E7E /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm.c */ = {isa = PBXBuildFile; fileRef = AC631302D40244968D011B5F /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm.c */; };
+		83E329C36DED4678BC9E8F38 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/s7.h */ = {isa = PBXBuildFile; fileRef = A9534909440C475EB1D38AE4 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/s7.h */; };
+		84F12E0F996B429AA5076014 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Checks.h */ = {isa = PBXBuildFile; fileRef = 51D638F3A5F14E059C354E26 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Checks.h */; };
+		8FD628DB997B448E8587C9D6 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/TestExec/Test.cpp */ = {isa = PBXBuildFile; fileRef = 7B95B1D5F1D441A6B499A051 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/TestExec/Test.cpp */; };
+		9059579707B748F8BFED8C1D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/io.c */ = {isa = PBXBuildFile; fileRef = 9A1D6C58424944ADBE596BB4 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/io.c */; };
+		967C35EACE8B468EA3B637FD /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/Tests/Test_RingBuffer.cpp */ = {isa = PBXBuildFile; fileRef = A22376CC74554E93A0CFDEFA /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/Tests/Test_RingBuffer.cpp */; };
+		99E61AEAF7BF48F6B7DDEEE1 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/DeferredTestResult.cpp */ = {isa = PBXBuildFile; fileRef = C58478BEEC2E461398FECC5B /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/DeferredTestResult.cpp */; };
+		9A0FC92E6F7E4736B9633311 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestDetails.h */ = {isa = PBXBuildFile; fileRef = A0955A5354144DB09313D7ED /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestDetails.h */; };
+		9A9AC6B8145A4A55AE46E50E /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/RingBuffer.h */ = {isa = PBXBuildFile; fileRef = 26D8863D081A489B941AB5B2 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/RingBuffer.h */; };
+		9B4AC643AFA84CF98713ABED /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/unix-config.h */ = {isa = PBXBuildFile; fileRef = A9B287636B0D4E04B71113B9 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/unix-config.h */; };
+		9B6B667C319D42349C698BA4 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/_sndlib.h */ = {isa = PBXBuildFile; fileRef = 29BCE561DF224299A5E337A5 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/_sndlib.h */; };
+		9E0A914E2E3944DA908A176A /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/UnitTest++.h */ = {isa = PBXBuildFile; fileRef = B2256100FCB8408AA7B424DE /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/UnitTest++.h */; };
+		9E4C61EF578544D99DFEED00 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ExceptionMacros.h */ = {isa = PBXBuildFile; fileRef = A1E1A700FCB1482290AE7D54 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ExceptionMacros.h */; };
+		A05DA65573414007BEF1CFCD /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 924EDD6E1351455FB5157A3C /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/CMakeLists.txt */; };
+		A2C1D080351D4F79B349541A /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ThrowingTestReporter.cpp */ = {isa = PBXBuildFile; fileRef = 6EE0574AD06A463CA93A7DDC /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ThrowingTestReporter.cpp */; };
+		A3541E2BC37A4177A8771A10 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestReporter.cpp */ = {isa = PBXBuildFile; fileRef = FFCCF3D015A5442BB07EF5C1 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestReporter.cpp */; };
+		A6D8E97E11A543568956AB84 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/DeferredTestResult.h */ = {isa = PBXBuildFile; fileRef = 0E83648B3D5B4DEB9A49A748 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/DeferredTestResult.h */; };
+		B3AF60C406F240D4B342C56F /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestReporterStdout.h */ = {isa = PBXBuildFile; fileRef = C74FBAE72C1642B68FD58C01 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestReporterStdout.h */; };
+		B472C1B2C48540FC87A1466D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sound.c */ = {isa = PBXBuildFile; fileRef = FC3C135AF2634B5F8AEC457D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sound.c */; };
+		B506D14516054B7C9F8DC26C /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/CombFilter/CombFilterIf.cpp */ = {isa = PBXBuildFile; fileRef = 78236559DFB64B5A986ABA49 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/CombFilter/CombFilterIf.cpp */; };
+		BB18A791BF0942F2B832AA04 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/AssertException.h */ = {isa = PBXBuildFile; fileRef = 409A34D1D4B544698D17B278 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/AssertException.h */; };
+		BB73F144EEB6430481750739 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/AudioFileIf.h */ = {isa = PBXBuildFile; fileRef = 211254AD6C264EDA971F1250 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/AudioFileIf.h */; };
+		BCC06168F04C446B9699DA50 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/xen.h */ = {isa = PBXBuildFile; fileRef = F6D4CE82D2244539A56661A3 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/xen.h */; };
+		BF917D58845541658BD0FC17 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/AudioFileIO/AudioFile.h */ = {isa = PBXBuildFile; fileRef = 39BCB84E4FE24E8EB2A68647 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/AudioFileIO/AudioFile.h */; };
+		C05C427FD0DB465095EA4ACA /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/MemoryOutStream.cpp */ = {isa = PBXBuildFile; fileRef = 150717328136430C84ECB3DA /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/MemoryOutStream.cpp */; };
+		C35CB052ED3C4788970AE03C /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/XmlTestReporter.h */ = {isa = PBXBuildFile; fileRef = 8E03208A09C344D3BD54242D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/XmlTestReporter.h */; };
+		C46F250D72494D4885B619B8 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/CombFilter.h */ = {isa = PBXBuildFile; fileRef = 8143BC9C4DAA4E6E8D39EBED /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/CombFilter.h */; };
+		C8EA7ADBC00749989B21E246 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/xen.c */ = {isa = PBXBuildFile; fileRef = F4AA7C9AECC14F8787FC7635 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/xen.c */; };
+		CE41E9738A964F85BD52BD2C /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/vct.c */ = {isa = PBXBuildFile; fileRef = 96AE5867EEAA477593A66C0C /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/vct.c */; };
+		D1E479776CF14176828086C7 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestMacros.h */ = {isa = PBXBuildFile; fileRef = 57F46435BB2D4D3E8D7B9AC0 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestMacros.h */; };
+		D49DF6A0FF0543CDA4624335 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm2xen.c */ = {isa = PBXBuildFile; fileRef = A8B20984E01948BF9BB86F46 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm2xen.c */; };
+		D741D8A029274059AA09623F /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TimeConstraint.h */ = {isa = PBXBuildFile; fileRef = EE5F3E19930F454086708A80 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TimeConstraint.h */; };
+		D79CEA51B3CA47088155D4CD /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ReportAssert.cpp */ = {isa = PBXBuildFile; fileRef = 90D97924672B41C0BF569999 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ReportAssert.cpp */; };
+		DC23B345641C4144BB0E9C57 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestRunner.h */ = {isa = PBXBuildFile; fileRef = A4AB6310A5D94483B48C7262 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestRunner.h */; };
+		DD5FC94EFD694BAB8EFE1E2A /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/CombFilterIf.h */ = {isa = PBXBuildFile; fileRef = F64436260FD04D03B4ED0D3B /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/CombFilterIf.h */; };
+		DDA612F0BC504A6382806375 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/s7.c */ = {isa = PBXBuildFile; fileRef = 76D168680F8B40DBAE3DB3E4 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/s7.c */; };
+		DDF48731E5744805971E9CC5 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/CombFilterIf.h */ = {isa = PBXBuildFile; fileRef = 19251C5AC7714D2A9371CFFB /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/CombFilterIf.h */; };
+		DE70671277C74208B252C9A5 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CompositeTestReporter.cpp */ = {isa = PBXBuildFile; fileRef = D1AEC22D575E48E7A324E666 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CompositeTestReporter.cpp */; };
+		E610438A66BC4197A97EFF9F /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/CombFilter.h */ = {isa = PBXBuildFile; fileRef = 166C0676E525462A80D23DFD /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/CombFilter.h */; };
+		E6F851492D8C45A6A12B0479 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ReportAssert.h */ = {isa = PBXBuildFile; fileRef = 9118454FD7E841508FF235EB /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ReportAssert.h */; };
+		E78B24FBEE7949128D41AE61 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Config.h */ = {isa = PBXBuildFile; fileRef = 7CFE2E6726A042E3B97BBFBE /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Config.h */; };
+		EA7ED9DE2459419085CFB91F /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CompositeTestReporter.h */ = {isa = PBXBuildFile; fileRef = C569B877DC48426492861B04 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CompositeTestReporter.h */; };
+		EEF5AC9B6310402BBC5F6C4D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/RingBuffer.h */ = {isa = PBXBuildFile; fileRef = 658DABC81EA24472BC9D4339 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/RingBuffer.h */; };
+		F1AE1AA98E924C2CA32FB4CC /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestList.cpp */ = {isa = PBXBuildFile; fileRef = 5EE3B3114D354211BB82B39B /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestList.cpp */; };
+		F255E808A1914494BF6E6CB5 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CheckMacros.h */ = {isa = PBXBuildFile; fileRef = B6EED4BCD7F54415B9877AB7 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CheckMacros.h */; };
+		F2B268EBD35B47FEB5D53204 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestReporter.h */ = {isa = PBXBuildFile; fileRef = EC380252F1AB4DF0B33B7B3E /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestReporter.h */; };
+		F527799BE9E34ABE986E0E76 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestRunner.cpp */ = {isa = PBXBuildFile; fileRef = 152998A9774B4305AA9D332F /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestRunner.cpp */; };
+		F5A607AD64B4420D8D384BD5 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestSuite.h */ = {isa = PBXBuildFile; fileRef = CCA1B2B02E4741A1B78131CB /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestSuite.h */; };
+		F80695328EA342E08FC49F33 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TimeHelpers.h */ = {isa = PBXBuildFile; fileRef = A7D0B081FC794B1AA2749B8D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TimeHelpers.h */; };
+		F81943F3F4C14DA7A78BCAF9 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/audio.c */ = {isa = PBXBuildFile; fileRef = DB0380BBFFB54742ABBA5EC8 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/audio.c */; };
+		FC8B36BA7EC943FE8673AA52 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestReporterStdout.cpp */ = {isa = PBXBuildFile; fileRef = C79C13AE550B4AC6AAE4DD5C /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestReporterStdout.cpp */; };
+		FE538266774C422F8128ADCA /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/MUSI6106Exec/MUSI6106Exec.cpp */ = {isa = PBXBuildFile; fileRef = 3DA533E141CD4448B52D469D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/MUSI6106Exec/MUSI6106Exec.cpp */; };
+		FFD8D2372177481AB24CE5C3 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/AssertException.cpp */ = {isa = PBXBuildFile; fileRef = A37569F26FB147FE82A3EC3E /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/AssertException.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		0B4E894FC62646118042F2DA /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		C8172D8E448246F39FD079F8 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		F4401039E0D74D0E85211012 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		F96BBF00D6644AEFA8E2E3E1 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		0B41D36FB9C84A0499CECCA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BC0574278FF484B9A8BE920;
+			remoteInfo = MUSI6106Exec;
+		};
+		22BE89AA09AB4622BD598AAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC891BDE2F1C437BADB45FEC;
+			remoteInfo = TestExec;
+		};
+		2FA5EFFC32E44301A842729D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E095477E7064D23B03E6799;
+			remoteInfo = "UnitTest++";
+		};
+		3CB10F841FE04204AEEA6D10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E08B39CAA9774C2FAEC4A61E;
+			remoteInfo = AudioFileIO;
+		};
+		421F39ACA5154F94BD3D99D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1DA4285F00A440CA69F0757;
+			remoteInfo = sndlib;
+		};
+		44413D56853B43FF86E49CD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC918E0948A3415FB2A3C337;
+			remoteInfo = CombFilter;
+		};
+		50DF24BD8925438B91BA14A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9975908991F0433380A2EE0C;
+			remoteInfo = ZERO_CHECK;
+		};
+		532B8B9B4510475D87BF86F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9975908991F0433380A2EE0C;
+			remoteInfo = ZERO_CHECK;
+		};
+		59AA3A46711C4A0BB450F168 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1DA4285F00A440CA69F0757;
+			remoteInfo = sndlib;
+		};
+		69F851CB06B243ADB8DAC000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E08B39CAA9774C2FAEC4A61E;
+			remoteInfo = AudioFileIO;
+		};
+		7D22A2E883DE4015A168079C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E095477E7064D23B03E6799;
+			remoteInfo = "UnitTest++";
+		};
+		8A4056F1AC264C1792A283A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9975908991F0433380A2EE0C;
+			remoteInfo = ZERO_CHECK;
+		};
+		98FE7730A87F4D54B00DFC56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9975908991F0433380A2EE0C;
+			remoteInfo = ZERO_CHECK;
+		};
+		9C33C5537E1149F19878C9EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9975908991F0433380A2EE0C;
+			remoteInfo = ZERO_CHECK;
+		};
+		A3B8E24AE6714EB0A089DA0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1DA4285F00A440CA69F0757;
+			remoteInfo = sndlib;
+		};
+		BD2FAC39CC4B4713BF86283D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1DA4285F00A440CA69F0757;
+			remoteInfo = sndlib;
+		};
+		CD859338F62A438B90B77390 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9975908991F0433380A2EE0C;
+			remoteInfo = ZERO_CHECK;
+		};
+		D8B2BF1869B546168CE548C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E08B39CAA9774C2FAEC4A61E;
+			remoteInfo = AudioFileIO;
+		};
+		EB0E0185CF374D0DA31659CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC918E0948A3415FB2A3C337;
+			remoteInfo = CombFilter;
+		};
+		F22C4BF80CAE460699A756F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F1C8B9009440DB245774B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9975908991F0433380A2EE0C;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0349B3BBDF5B48878456427A /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Vector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Vector.h; path = src/inc/Vector.h; sourceTree = SOURCE_ROOT; };
+		0398AF279418490B91DBB573 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/DeferredTestReporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DeferredTestReporter.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/DeferredTestReporter.cpp"; sourceTree = SOURCE_ROOT; };
+		0B343A59889C452883B0E757 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/AudioFileIO/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/AudioFileIO/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0E83648B3D5B4DEB9A49A748 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/DeferredTestResult.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DeferredTestResult.h; path = "3rdparty/unittest-cpp-master/UnitTest++/DeferredTestResult.h"; sourceTree = SOURCE_ROOT; };
+		10BCE3C7AAD1411BAC850E40 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sndlib-strings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "sndlib-strings.h"; path = "3rdparty/sndlib/sndlib-strings.h"; sourceTree = SOURCE_ROOT; };
+		150717328136430C84ECB3DA /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/MemoryOutStream.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MemoryOutStream.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/MemoryOutStream.cpp"; sourceTree = SOURCE_ROOT; };
+		152998A9774B4305AA9D332F /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestRunner.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TestRunner.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/TestRunner.cpp"; sourceTree = SOURCE_ROOT; };
+		15565A4D0B16457F87D9E491 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckTestReporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RequiredCheckTestReporter.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckTestReporter.cpp"; sourceTree = SOURCE_ROOT; };
+		163E6690C69647DB9541E1EB /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/Tests/Test_AudioIO.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Test_AudioIO.cpp; path = src/Tests/Tests/Test_AudioIO.cpp; sourceTree = SOURCE_ROOT; };
+		166C0676E525462A80D23DFD /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/CombFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CombFilter.h; path = src/inc/CombFilter.h; sourceTree = SOURCE_ROOT; };
+		19251C5AC7714D2A9371CFFB /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/CombFilterIf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CombFilterIf.h; path = src/inc/CombFilterIf.h; sourceTree = SOURCE_ROOT; };
+		2023F4989D914D46A3A77EBA /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Vector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Vector.h; path = src/inc/Vector.h; sourceTree = SOURCE_ROOT; };
+		211254AD6C264EDA971F1250 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/AudioFileIf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AudioFileIf.h; path = src/inc/AudioFileIf.h; sourceTree = SOURCE_ROOT; };
+		26D8863D081A489B941AB5B2 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/RingBuffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RingBuffer.h; path = src/inc/RingBuffer.h; sourceTree = SOURCE_ROOT; };
+		29417225884E40FA972499D4 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckException.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RequiredCheckException.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckException.cpp"; sourceTree = SOURCE_ROOT; };
+		29BCE561DF224299A5E337A5 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/_sndlib.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = _sndlib.h; path = 3rdparty/sndlib/_sndlib.h; sourceTree = SOURCE_ROOT; };
+		39BCB84E4FE24E8EB2A68647 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/AudioFileIO/AudioFile.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AudioFile.h; path = src/AudioFileIO/AudioFile.h; sourceTree = SOURCE_ROOT; };
+		3D2FF304E4BE4F34B8E74280 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CurrentTest.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CurrentTest.h; path = "3rdparty/unittest-cpp-master/UnitTest++/CurrentTest.h"; sourceTree = SOURCE_ROOT; };
+		3DA533E141CD4448B52D469D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/MUSI6106Exec/MUSI6106Exec.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MUSI6106Exec.cpp; path = src/MUSI6106Exec/MUSI6106Exec.cpp; sourceTree = SOURCE_ROOT; };
+		409A34D1D4B544698D17B278 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/AssertException.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AssertException.h; path = "3rdparty/unittest-cpp-master/UnitTest++/AssertException.h"; sourceTree = SOURCE_ROOT; };
+		41AE636724C745DFB1CD2EF4 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckTestReporter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RequiredCheckTestReporter.h; path = "3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckTestReporter.h"; sourceTree = SOURCE_ROOT; };
+		43F857E641C345F08B4767DF /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Checks.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Checks.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/Checks.cpp"; sourceTree = SOURCE_ROOT; };
+		46BB2ADD2336460A89BAAD64 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/HelperMacros.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = HelperMacros.h; path = "3rdparty/unittest-cpp-master/UnitTest++/HelperMacros.h"; sourceTree = SOURCE_ROOT; };
+		4DD04A5787704F0594D7E089 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/UnitTestPP.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = UnitTestPP.h; path = "3rdparty/unittest-cpp-master/UnitTest++/UnitTestPP.h"; sourceTree = SOURCE_ROOT; };
+		51D638F3A5F14E059C354E26 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Checks.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Checks.h; path = "3rdparty/unittest-cpp-master/UnitTest++/Checks.h"; sourceTree = SOURCE_ROOT; };
+		5656EE64695A469FB2843459 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/mus-config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "mus-config.h"; path = "3rdparty/sndlib/mus-config.h"; sourceTree = SOURCE_ROOT; };
+		579BFDAEEAA64915BE560D80 /* MUSI6106Exec */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = MUSI6106Exec; sourceTree = BUILT_PRODUCTS_DIR; };
+		57F46435BB2D4D3E8D7B9AC0 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestMacros.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TestMacros.h; path = "3rdparty/unittest-cpp-master/UnitTest++/TestMacros.h"; sourceTree = SOURCE_ROOT; };
+		5CD8BDD992044E879D8281A5 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/TestExec/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/Tests/TestExec/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5E65ECD645254E2C887D6610 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Posix/SignalTranslator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SignalTranslator.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/Posix/SignalTranslator.cpp"; sourceTree = SOURCE_ROOT; };
+		5EE3B3114D354211BB82B39B /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestList.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TestList.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/TestList.cpp"; sourceTree = SOURCE_ROOT; };
+		5F18A05BED2A422DA9BA1730 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = clm.h; path = 3rdparty/sndlib/clm.h; sourceTree = SOURCE_ROOT; };
+		658DABC81EA24472BC9D4339 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/RingBuffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RingBuffer.h; path = src/inc/RingBuffer.h; sourceTree = SOURCE_ROOT; };
+		66510C904738436EBD2EBCA9 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Test.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Test.h; path = "3rdparty/unittest-cpp-master/UnitTest++/Test.h"; sourceTree = SOURCE_ROOT; };
+		67B4BEB4D71149BA8EA32B00 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestList.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TestList.h; path = "3rdparty/unittest-cpp-master/UnitTest++/TestList.h"; sourceTree = SOURCE_ROOT; };
+		6C3CFA395AB343F681675469 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/vct.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vct.h; path = 3rdparty/sndlib/vct.h; sourceTree = SOURCE_ROOT; };
+		6EE0574AD06A463CA93A7DDC /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ThrowingTestReporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ThrowingTestReporter.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/ThrowingTestReporter.cpp"; sourceTree = SOURCE_ROOT; };
+		74D9173EC5D042D99EB52C0C /* TestExec */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = TestExec; sourceTree = BUILT_PRODUCTS_DIR; };
+		7589FE6842564C99B5FC76D2 /* sndlib */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libsndlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		75FD8AB3AE734841BB95F606 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Util.h; path = src/inc/Util.h; sourceTree = SOURCE_ROOT; };
+		76D168680F8B40DBAE3DB3E4 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/s7.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = s7.c; path = 3rdparty/sndlib/s7.c; sourceTree = SOURCE_ROOT; };
+		78236559DFB64B5A986ABA49 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/CombFilter/CombFilterIf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CombFilterIf.cpp; path = src/CombFilter/CombFilterIf.cpp; sourceTree = SOURCE_ROOT; };
+		7A2E274E2E394DE9823ECC19 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm2xen.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = clm2xen.h; path = 3rdparty/sndlib/clm2xen.h; sourceTree = SOURCE_ROOT; };
+		7B95B1D5F1D441A6B499A051 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/TestExec/Test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Test.cpp; path = src/Tests/TestExec/Test.cpp; sourceTree = SOURCE_ROOT; };
+		7CFE2E6726A042E3B97BBFBE /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Config.h; path = "3rdparty/unittest-cpp-master/UnitTest++/Config.h"; sourceTree = SOURCE_ROOT; };
+		7F68C1E07BB3409486E3FF86 /* UnitTest++ */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libUnitTest++.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		804E6185F78840C3A158FDEF /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Synthesis.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Synthesis.h; path = src/inc/Synthesis.h; sourceTree = SOURCE_ROOT; };
+		8143BC9C4DAA4E6E8D39EBED /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/CombFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CombFilter.h; path = src/inc/CombFilter.h; sourceTree = SOURCE_ROOT; };
+		8588AA3999AE4244A4EAA433 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Synthesis.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Synthesis.h; path = src/inc/Synthesis.h; sourceTree = SOURCE_ROOT; };
+		88970A90F81F40EC95236534 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/CombFilter/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CombFilter/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8E03208A09C344D3BD54242D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/XmlTestReporter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = XmlTestReporter.h; path = "3rdparty/unittest-cpp-master/UnitTest++/XmlTestReporter.h"; sourceTree = SOURCE_ROOT; };
+		90D97924672B41C0BF569999 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ReportAssert.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ReportAssert.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/ReportAssert.cpp"; sourceTree = SOURCE_ROOT; };
+		9118454FD7E841508FF235EB /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ReportAssert.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ReportAssert.h; path = "3rdparty/unittest-cpp-master/UnitTest++/ReportAssert.h"; sourceTree = SOURCE_ROOT; };
+		924EDD6E1351455FB5157A3C /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = 3rdparty/sndlib/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		95EFA2064DA6419495F0531F /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestResults.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TestResults.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/TestResults.cpp"; sourceTree = SOURCE_ROOT; };
+		96AE5867EEAA477593A66C0C /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/vct.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vct.c; path = 3rdparty/sndlib/vct.c; sourceTree = SOURCE_ROOT; };
+		9866D20015D342BDAF03CA84 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Posix/TimeHelpers.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TimeHelpers.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/Posix/TimeHelpers.cpp"; sourceTree = SOURCE_ROOT; };
+		9A1D6C58424944ADBE596BB4 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/io.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = io.c; path = 3rdparty/sndlib/io.c; sourceTree = SOURCE_ROOT; };
+		9A817D9CC5914DF5B88AB79F /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/XmlTestReporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = XmlTestReporter.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/XmlTestReporter.cpp"; sourceTree = SOURCE_ROOT; };
+		9C4D7BD945D84E7CBE8B7B1E /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TimeConstraint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TimeConstraint.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/TimeConstraint.cpp"; sourceTree = SOURCE_ROOT; };
+		A0955A5354144DB09313D7ED /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestDetails.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TestDetails.h; path = "3rdparty/unittest-cpp-master/UnitTest++/TestDetails.h"; sourceTree = SOURCE_ROOT; };
+		A1E1A700FCB1482290AE7D54 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ExceptionMacros.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ExceptionMacros.h; path = "3rdparty/unittest-cpp-master/UnitTest++/ExceptionMacros.h"; sourceTree = SOURCE_ROOT; };
+		A22376CC74554E93A0CFDEFA /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/Tests/Test_RingBuffer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Test_RingBuffer.cpp; path = src/Tests/Tests/Test_RingBuffer.cpp; sourceTree = SOURCE_ROOT; };
+		A37569F26FB147FE82A3EC3E /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/AssertException.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AssertException.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/AssertException.cpp"; sourceTree = SOURCE_ROOT; };
+		A4AB6310A5D94483B48C7262 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestRunner.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TestRunner.h; path = "3rdparty/unittest-cpp-master/UnitTest++/TestRunner.h"; sourceTree = SOURCE_ROOT; };
+		A512793CBD2F4367B3846105 /* CombFilter */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCombFilter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7D0B081FC794B1AA2749B8D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TimeHelpers.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TimeHelpers.h; path = "3rdparty/unittest-cpp-master/UnitTest++/TimeHelpers.h"; sourceTree = SOURCE_ROOT; };
+		A8B20984E01948BF9BB86F46 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm2xen.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = clm2xen.c; path = 3rdparty/sndlib/clm2xen.c; sourceTree = SOURCE_ROOT; };
+		A9534909440C475EB1D38AE4 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/s7.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = s7.h; path = 3rdparty/sndlib/s7.h; sourceTree = SOURCE_ROOT; };
+		A9B287636B0D4E04B71113B9 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/unix-config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "unix-config.h"; path = "3rdparty/sndlib/unix-config.h"; sourceTree = SOURCE_ROOT; };
+		A9EC022987764F5691A1CCA1 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestResults.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TestResults.h; path = "3rdparty/unittest-cpp-master/UnitTest++/TestResults.h"; sourceTree = SOURCE_ROOT; };
+		AB13A04A42284DD58FB8D5B9 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ExecuteTest.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ExecuteTest.h; path = "3rdparty/unittest-cpp-master/UnitTest++/ExecuteTest.h"; sourceTree = SOURCE_ROOT; };
+		AC631302D40244968D011B5F /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = clm.c; path = 3rdparty/sndlib/clm.c; sourceTree = SOURCE_ROOT; };
+		ACE0B5A8F9434AC39D477887 /* AudioFileIO */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAudioFileIO.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2256100FCB8408AA7B424DE /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/UnitTest++.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "UnitTest++.h"; path = "3rdparty/unittest-cpp-master/UnitTest++/UnitTest++.h"; sourceTree = SOURCE_ROOT; };
+		B36D254A189249B5B0A9386C /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/DeferredTestReporter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DeferredTestReporter.h; path = "3rdparty/unittest-cpp-master/UnitTest++/DeferredTestReporter.h"; sourceTree = SOURCE_ROOT; };
+		B3C90556C83143C4A9F5C874 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/MemoryOutStream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MemoryOutStream.h; path = "3rdparty/unittest-cpp-master/UnitTest++/MemoryOutStream.h"; sourceTree = SOURCE_ROOT; };
+		B4D9075A77C1423A820E0F8B /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckException.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RequiredCheckException.h; path = "3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckException.h"; sourceTree = SOURCE_ROOT; };
+		B6EED4BCD7F54415B9877AB7 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CheckMacros.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CheckMacros.h; path = "3rdparty/unittest-cpp-master/UnitTest++/CheckMacros.h"; sourceTree = SOURCE_ROOT; };
+		B90DCF2735274ED5BFCB7B34 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		BB5786CB1A274152A632B5FA /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sndlib.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sndlib.h; path = 3rdparty/sndlib/sndlib.h; sourceTree = SOURCE_ROOT; };
+		BD9446ABCD684C82824A8FAE /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm-strings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "clm-strings.h"; path = "3rdparty/sndlib/clm-strings.h"; sourceTree = SOURCE_ROOT; };
+		BDE710BEA3D34280BCA5DBD0 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/AudioFileIO/AudioFile.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AudioFile.cpp; path = src/AudioFileIO/AudioFile.cpp; sourceTree = SOURCE_ROOT; };
+		C1B0014010974735A70D2685 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ThrowingTestReporter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ThrowingTestReporter.h; path = "3rdparty/unittest-cpp-master/UnitTest++/ThrowingTestReporter.h"; sourceTree = SOURCE_ROOT; };
+		C569B877DC48426492861B04 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CompositeTestReporter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CompositeTestReporter.h; path = "3rdparty/unittest-cpp-master/UnitTest++/CompositeTestReporter.h"; sourceTree = SOURCE_ROOT; };
+		C58478BEEC2E461398FECC5B /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/DeferredTestResult.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DeferredTestResult.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/DeferredTestResult.cpp"; sourceTree = SOURCE_ROOT; };
+		C74FBAE72C1642B68FD58C01 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestReporterStdout.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TestReporterStdout.h; path = "3rdparty/unittest-cpp-master/UnitTest++/TestReporterStdout.h"; sourceTree = SOURCE_ROOT; };
+		C79C13AE550B4AC6AAE4DD5C /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestReporterStdout.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TestReporterStdout.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/TestReporterStdout.cpp"; sourceTree = SOURCE_ROOT; };
+		C9E6E984D0E24BDBB41B0031 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/AudioFileIf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AudioFileIf.h; path = src/inc/AudioFileIf.h; sourceTree = SOURCE_ROOT; };
+		CCA1B2B02E4741A1B78131CB /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestSuite.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TestSuite.h; path = "3rdparty/unittest-cpp-master/UnitTest++/TestSuite.h"; sourceTree = SOURCE_ROOT; };
+		CED881C7E46A462BAB76879D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/CombFilter/CombFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CombFilter.cpp; path = src/CombFilter/CombFilter.cpp; sourceTree = SOURCE_ROOT; };
+		D1AEC22D575E48E7A324E666 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CompositeTestReporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CompositeTestReporter.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/CompositeTestReporter.cpp"; sourceTree = SOURCE_ROOT; };
+		D31A1462BC7B4EB385FA2489 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sndlib2xen.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = sndlib2xen.c; path = 3rdparty/sndlib/sndlib2xen.c; sourceTree = SOURCE_ROOT; };
+		DB0380BBFFB54742ABBA5EC8 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/audio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = audio.c; path = 3rdparty/sndlib/audio.c; sourceTree = SOURCE_ROOT; };
+		DB289DAF73164ABD9E7A38D6 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E57200E11B264DB7B24A1BC8 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Util.h; path = src/inc/Util.h; sourceTree = SOURCE_ROOT; };
+		E7EFCD65CEAD420C927F82C3 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/MUSI6106Exec/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/MUSI6106Exec/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E8997F677EB84ACD9332EB26 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Test.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/Test.cpp"; sourceTree = SOURCE_ROOT; };
+		E99D6B2B925F48468B89D9E5 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CurrentTest.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CurrentTest.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/CurrentTest.cpp"; sourceTree = SOURCE_ROOT; };
+		EA624A7C66B344BBBDBB5CE1 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/TestExec/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/Tests/TestExec/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		EB29565CE5584A69BFE3BB7A /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequireMacros.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RequireMacros.h; path = "3rdparty/unittest-cpp-master/UnitTest++/RequireMacros.h"; sourceTree = SOURCE_ROOT; };
+		EC380252F1AB4DF0B33B7B3E /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestReporter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TestReporter.h; path = "3rdparty/unittest-cpp-master/UnitTest++/TestReporter.h"; sourceTree = SOURCE_ROOT; };
+		EE5F3E19930F454086708A80 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TimeConstraint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TimeConstraint.h; path = "3rdparty/unittest-cpp-master/UnitTest++/TimeConstraint.h"; sourceTree = SOURCE_ROOT; };
+		F12FE39DD792447CBC5A6CED /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/AudioFileIO/AudioFileIf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AudioFileIf.cpp; path = src/AudioFileIO/AudioFileIf.cpp; sourceTree = SOURCE_ROOT; };
+		F238B638699340ECB76F5755 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ReportAssertImpl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ReportAssertImpl.h; path = "3rdparty/unittest-cpp-master/UnitTest++/ReportAssertImpl.h"; sourceTree = SOURCE_ROOT; };
+		F302C4015C4942D0BA9B1765 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sndlib2xen.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sndlib2xen.h; path = 3rdparty/sndlib/sndlib2xen.h; sourceTree = SOURCE_ROOT; };
+		F4AA7C9AECC14F8787FC7635 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/xen.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = xen.c; path = 3rdparty/sndlib/xen.c; sourceTree = SOURCE_ROOT; };
+		F64436260FD04D03B4ED0D3B /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/CombFilterIf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CombFilterIf.h; path = src/inc/CombFilterIf.h; sourceTree = SOURCE_ROOT; };
+		F6D4CE82D2244539A56661A3 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/xen.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = xen.h; path = 3rdparty/sndlib/xen.h; sourceTree = SOURCE_ROOT; };
+		FC3C135AF2634B5F8AEC457D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sound.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = sound.c; path = 3rdparty/sndlib/sound.c; sourceTree = SOURCE_ROOT; };
+		FC423A8614A44228A42F3A15 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestDetails.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TestDetails.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/TestDetails.cpp"; sourceTree = SOURCE_ROOT; };
+		FCC773A48BAF44968EB7195E /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/headers.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = headers.c; path = 3rdparty/sndlib/headers.c; sourceTree = SOURCE_ROOT; };
+		FFCCF3D015A5442BB07EF5C1 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestReporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TestReporter.cpp; path = "3rdparty/unittest-cpp-master/UnitTest++/TestReporter.cpp"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		037EBD68C397464F92B30A2D /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				D4A681843ECC4925B9F75672 /* CMake Rules */,
+				DB289DAF73164ABD9E7A38D6 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		1C2E69D7D9C24C9190B069A1 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDE710BEA3D34280BCA5DBD0 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/AudioFileIO/AudioFile.cpp */,
+				F12FE39DD792447CBC5A6CED /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/AudioFileIO/AudioFileIf.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		354CECFA568E4105B882757B /* AudioFileIO */ = {
+			isa = PBXGroup;
+			children = (
+				1C2E69D7D9C24C9190B069A1 /* Source Files */,
+				654316F2F81A4ABE9523CC17 /* Header Files */,
+				0B343A59889C452883B0E757 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/AudioFileIO/CMakeLists.txt */,
+			);
+			name = AudioFileIO;
+			sourceTree = "<group>";
+		};
+		3DE132EA41234EF8AA1AEF2E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB0380BBFFB54742ABBA5EC8 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/audio.c */,
+				AC631302D40244968D011B5F /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm.c */,
+				A8B20984E01948BF9BB86F46 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm2xen.c */,
+				FCC773A48BAF44968EB7195E /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/headers.c */,
+				9A1D6C58424944ADBE596BB4 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/io.c */,
+				76D168680F8B40DBAE3DB3E4 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/s7.c */,
+				D31A1462BC7B4EB385FA2489 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sndlib2xen.c */,
+				FC3C135AF2634B5F8AEC457D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sound.c */,
+				96AE5867EEAA477593A66C0C /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/vct.c */,
+				F4AA7C9AECC14F8787FC7635 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/xen.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		50E0819FB0D749C0A4C148BD /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		54B08262806A4ACEB438387B /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				211254AD6C264EDA971F1250 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/AudioFileIf.h */,
+				8143BC9C4DAA4E6E8D39EBED /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/CombFilter.h */,
+				19251C5AC7714D2A9371CFFB /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/CombFilterIf.h */,
+				26D8863D081A489B941AB5B2 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/RingBuffer.h */,
+				8588AA3999AE4244A4EAA433 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Synthesis.h */,
+				75FD8AB3AE734841BB95F606 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Util.h */,
+				0349B3BBDF5B48878456427A /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Vector.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		5CAA54DD51AB4A8B9B0A2422 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9E6E984D0E24BDBB41B0031 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/AudioFileIf.h */,
+				166C0676E525462A80D23DFD /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/CombFilter.h */,
+				F64436260FD04D03B4ED0D3B /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/CombFilterIf.h */,
+				658DABC81EA24472BC9D4339 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/RingBuffer.h */,
+				804E6185F78840C3A158FDEF /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Synthesis.h */,
+				E57200E11B264DB7B24A1BC8 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Util.h */,
+				2023F4989D914D46A3A77EBA /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc/Vector.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		654316F2F81A4ABE9523CC17 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				39BCB84E4FE24E8EB2A68647 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/AudioFileIO/AudioFile.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		8BCB3FB0E6E343CF97EC5872 = {
+			isa = PBXGroup;
+			children = (
+				DA223283690A46FE9C5E4E7C /* ALL_BUILD */,
+				037EBD68C397464F92B30A2D /* ZERO_CHECK */,
+				FF84F4F868514C6EA0BF80BE /* MUSI6106Exec */,
+				354CECFA568E4105B882757B /* AudioFileIO */,
+				A7082EECE72F417F8D01F752 /* sndlib */,
+				AEAE42D32D8143848A80D125 /* CombFilter */,
+				D7060F44D9E9406E801E3565 /* TestExec */,
+				E71D0E54746C47ABA7F63F7D /* UnitTest++ */,
+				8FA49D6331AB4A54887BF1F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FA49D6331AB4A54887BF1F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				579BFDAEEAA64915BE560D80 /* MUSI6106Exec */,
+				ACE0B5A8F9434AC39D477887 /* AudioFileIO */,
+				7589FE6842564C99B5FC76D2 /* sndlib */,
+				A512793CBD2F4367B3846105 /* CombFilter */,
+				74D9173EC5D042D99EB52C0C /* TestExec */,
+				7F68C1E07BB3409486E3FF86 /* UnitTest++ */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BDBD94525F24FA3B81A9A4B /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B95B1D5F1D441A6B499A051 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/TestExec/Test.cpp */,
+				163E6690C69647DB9541E1EB /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/Tests/Test_AudioIO.cpp */,
+				A22376CC74554E93A0CFDEFA /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/Tests/Test_RingBuffer.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A6F53A850043489E9D284E65 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				409A34D1D4B544698D17B278 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/AssertException.h */,
+				B6EED4BCD7F54415B9877AB7 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CheckMacros.h */,
+				51D638F3A5F14E059C354E26 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Checks.h */,
+				C569B877DC48426492861B04 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CompositeTestReporter.h */,
+				7CFE2E6726A042E3B97BBFBE /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Config.h */,
+				3D2FF304E4BE4F34B8E74280 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CurrentTest.h */,
+				B36D254A189249B5B0A9386C /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/DeferredTestReporter.h */,
+				0E83648B3D5B4DEB9A49A748 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/DeferredTestResult.h */,
+				A1E1A700FCB1482290AE7D54 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ExceptionMacros.h */,
+				AB13A04A42284DD58FB8D5B9 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ExecuteTest.h */,
+				46BB2ADD2336460A89BAAD64 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/HelperMacros.h */,
+				B3C90556C83143C4A9F5C874 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/MemoryOutStream.h */,
+				9118454FD7E841508FF235EB /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ReportAssert.h */,
+				F238B638699340ECB76F5755 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ReportAssertImpl.h */,
+				EB29565CE5584A69BFE3BB7A /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequireMacros.h */,
+				B4D9075A77C1423A820E0F8B /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckException.h */,
+				41AE636724C745DFB1CD2EF4 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckTestReporter.h */,
+				66510C904738436EBD2EBCA9 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Test.h */,
+				A0955A5354144DB09313D7ED /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestDetails.h */,
+				67B4BEB4D71149BA8EA32B00 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestList.h */,
+				57F46435BB2D4D3E8D7B9AC0 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestMacros.h */,
+				EC380252F1AB4DF0B33B7B3E /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestReporter.h */,
+				C74FBAE72C1642B68FD58C01 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestReporterStdout.h */,
+				A9EC022987764F5691A1CCA1 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestResults.h */,
+				A4AB6310A5D94483B48C7262 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestRunner.h */,
+				CCA1B2B02E4741A1B78131CB /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestSuite.h */,
+				C1B0014010974735A70D2685 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ThrowingTestReporter.h */,
+				EE5F3E19930F454086708A80 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TimeConstraint.h */,
+				A7D0B081FC794B1AA2749B8D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TimeHelpers.h */,
+				B2256100FCB8408AA7B424DE /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/UnitTest++.h */,
+				4DD04A5787704F0594D7E089 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/UnitTestPP.h */,
+				8E03208A09C344D3BD54242D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/XmlTestReporter.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		A7082EECE72F417F8D01F752 /* sndlib */ = {
+			isa = PBXGroup;
+			children = (
+				3DE132EA41234EF8AA1AEF2E /* Source Files */,
+				C5BF39AA5DC741FEA7239908 /* Header Files */,
+				924EDD6E1351455FB5157A3C /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/CMakeLists.txt */,
+			);
+			name = sndlib;
+			sourceTree = "<group>";
+		};
+		AEAE42D32D8143848A80D125 /* CombFilter */ = {
+			isa = PBXGroup;
+			children = (
+				D137A2D5BCA74CD5A955F644 /* Source Files */,
+				5CAA54DD51AB4A8B9B0A2422 /* Header Files */,
+				88970A90F81F40EC95236534 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/CombFilter/CMakeLists.txt */,
+			);
+			name = CombFilter;
+			sourceTree = "<group>";
+		};
+		BC7633BB9E244106B7292AA2 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A37569F26FB147FE82A3EC3E /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/AssertException.cpp */,
+				43F857E641C345F08B4767DF /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Checks.cpp */,
+				D1AEC22D575E48E7A324E666 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CompositeTestReporter.cpp */,
+				E99D6B2B925F48468B89D9E5 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CurrentTest.cpp */,
+				0398AF279418490B91DBB573 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/DeferredTestReporter.cpp */,
+				C58478BEEC2E461398FECC5B /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/DeferredTestResult.cpp */,
+				150717328136430C84ECB3DA /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/MemoryOutStream.cpp */,
+				5E65ECD645254E2C887D6610 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Posix/SignalTranslator.cpp */,
+				9866D20015D342BDAF03CA84 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Posix/TimeHelpers.cpp */,
+				90D97924672B41C0BF569999 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ReportAssert.cpp */,
+				29417225884E40FA972499D4 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckException.cpp */,
+				15565A4D0B16457F87D9E491 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckTestReporter.cpp */,
+				E8997F677EB84ACD9332EB26 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Test.cpp */,
+				FC423A8614A44228A42F3A15 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestDetails.cpp */,
+				5EE3B3114D354211BB82B39B /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestList.cpp */,
+				FFCCF3D015A5442BB07EF5C1 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestReporter.cpp */,
+				C79C13AE550B4AC6AAE4DD5C /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestReporterStdout.cpp */,
+				95EFA2064DA6419495F0531F /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestResults.cpp */,
+				152998A9774B4305AA9D332F /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestRunner.cpp */,
+				6EE0574AD06A463CA93A7DDC /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ThrowingTestReporter.cpp */,
+				9C4D7BD945D84E7CBE8B7B1E /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TimeConstraint.cpp */,
+				9A817D9CC5914DF5B88AB79F /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/XmlTestReporter.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C5BF39AA5DC741FEA7239908 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				29BCE561DF224299A5E337A5 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/_sndlib.h */,
+				BD9446ABCD684C82824A8FAE /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm-strings.h */,
+				5F18A05BED2A422DA9BA1730 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm.h */,
+				7A2E274E2E394DE9823ECC19 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm2xen.h */,
+				5656EE64695A469FB2843459 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/mus-config.h */,
+				A9534909440C475EB1D38AE4 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/s7.h */,
+				10BCE3C7AAD1411BAC850E40 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sndlib-strings.h */,
+				BB5786CB1A274152A632B5FA /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sndlib.h */,
+				F302C4015C4942D0BA9B1765 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sndlib2xen.h */,
+				A9B287636B0D4E04B71113B9 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/unix-config.h */,
+				6C3CFA395AB343F681675469 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/vct.h */,
+				F6D4CE82D2244539A56661A3 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/xen.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		D137A2D5BCA74CD5A955F644 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				CED881C7E46A462BAB76879D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/CombFilter/CombFilter.cpp */,
+				78236559DFB64B5A986ABA49 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/CombFilter/CombFilterIf.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		D4A681843ECC4925B9F75672 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		D7060F44D9E9406E801E3565 /* TestExec */ = {
+			isa = PBXGroup;
+			children = (
+				9BDBD94525F24FA3B81A9A4B /* Source Files */,
+				EA624A7C66B344BBBDBB5CE1 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/TestExec/CMakeLists.txt */,
+			);
+			name = TestExec;
+			sourceTree = "<group>";
+		};
+		DA223283690A46FE9C5E4E7C /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				50E0819FB0D749C0A4C148BD /* CMake Rules */,
+				B90DCF2735274ED5BFCB7B34 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		E71D0E54746C47ABA7F63F7D /* UnitTest++ */ = {
+			isa = PBXGroup;
+			children = (
+				BC7633BB9E244106B7292AA2 /* Source Files */,
+				A6F53A850043489E9D284E65 /* Header Files */,
+				5CD8BDD992044E879D8281A5 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/TestExec/CMakeLists.txt */,
+			);
+			name = "UnitTest++";
+			sourceTree = "<group>";
+		};
+		FBE509A35090434185C7FD96 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DA533E141CD4448B52D469D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/MUSI6106Exec/MUSI6106Exec.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		FF84F4F868514C6EA0BF80BE /* MUSI6106Exec */ = {
+			isa = PBXGroup;
+			children = (
+				FBE509A35090434185C7FD96 /* Source Files */,
+				54B08262806A4ACEB438387B /* Header Files */,
+				E7EFCD65CEAD420C927F82C3 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/MUSI6106Exec/CMakeLists.txt */,
+			);
+			name = MUSI6106Exec;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BC0574278FF484B9A8BE920 /* MUSI6106Exec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F61D51557442465A84B8F504 /* Build configuration list for PBXNativeTarget "MUSI6106Exec" */;
+			buildPhases = (
+				1CB39D5F4DF4482096CCF4BD /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75DDFBEC1E704899AD6ABB5E /* PBXTargetDependency */,
+				7DA9EBFB4FC64BF5B4B75260 /* PBXTargetDependency */,
+				3DB4DC388C6F45C88BD7858A /* PBXTargetDependency */,
+				548FDB0A3EB6489899836AD4 /* PBXTargetDependency */,
+			);
+			name = MUSI6106Exec;
+			productName = MUSI6106Exec;
+			productReference = 579BFDAEEAA64915BE560D80 /* MUSI6106Exec */;
+			productType = "com.apple.product-type.tool";
+		};
+		9E095477E7064D23B03E6799 /* UnitTest++ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830531CF8D2A4657A639C02E /* Build configuration list for PBXNativeTarget "UnitTest++" */;
+			buildPhases = (
+				3A5F98D390BC4003881AE6AB /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				457835F5810E43A890768414 /* PBXTargetDependency */,
+			);
+			name = "UnitTest++";
+			productName = "UnitTest++";
+			productReference = 7F68C1E07BB3409486E3FF86 /* UnitTest++ */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B1DA4285F00A440CA69F0757 /* sndlib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01F47A1FB899434B849DCD52 /* Build configuration list for PBXNativeTarget "sndlib" */;
+			buildPhases = (
+				A2489FB5F8044DC0B5587C95 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58F46D1DDE524D9398A5397A /* PBXTargetDependency */,
+			);
+			name = sndlib;
+			productName = sndlib;
+			productReference = 7589FE6842564C99B5FC76D2 /* sndlib */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CC891BDE2F1C437BADB45FEC /* TestExec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C433F33474543379A29E207 /* Build configuration list for PBXNativeTarget "TestExec" */;
+			buildPhases = (
+				F84D878C737C42349D87559A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF002783DB2D482DB37BFD84 /* PBXTargetDependency */,
+				CAAD9E0C7F7B408CA5F055CC /* PBXTargetDependency */,
+				3D36699E09714646B83ECE7F /* PBXTargetDependency */,
+				16DAF359C5274670B86B8676 /* PBXTargetDependency */,
+			);
+			name = TestExec;
+			productName = TestExec;
+			productReference = 74D9173EC5D042D99EB52C0C /* TestExec */;
+			productType = "com.apple.product-type.tool";
+		};
+		CC918E0948A3415FB2A3C337 /* CombFilter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64833FBD9D114F3684F1BD6F /* Build configuration list for PBXNativeTarget "CombFilter" */;
+			buildPhases = (
+				F595514FA24A4E7BB1B02B9F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90CA6298C8E046F391EEDC75 /* PBXTargetDependency */,
+			);
+			name = CombFilter;
+			productName = CombFilter;
+			productReference = A512793CBD2F4367B3846105 /* CombFilter */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E08B39CAA9774C2FAEC4A61E /* AudioFileIO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88B9BCDB8DBD4414BF02DB30 /* Build configuration list for PBXNativeTarget "AudioFileIO" */;
+			buildPhases = (
+				8E042497834C4B7FB6BC79DD /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28F3A9C4F30445B886A4DE8A /* PBXTargetDependency */,
+				F189065126F440CDA1CF5486 /* PBXTargetDependency */,
+			);
+			name = AudioFileIO;
+			productName = AudioFileIO;
+			productReference = ACE0B5A8F9434AC39D477887 /* AudioFileIO */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE0F1C8B9009440DB245774B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0920;
+			};
+			buildConfigurationList = 57A3718A67394E93B8D9AD7B /* Build configuration list for PBXProject "MUSI6106" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				F96BBF00D6644AEFA8E2E3E1 /* Debug */,
+				C8172D8E448246F39FD079F8 /* Release */,
+				0B4E894FC62646118042F2DA /* MinSizeRel */,
+				F4401039E0D74D0E85211012 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 8BCB3FB0E6E343CF97EC5872;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				40BD4823E36A424AA83BF038 /* ALL_BUILD */,
+				9F5CBB531B5C445FBE362738 /* RUN_TESTS */,
+				9975908991F0433380A2EE0C /* ZERO_CHECK */,
+				2BC0574278FF484B9A8BE920 /* MUSI6106Exec */,
+				E08B39CAA9774C2FAEC4A61E /* AudioFileIO */,
+				B1DA4285F00A440CA69F0757 /* sndlib */,
+				CC918E0948A3415FB2A3C337 /* CombFilter */,
+				CC891BDE2F1C437BADB45FEC /* TestExec */,
+				9E095477E7064D23B03E6799 /* UnitTest++ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0754FE774E994F369883DD8A /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2 -f /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		5A4CCD748CBC4E319A338311 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		770668F1AC324CD9AED6652F /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2 -f /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		77C160CFAB20459CB8C9F618 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		C3C2FA25E4A849D486338001 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		D3EF881240994EF49EA706BD /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2 -f /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CB39D5F4DF4482096CCF4BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE538266774C422F8128ADCA /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/MUSI6106Exec/MUSI6106Exec.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5F98D390BC4003881AE6AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD8D2372177481AB24CE5C3 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/AssertException.cpp */,
+				3465508115C54B958EE8E995 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Checks.cpp */,
+				DE70671277C74208B252C9A5 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CompositeTestReporter.cpp */,
+				75B497AD159A4B1F93EF6F40 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/CurrentTest.cpp */,
+				35596BCA953D4A018FC596C1 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/DeferredTestReporter.cpp */,
+				99E61AEAF7BF48F6B7DDEEE1 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/DeferredTestResult.cpp */,
+				C05C427FD0DB465095EA4ACA /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/MemoryOutStream.cpp */,
+				592E0CFE6EFC4FDA919CD3AD /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Posix/SignalTranslator.cpp */,
+				4568C99B20F5485EA83164D8 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Posix/TimeHelpers.cpp */,
+				D79CEA51B3CA47088155D4CD /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ReportAssert.cpp */,
+				7BA09910CAA74F2B8C4DD6BA /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckException.cpp */,
+				4EF1EEB17AF34E53BD9C7377 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/RequiredCheckTestReporter.cpp */,
+				564304BDAFF04F06974D5E45 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/Test.cpp */,
+				2653564B867348DDA1CEDA24 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestDetails.cpp */,
+				F1AE1AA98E924C2CA32FB4CC /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestList.cpp */,
+				A3541E2BC37A4177A8771A10 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestReporter.cpp */,
+				FC8B36BA7EC943FE8673AA52 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestReporterStdout.cpp */,
+				428E555B92324606B021E7B1 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestResults.cpp */,
+				F527799BE9E34ABE986E0E76 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TestRunner.cpp */,
+				A2C1D080351D4F79B349541A /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/ThrowingTestReporter.cpp */,
+				6621D533E53246868A966313 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/TimeConstraint.cpp */,
+				11A062D818A94917AB98C897 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++/XmlTestReporter.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E042497834C4B7FB6BC79DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1638E86A98CA443B9DD68198 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/AudioFileIO/AudioFile.cpp */,
+				181ABD265638483189530F0A /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/AudioFileIO/AudioFileIf.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2489FB5F8044DC0B5587C95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F81943F3F4C14DA7A78BCAF9 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/audio.c */,
+				817E143B67B542B5B6CB9E7E /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm.c */,
+				D49DF6A0FF0543CDA4624335 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/clm2xen.c */,
+				370C5E01EB1E47718043BD54 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/headers.c */,
+				9059579707B748F8BFED8C1D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/io.c */,
+				DDA612F0BC504A6382806375 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/s7.c */,
+				56790EC9AB3949D4BF41C541 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sndlib2xen.c */,
+				B472C1B2C48540FC87A1466D /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/sound.c */,
+				CE41E9738A964F85BD52BD2C /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/vct.c */,
+				C8EA7ADBC00749989B21E246 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib/xen.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F595514FA24A4E7BB1B02B9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000FE2E3D8A64765B3C86B79 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/CombFilter/CombFilter.cpp */,
+				B506D14516054B7C9F8DC26C /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/CombFilter/CombFilterIf.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F84D878C737C42349D87559A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD628DB997B448E8587C9D6 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/TestExec/Test.cpp */,
+				1C2314822942449CB830FA43 /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/Tests/Test_AudioIO.cpp */,
+				967C35EACE8B468EA3B637FD /* /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/Tests/Tests/Test_RingBuffer.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F763C13E5A443BCBAA9DEC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BC0574278FF484B9A8BE920 /* MUSI6106Exec */;
+			targetProxy = 0B41D36FB9C84A0499CECCA9 /* PBXContainerItemProxy */;
+		};
+		16DAF359C5274670B86B8676 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9975908991F0433380A2EE0C /* ZERO_CHECK */;
+			targetProxy = 8A4056F1AC264C1792A283A2 /* PBXContainerItemProxy */;
+		};
+		25528FC6118D439491FC4494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9975908991F0433380A2EE0C /* ZERO_CHECK */;
+			targetProxy = 9C33C5537E1149F19878C9EC /* PBXContainerItemProxy */;
+		};
+		28F3A9C4F30445B886A4DE8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1DA4285F00A440CA69F0757 /* sndlib */;
+			targetProxy = A3B8E24AE6714EB0A089DA0A /* PBXContainerItemProxy */;
+		};
+		3D36699E09714646B83ECE7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E08B39CAA9774C2FAEC4A61E /* AudioFileIO */;
+			targetProxy = 69F851CB06B243ADB8DAC000 /* PBXContainerItemProxy */;
+		};
+		3DB4DC388C6F45C88BD7858A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E08B39CAA9774C2FAEC4A61E /* AudioFileIO */;
+			targetProxy = 3CB10F841FE04204AEEA6D10 /* PBXContainerItemProxy */;
+		};
+		457835F5810E43A890768414 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9975908991F0433380A2EE0C /* ZERO_CHECK */;
+			targetProxy = CD859338F62A438B90B77390 /* PBXContainerItemProxy */;
+		};
+		548FDB0A3EB6489899836AD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9975908991F0433380A2EE0C /* ZERO_CHECK */;
+			targetProxy = 50DF24BD8925438B91BA14A1 /* PBXContainerItemProxy */;
+		};
+		58F46D1DDE524D9398A5397A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9975908991F0433380A2EE0C /* ZERO_CHECK */;
+			targetProxy = F22C4BF80CAE460699A756F3 /* PBXContainerItemProxy */;
+		};
+		6521A2E7E71D45DD8B8B6FBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E095477E7064D23B03E6799 /* UnitTest++ */;
+			targetProxy = 2FA5EFFC32E44301A842729D /* PBXContainerItemProxy */;
+		};
+		75DDFBEC1E704899AD6ABB5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1DA4285F00A440CA69F0757 /* sndlib */;
+			targetProxy = 59AA3A46711C4A0BB450F168 /* PBXContainerItemProxy */;
+		};
+		7DA9EBFB4FC64BF5B4B75260 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC918E0948A3415FB2A3C337 /* CombFilter */;
+			targetProxy = EB0E0185CF374D0DA31659CF /* PBXContainerItemProxy */;
+		};
+		90CA6298C8E046F391EEDC75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9975908991F0433380A2EE0C /* ZERO_CHECK */;
+			targetProxy = 532B8B9B4510475D87BF86F7 /* PBXContainerItemProxy */;
+		};
+		9AECFD41E64E48229350249F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC918E0948A3415FB2A3C337 /* CombFilter */;
+			targetProxy = 44413D56853B43FF86E49CD8 /* PBXContainerItemProxy */;
+		};
+		AC32952AA97A4008AE6D1A90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC891BDE2F1C437BADB45FEC /* TestExec */;
+			targetProxy = 22BE89AA09AB4622BD598AAC /* PBXContainerItemProxy */;
+		};
+		BD026DB1A0F8436C8F4B060D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E08B39CAA9774C2FAEC4A61E /* AudioFileIO */;
+			targetProxy = D8B2BF1869B546168CE548C5 /* PBXContainerItemProxy */;
+		};
+		CAAD9E0C7F7B408CA5F055CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E095477E7064D23B03E6799 /* UnitTest++ */;
+			targetProxy = 7D22A2E883DE4015A168079C /* PBXContainerItemProxy */;
+		};
+		D05C3C26142B49F0927436B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1DA4285F00A440CA69F0757 /* sndlib */;
+			targetProxy = BD2FAC39CC4B4713BF86283D /* PBXContainerItemProxy */;
+		};
+		EF002783DB2D482DB37BFD84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1DA4285F00A440CA69F0757 /* sndlib */;
+			targetProxy = 421F39ACA5154F94BD3D99D8 /* PBXContainerItemProxy */;
+		};
+		F189065126F440CDA1CF5486 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9975908991F0433380A2EE0C /* ZERO_CHECK */;
+			targetProxy = 98FE7730A87F4D54B00DFC56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0DE331FF3A374CBC9F417AC5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/relwithdebinfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CombFilter;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/CombFilter";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		0EB6B3B322D8467BB7ACF275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		2FFE782A55A6453786FF4CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		337E4B2C2F8649979A5E2974 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3FDA2973FB1D487596C143C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -w  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = sndlib;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/AudioFileIO/sndlib";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		4001475AA43340AD8E32F312 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/build";
+			};
+			name = MinSizeRel;
+		};
+		404F85DC68574A37BFE3A157 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		56D564BFD79F48FB8D4BB5BC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		59898153A71F4A03B124E383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		659B41BAF8814BEBB3F6549E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AudioFileIO;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/AudioFileIO";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		665A5ECCCE65443192552EDB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CombFilter;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/CombFilter";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6F7B5B2AD4A142CC93918590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/bin/release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/release/libUnitTest++.a /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/release/libAudioFileIO.a /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/release/libsndlib.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = TestExec;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/TestExec";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		70AD7A4C9DED4AF68BB6064D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/bin/relwithdebinfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/relwithdebinfo/libCombFilter.a /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/relwithdebinfo/libAudioFileIO.a /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/relwithdebinfo/libsndlib.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MUSI6106Exec;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/MUSI6106Exec";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		75601B18F29F4510A7436DCE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/relwithdebinfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -w  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "UnitTest++";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/TestExec";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7D37647EB8E64F41A9E0A889 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/build";
+			};
+			name = Release;
+		};
+		7E418A1149434ABE9A6C155E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		800361A8BE9D474EB7402AE2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -w  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "UnitTest++";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/TestExec";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		82246E06E0A44F6A8A138A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CombFilter;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/CombFilter";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		872656F82249402ABCB10DDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/bin/debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/debug/libCombFilter.a /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/debug/libAudioFileIO.a /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/debug/libsndlib.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MUSI6106Exec;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/MUSI6106Exec";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		9ACE76BA1D884BA68DBA4552 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/build";
+			};
+			name = RelWithDebInfo;
+		};
+		A8BDCC1C2E0043C0A8260D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		B35E3DA7C2CD43B19CD62DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "   -w  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = sndlib;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/AudioFileIO/sndlib";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		BEBACEEE08B548A0B738051C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/relwithdebinfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AudioFileIO;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/AudioFileIO";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C8D471A621ED4488A237C28F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/build";
+			};
+			name = Debug;
+		};
+		CB880913EDAF4F2497880781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AudioFileIO;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/AudioFileIO";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		CBA5F5DE14C04E01A7F5C0D4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/bin/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/MinSizeRel/libCombFilter.a /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/MinSizeRel/libAudioFileIO.a /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/MinSizeRel/libsndlib.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MUSI6106Exec;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/MUSI6106Exec";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		CEED5382892B4CDCA1F26453 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/relwithdebinfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG -w  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = sndlib;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/AudioFileIO/sndlib";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		D2E3AE45D5474DF8B47A2D21 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AudioFileIO;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/AudioFileIO";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D5850F13BBB64BA3B346043B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		D6F8E0D1805149BE8C82498D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/sndlib");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -w  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = sndlib;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/AudioFileIO/sndlib";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DE13F64F5E7743B1A693872F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DE739637EAEB41BABBBA4CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -w  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "UnitTest++";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/TestExec";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		DFE60A914514499E8B658DEF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/bin/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/MinSizeRel/libUnitTest++.a /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/MinSizeRel/libAudioFileIO.a /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/MinSizeRel/libsndlib.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = TestExec;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/TestExec";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E169C03BFCB74023A08C39C5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/bin/relwithdebinfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/relwithdebinfo/libUnitTest++.a /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/relwithdebinfo/libAudioFileIO.a /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/relwithdebinfo/libsndlib.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = TestExec;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/TestExec";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E3E26B0C089B4F3891BF1672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   -w  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "UnitTest++";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/TestExec";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		E5238C8584514EBBA28909B3 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		ECBEA95C9315407086259F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/bin/debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/3rdparty/unittest-cpp-master/UnitTest++");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/debug/libUnitTest++.a /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/debug/libAudioFileIO.a /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/debug/libsndlib.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = TestExec;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/TestExec";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		F4B9277A8A9A472A833AB36B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CombFilter;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/CombFilter";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		FB8AAA317CC84084832C62D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/bin/release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/inc","/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/src/inc");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/release/libCombFilter.a /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/release/libAudioFileIO.a /Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/lib/release/libsndlib.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MUSI6106Exec;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2/MUSI6106Exec";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		FDBD345B0AF14E6EB18AFD2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yonglianghe/Downloads/2018-MUSI6106-assignment_2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01F47A1FB899434B849DCD52 /* Build configuration list for PBXNativeTarget "sndlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B35E3DA7C2CD43B19CD62DB5 /* Debug */,
+				3FDA2973FB1D487596C143C8 /* Release */,
+				D6F8E0D1805149BE8C82498D /* MinSizeRel */,
+				CEED5382892B4CDCA1F26453 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		466FE99AE1E546B895768F06 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDBD345B0AF14E6EB18AFD2D /* Debug */,
+				2FFE782A55A6453786FF4CF2 /* Release */,
+				337E4B2C2F8649979A5E2974 /* MinSizeRel */,
+				D5850F13BBB64BA3B346043B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		57A3718A67394E93B8D9AD7B /* Build configuration list for PBXProject "MUSI6106" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8D471A621ED4488A237C28F /* Debug */,
+				7D37647EB8E64F41A9E0A889 /* Release */,
+				4001475AA43340AD8E32F312 /* MinSizeRel */,
+				9ACE76BA1D884BA68DBA4552 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		64833FBD9D114F3684F1BD6F /* Build configuration list for PBXNativeTarget "CombFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82246E06E0A44F6A8A138A64 /* Debug */,
+				F4B9277A8A9A472A833AB36B /* Release */,
+				665A5ECCCE65443192552EDB /* MinSizeRel */,
+				0DE331FF3A374CBC9F417AC5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		830531CF8D2A4657A639C02E /* Build configuration list for PBXNativeTarget "UnitTest++" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3E26B0C089B4F3891BF1672 /* Debug */,
+				DE739637EAEB41BABBBA4CD9 /* Release */,
+				800361A8BE9D474EB7402AE2 /* MinSizeRel */,
+				75601B18F29F4510A7436DCE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		88B9BCDB8DBD4414BF02DB30 /* Build configuration list for PBXNativeTarget "AudioFileIO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB880913EDAF4F2497880781 /* Debug */,
+				659B41BAF8814BEBB3F6549E /* Release */,
+				D2E3AE45D5474DF8B47A2D21 /* MinSizeRel */,
+				BEBACEEE08B548A0B738051C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8C433F33474543379A29E207 /* Build configuration list for PBXNativeTarget "TestExec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECBEA95C9315407086259F9B /* Debug */,
+				6F7B5B2AD4A142CC93918590 /* Release */,
+				DFE60A914514499E8B658DEF /* MinSizeRel */,
+				E169C03BFCB74023A08C39C5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		94D3B377EA17479091CB87F1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8BDCC1C2E0043C0A8260D33 /* Debug */,
+				404F85DC68574A37BFE3A157 /* Release */,
+				7E418A1149434ABE9A6C155E /* MinSizeRel */,
+				DE13F64F5E7743B1A693872F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		957B425F84BF416E845E7A90 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59898153A71F4A03B124E383 /* Debug */,
+				0EB6B3B322D8467BB7ACF275 /* Release */,
+				56D564BFD79F48FB8D4BB5BC /* MinSizeRel */,
+				E5238C8584514EBBA28909B3 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F61D51557442465A84B8F504 /* Build configuration list for PBXNativeTarget "MUSI6106Exec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				872656F82249402ABCB10DDF /* Debug */,
+				FB8AAA317CC84084832C62D5 /* Release */,
+				CBA5F5DE14C04E01A7F5C0D4 /* MinSizeRel */,
+				70AD7A4C9DED4AF68BB6064D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE0F1C8B9009440DB245774B /* Project object */;
+}
