@@ -223,9 +223,11 @@ void testImpulseTrailOutputFIR(float**& ppfInputSignal, float**& ppfOutputSignal
 
 void testImpulseTrailOutputIIR(float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec) {
     for (int c = 0; c < structTestSpec.iNumChannels; c++) {
-        for (int i = structTestSpec.iDelay; i < structTestSpec.iTestSignalLength; i = i + structTestSpec.iDelay) {
-            assert(ppfOutputSignal[c][i] == ppfInputSignal[c][i-structTestSpec.iDelay] + (structTestSpec.fGain*ppfInputSignal[c][i-structTestSpec.iDelay]));
-        }
+        assert(ppfOutputSignal[c][2] == ppfInputSignal[c][2] + structTestSpec.fGain * ppfOutputSignal[c][0]);
+        assert(ppfOutputSignal[c][3] == ppfInputSignal[c][3] + structTestSpec.fGain * ppfOutputSignal[c][1]);
+
+        assert(ppfOutputSignal[c][4] == ppfInputSignal[c][4] + structTestSpec.fGain * ppfOutputSignal[c][2]);
+        assert(ppfOutputSignal[c][5] == ppfInputSignal[c][5] + structTestSpec.fGain * ppfOutputSignal[c][3]);
     }
 }
 
