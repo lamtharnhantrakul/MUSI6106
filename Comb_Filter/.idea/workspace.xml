@@ -32,7 +32,7 @@
             <file leaf-file-name="CombFilter.h" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/inc/CombFilter.h">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="400">
+                  <state relative-caret-position="600">
                     <caret line="40" column="21" lean-forward="false" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="21" />
                     <folding />
                   </state>
@@ -42,8 +42,8 @@
             <file leaf-file-name="CombFilter.cpp" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/CombFilter/CombFilter.cpp">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="253">
-                    <caret line="38" column="10" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="10" />
+                  <state relative-caret-position="405">
+                    <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
                     <folding />
                   </state>
                 </provider>
@@ -52,8 +52,8 @@
             <file leaf-file-name="MUSI6106Exec.cpp" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/MUSI6106Exec/MUSI6106Exec.cpp">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="509">
-                    <caret line="118" column="34" lean-forward="false" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
+                  <state relative-caret-position="172">
+                    <caret line="64" column="40" lean-forward="true" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
                     <folding>
                       <element signature="e#1#20#0" expanded="true" />
                     </folding>
@@ -68,7 +68,18 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Default" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="AudioFileIf.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/inc/AudioFileIf.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-221">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -202,12 +213,12 @@
       <workItem from="1518493642666" duration="9218000" />
       <workItem from="1518541095973" duration="152000" />
       <workItem from="1518553331114" duration="8692000" />
-      <workItem from="1518564213461" duration="2082000" />
+      <workItem from="1518564213461" duration="3899000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21309000" />
+    <option name="totallyTimeSpent" value="23126000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="0" width="1070" height="900" extended-state="0" />
@@ -289,6 +300,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -319,6 +331,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -389,29 +402,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CombFilter/CombFilter.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="38" column="10" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/inc/CombFilter.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
+        <state relative-caret-position="600">
           <caret line="40" column="21" lean-forward="false" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CombFilter/CombFilter.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/inc/AudioFileIf.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MUSI6106Exec/MUSI6106Exec.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="118" column="34" lean-forward="false" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
+        <state relative-caret-position="172">
+          <caret line="64" column="40" lean-forward="true" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
           <folding>
             <element signature="e#1#20#0" expanded="true" />
           </folding>
