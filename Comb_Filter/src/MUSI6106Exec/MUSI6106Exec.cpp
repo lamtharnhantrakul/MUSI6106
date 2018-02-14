@@ -28,9 +28,12 @@ void    initOutput(float**& ppfOutputSignal,TestSpec_t structTestSpec);
 void    generateTestImpulseSignal(float**& ppfInputSignal, TestSpec_t structTestSpec);
 void    printOutput(float**& ppfOutputSignal, TestSpec_t structTestSpec);
 void    testImpulseOutputFIR(float**& ppfOutputSignal, TestSpec_t structTestSpec);
-void    testImpulseOutputIIR(float**& ppfOutputSignal, int iNumChannels, int iDelay, float fGain, float fMaxDelay);
-void    generateTestImpulseTrailSignal(float**& ppfInputSignal, int iNumChannels, int iTestSignalLength, bool bAutoPrint);
-void    processCombFilter(CCombFilterIf*& pInstance, float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec);
+void    testImpulseOutputIIR(float**& ppfOutputSignal, TestSpec_t structTestSpec);
+
+void    generateTestImpulseTrailSignal(float**& ppfInputSignal, TestSpec_t structTestSpec);
+void    testImpulseTrailOutputFIR(float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec);
+void    testImpulseTrailOutputIIR(float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec);
+void    processCombFilter(CCombFilterIf*& pInstance, CCombFilterIf::CombFilterType_t eFilterType, float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec);
 /////////////////////////////////////////////////////////////////////////////////
 // main function
 int main(int argc, char* argv[])
@@ -55,60 +58,49 @@ int main(int argc, char* argv[])
     float                   **ppfInputSignal = 0;
     float                   **ppfOutputSignal = 0;
 
-
-
     structTestSpec.iTestSignalLength = 10;
     structTestSpec.iNumChannels = 2;
-    structTestSpec.iDelay = 0;
-    structTestSpec.fGain = 0.0;
+    structTestSpec.iDelay = 2;
+    structTestSpec.fGain = 0.8;
     structTestSpec.fMaxDelay = 10.0f;
     structTestSpec.fSamplingRate = 1.0f;
     structTestSpec.bAutoPrint = true;
 
     /////////////////////////////////////////////////////////////////////////////
 
-    initOutput(ppfOutputSignal, structTestSpec);
-    if (structTestSpec.bAutoPrint) {printOutput(ppfOutputSignal, structTestSpec);}
-
+    /*
+     * TEST 1: IMPULSE SIGNAL
+     */
     generateTestImpulseSignal(ppfInputSignal, structTestSpec);
 
-    structTestSpec.iDelay = 4;
-    structTestSpec.fGain = 0.8;
+    initOutput(ppfOutputSignal, structTestSpec);
     // Define a simple FIR delay line where the sampling rate is 1 Hz
-    processCombFilter(pInstance, ppfInputSignal, ppfOutputSignal, structTestSpec);
-
+    processCombFilter(pInstance, CCombFilterIf::kCombFIR, ppfInputSignal, ppfOutputSignal, structTestSpec);
     // Check output
     if (structTestSpec.bAutoPrint) {printOutput(ppfOutputSignal, structTestSpec);}
     testImpulseOutputFIR(ppfOutputSignal, structTestSpec);
 
-    /*
     // Reset output array for next test
-    initOutput(ppfOutputSignal, iNumChannels, iTestSignalLength, false);
-
-    // Define a simple IIR delay line where the sampling rate is 1 Hz
-    pInstance->init(CCombFilterIf::kCombIIR, fMaxDelay, fSamplingRate, iNumChannels);
-    pInstance->setParam(CCombFilterIf::kParamDelay, iDelay);
-    pInstance->setParam(CCombFilterIf::kParamGain, fGain);
-    pInstance->process(ppfInputSignal, ppfOutputSignal, iTestSignalLength);
-    // Check output
-    printOutput(ppfOutputSignal, iNumChannels, iTestSignalLength);
-    testImpulseOutputIIR(ppfOutputSignal, iNumChannels, iDelay, fGain, fMaxDelay);
+    initOutput(ppfOutputSignal, structTestSpec);
+    processCombFilter(pInstance, CCombFilterIf::kCombIIR, ppfInputSignal, ppfOutputSignal, structTestSpec);
+    if (structTestSpec.bAutoPrint) {printOutput(ppfOutputSignal, structTestSpec);}
+    testImpulseOutputIIR(ppfOutputSignal, structTestSpec);
 
 
-    generateTestImpulseTrailSignal(ppfInputSignal, iNumChannels, iTestSignalLength, true);
+    /*
+     * TEST 2: IMPULSE TRAIL
+     */
+    generateTestImpulseTrailSignal(ppfInputSignal, structTestSpec);
 
-    pInstance->init(CCombFilterIf::kCombFIR, fMaxDelay, fSamplingRate, iNumChannels);
-    pInstance->setParam(CCombFilterIf::kParamDelay, iDelay);
-    pInstance->setParam(CCombFilterIf::kParamGain, fGain);
-    pInstance->process(ppfInputSignal, ppfOutputSignal, iTestSignalLength);
+    initOutput(ppfOutputSignal, structTestSpec);
+    processCombFilter(pInstance, CCombFilterIf::kCombFIR, ppfInputSignal, ppfOutputSignal, structTestSpec);
+    if (structTestSpec.bAutoPrint) {printOutput(ppfOutputSignal, structTestSpec);}
+    testImpulseTrailOutputFIR(ppfInputSignal, ppfOutputSignal, structTestSpec);
 
-    // Check output
-    printOutput(ppfOutputSignal, iNumChannels, iTestSignalLength);
-    testImpulseOutputFIR(ppfOutputSignal, iNumChannels, iDelay, fGain);
-
-    */
-
-
+    initOutput(ppfOutputSignal, structTestSpec);
+    processCombFilter(pInstance, CCombFilterIf::kCombIIR, ppfInputSignal, ppfOutputSignal, structTestSpec);
+    if (structTestSpec.bAutoPrint) {printOutput(ppfOutputSignal, structTestSpec);}
+    testImpulseTrailOutputIIR(ppfInputSignal, ppfOutputSignal, structTestSpec);
 
     /*
     * TEST 3:
@@ -204,28 +196,48 @@ void printOutput(float**& ppfOutputSignal, TestSpec_t structTestSpec){
  */
 void testImpulseOutputFIR(float**& ppfOutputSignal, TestSpec_t structTestSpec) {
     for (int c = 0; c < structTestSpec.iNumChannels; c++) {
-        assert(ppfOutputSignal[c][structTestSpec.iDelay] = structTestSpec.fGain*ppfOutputSignal[c][0]);
+        assert(ppfOutputSignal[c][structTestSpec.iDelay] == structTestSpec.fGain*ppfOutputSignal[c][0]);
     }
 }
 
 /*
- * Tests if a simple unit impulse through the IIR yields a delayed `1*iGain` at a location offset by `iDelay`, and a subsequent location
+ * Tests if a simple unit impulse produces the first 3 expected values in the output
  */
-void testImpulseOutputIIR(float**& ppfOutputSignal, int iNumChannels, int iDelay, float fGain, float fMaxDelay){
-    for (int c = 0; c < iNumChannels; c++) {
-        assert(ppfOutputSignal[c][iDelay] = fGain * ppfOutputSignal[c][0]);
-        assert(ppfOutputSignal[c][2*iDelay] = fGain * ppfOutputSignal[c][iDelay]);
-        assert(ppfOutputSignal[c][3*iDelay] = fGain * ppfOutputSignal[c][2*iDelay]);
+void testImpulseOutputIIR(float**& ppfOutputSignal, TestSpec_t structTestSpec) {
+    for (int c = 0; c < structTestSpec.iNumChannels; c++) {
+        for (int c = 0; c < structTestSpec.iNumChannels; c++) {
+            assert(ppfOutputSignal[c][1 * structTestSpec.iDelay] == structTestSpec.fGain * ppfOutputSignal[c][0]);
+            assert(ppfOutputSignal[c][2 * structTestSpec.iDelay] == structTestSpec.fGain * ppfOutputSignal[c][1 * structTestSpec.iDelay]);
+            assert(ppfOutputSignal[c][3 * structTestSpec.iDelay] == structTestSpec.fGain * ppfOutputSignal[c][2 * structTestSpec.iDelay]);
+        }
     }
 }
 
-void processCombFilter(CCombFilterIf*& pInstance, float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec){
-    pInstance->init(CCombFilterIf::kCombFIR, structTestSpec.fMaxDelay, structTestSpec.fSamplingRate, structTestSpec.iNumChannels);
+void testImpulseTrailOutputFIR(float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec) {
+    for (int c = 0; c < structTestSpec.iNumChannels; c++) {
+       for (int i = structTestSpec.iDelay; i < structTestSpec.iTestSignalLength; i++) {
+           assert(ppfOutputSignal[c][i] == ppfInputSignal[c][i] + (structTestSpec.fGain*1));
+       }
+    }
+}
+
+void testImpulseTrailOutputIIR(float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec) {
+    for (int c = 0; c < structTestSpec.iNumChannels; c++) {
+        for (int i = structTestSpec.iDelay; i < structTestSpec.iTestSignalLength; i = i + structTestSpec.iDelay) {
+            assert(ppfOutputSignal[c][i] == ppfInputSignal[c][i-structTestSpec.iDelay] + (structTestSpec.fGain*ppfInputSignal[c][i-structTestSpec.iDelay]));
+        }
+    }
+}
+
+/*
+ * Process test signal using specified type of comb filter
+ */
+void processCombFilter(CCombFilterIf*& pInstance, CCombFilterIf::CombFilterType_t eFilterType, float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec){
+    pInstance->init(eFilterType, structTestSpec.fMaxDelay, structTestSpec.fSamplingRate, structTestSpec.iNumChannels);
     pInstance->setParam(CCombFilterIf::kParamDelay, structTestSpec.iDelay);
     pInstance->setParam(CCombFilterIf::kParamGain, structTestSpec.fGain);
     pInstance->process(ppfInputSignal, ppfOutputSignal, structTestSpec.iTestSignalLength);
 }
-
 
 void     showClInfo()
 {
