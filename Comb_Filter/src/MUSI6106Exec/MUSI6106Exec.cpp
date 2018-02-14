@@ -87,6 +87,7 @@ int main(int argc, char* argv[])
         return -1;
     }
     phAudioFile->getFileSpec(stFileSpec);
+
     // open the output text file
     hOutputFile.open(sOutputFilePath.c_str(), std::ios::out);
     if (!hOutputFile.is_open())
@@ -94,6 +95,7 @@ int main(int argc, char* argv[])
         cout << "Text file open error!";
         return -1;
     }
+
     // allocate memory
     ppfAudioData = new float*[stFileSpec.iNumChannels];
     for (int i = 0; i < stFileSpec.iNumChannels; i++)
@@ -146,9 +148,9 @@ int main(int argc, char* argv[])
     structTestSpec.iNumChannels = 3;
     structTestSpec.iDelay = 3;
     structTestSpec.fGain = 0.8;
-    structTestSpec.fMaxDelay = 10.0f;
+    structTestSpec.fMaxDelay = 15.0f;
     structTestSpec.fSamplingRate = 1.0f;
-    structTestSpec.bAutoPrint = false;
+    structTestSpec.bAutoPrint = true;
 
     /*
      * TEST 1: IMPULSE SIGNAL
@@ -325,8 +327,10 @@ void printOutput(float**& ppfOutputSignal, TestSpec_t structTestSpec){
  * Tests if a simple unit impulse through the FIR yields a delayed `1*iGain` at a location offset by `iDelay`
  */
 void testImpulseOutputFIR(float**& ppfOutputSignal, TestSpec_t structTestSpec) {
-    for (int c = 0; c < structTestSpec.iNumChannels; c++) {
-        assert(ppfOutputSignal[c][structTestSpec.iDelay] == structTestSpec.fGain*ppfOutputSignal[c][0]);
+    if (structTestSpec.iDelay < structTestSpec.iTestSignalLength) {
+        for (int c = 0; c < structTestSpec.iNumChannels; c++) {
+            assert(ppfOutputSignal[c][structTestSpec.iDelay] == structTestSpec.fGain*ppfOutputSignal[c][0]);
+        }
     }
 }
 
@@ -334,7 +338,7 @@ void testImpulseOutputFIR(float**& ppfOutputSignal, TestSpec_t structTestSpec) {
  * Tests if a simple unit impulse produces the first few expected values in the output
  */
 void testImpulseOutputIIR(float**& ppfOutputSignal, TestSpec_t structTestSpec) {
-    for (int c = 0; c < structTestSpec.iNumChannels; c++) {
+    if (structTestSpec.iDelay < structTestSpec.iTestSignalLength) {
         for (int c = 0; c < structTestSpec.iNumChannels; c++) {
             assert(ppfOutputSignal[c][1 * structTestSpec.iDelay] == structTestSpec.fGain * ppfOutputSignal[c][0]);
             assert(ppfOutputSignal[c][2 * structTestSpec.iDelay] == structTestSpec.fGain * ppfOutputSignal[c][1 * structTestSpec.iDelay]);
@@ -342,25 +346,35 @@ void testImpulseOutputIIR(float**& ppfOutputSignal, TestSpec_t structTestSpec) {
     }
 }
 
+/*
+ * Tests if a simple unit impulse trail produces the an impulse trail superposed with a delayed impulse trail
+ */
 void testImpulseTrailOutputFIR(float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec) {
-    for (int c = 0; c < structTestSpec.iNumChannels; c++) {
-       for (int i = structTestSpec.iDelay; i < structTestSpec.iTestSignalLength; i++) {
-           assert(ppfOutputSignal[c][i] == ppfInputSignal[c][i] + (structTestSpec.fGain*1));
-       }
+    if (structTestSpec.iDelay < structTestSpec.iTestSignalLength) {
+        for (int c = 0; c < structTestSpec.iNumChannels; c++) {
+            for (int i = structTestSpec.iDelay; i < structTestSpec.iTestSignalLength; i++) {
+                assert(ppfOutputSignal[c][i] == ppfInputSignal[c][i] + (structTestSpec.fGain * 1));
+            }
+        }
     }
 }
 
+
+/*
+ * Tests if a simple unit impulse generates the first 2 expected groups of values
+ */
 void testImpulseTrailOutputIIR(float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec) {
-    for (int c = 0; c < structTestSpec.iNumChannels; c++) {
-        for (int i = 0; i < structTestSpec.iDelay; i++) {
-            int idx = structTestSpec.iDelay;
-            assert(ppfOutputSignal[c][idx + i]     == ppfInputSignal[c][idx] + structTestSpec.fGain * ppfOutputSignal[c][i]);
-            assert(ppfOutputSignal[c][idx + i + 1] == ppfInputSignal[c][idx + 1] + structTestSpec.fGain * ppfOutputSignal[c][i + 1]);
+    if (structTestSpec.iDelay < structTestSpec.iTestSignalLength) {
+        for (int c = 0; c < structTestSpec.iNumChannels; c++) {
+            for (int i = 0; i < structTestSpec.iDelay; i++) {
+                int idx = structTestSpec.iDelay;
+                assert(ppfOutputSignal[c][idx + i]         == ppfInputSignal[c][idx] + structTestSpec.fGain * ppfOutputSignal[c][i]);
+                assert(ppfOutputSignal[c][idx + i + 1]     == ppfInputSignal[c][idx + 1] + structTestSpec.fGain * ppfOutputSignal[c][i + 1]);
 
-            assert(ppfOutputSignal[c][2*idx + i]     == ppfInputSignal[c][2*idx] + structTestSpec.fGain * ppfOutputSignal[c][idx]);
-            assert(ppfOutputSignal[c][2*idx + i + 1] == ppfInputSignal[c][2*idx + i] + structTestSpec.fGain * ppfOutputSignal[c][idx + i + 1]);
+                assert(ppfOutputSignal[c][2 * idx + i]     == ppfInputSignal[c][2 * idx] + structTestSpec.fGain * ppfOutputSignal[c][idx]);
+                assert(ppfOutputSignal[c][2 * idx + i + 1] == ppfInputSignal[c][2 * idx + i] + structTestSpec.fGain * ppfOutputSignal[c][idx + i + 1]);
+            }
         }
-
     }
 }
 
