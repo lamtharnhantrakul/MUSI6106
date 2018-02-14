@@ -2,10 +2,10 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="MUSI6106" targetName="AudioFileIO" />
-      <config projectName="MUSI6106" targetName="MUSI6106Exec" />
       <config projectName="MUSI6106" targetName="sndlib" />
+      <config projectName="MUSI6106" targetName="MUSI6106Exec" />
       <config projectName="MUSI6106" targetName="CombFilter" />
+      <config projectName="MUSI6106" targetName="AudioFileIO" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -32,8 +32,8 @@
             <file leaf-file-name="CombFilter.h" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/inc/CombFilter.h">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="570">
-                    <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+                  <state relative-caret-position="400">
+                    <caret line="40" column="21" lean-forward="false" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="21" />
                     <folding />
                   </state>
                 </provider>
@@ -42,8 +42,8 @@
             <file leaf-file-name="CombFilter.cpp" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/CombFilter/CombFilter.cpp">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-713">
-                    <caret line="37" column="61" lean-forward="true" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
+                  <state relative-caret-position="253">
+                    <caret line="38" column="10" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="10" />
                     <folding />
                   </state>
                 </provider>
@@ -52,8 +52,8 @@
             <file leaf-file-name="MUSI6106Exec.cpp" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/MUSI6106Exec/MUSI6106Exec.cpp">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="517">
-                    <caret line="75" column="53" lean-forward="true" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
+                  <state relative-caret-position="509">
+                    <caret line="118" column="34" lean-forward="false" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
                     <folding>
                       <element signature="e#1#20#0" expanded="true" />
                     </folding>
@@ -68,7 +68,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Default" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -161,19 +161,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.MUSI6106Exec">
-    <configuration name="AudioFileIO" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MUSI6106" TARGET_NAME="AudioFileIO" CONFIG_NAME="Default">
+    <configuration name="AudioFileIO" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MUSI6106" TARGET_NAME="AudioFileIO" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="MUSI6106" RUN_TARGET_NAME="MUSI6106Exec">
       <envs />
     </configuration>
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Default" EXPLICIT_BUILD_TARGET_NAME="all">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="MUSI6106" RUN_TARGET_NAME="MUSI6106Exec" EXPLICIT_BUILD_TARGET_NAME="all">
       <envs />
     </configuration>
-    <configuration name="CombFilter" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MUSI6106" TARGET_NAME="CombFilter" CONFIG_NAME="Default">
+    <configuration name="CombFilter" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MUSI6106" TARGET_NAME="CombFilter" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="MUSI6106" RUN_TARGET_NAME="MUSI6106Exec">
       <envs />
     </configuration>
     <configuration name="MUSI6106Exec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MUSI6106" TARGET_NAME="MUSI6106Exec" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="MUSI6106" RUN_TARGET_NAME="MUSI6106Exec">
       <envs />
     </configuration>
-    <configuration name="sndlib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MUSI6106" TARGET_NAME="sndlib" CONFIG_NAME="Default">
+    <configuration name="sndlib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MUSI6106" TARGET_NAME="sndlib" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="MUSI6106" RUN_TARGET_NAME="MUSI6106Exec">
       <envs />
     </configuration>
     <list size="5">
@@ -201,26 +201,27 @@
       <workItem from="1518468619656" duration="27000" />
       <workItem from="1518493642666" duration="9218000" />
       <workItem from="1518541095973" duration="152000" />
-      <workItem from="1518553331114" duration="8185000" />
+      <workItem from="1518553331114" duration="8692000" />
+      <workItem from="1518564213461" duration="2082000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18720000" />
+    <option name="totallyTimeSpent" value="21309000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="0" width="1070" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25071496" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25071496" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -243,6 +244,32 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/inc/CombFilter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CombFilter/CombFilter.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="61" lean-forward="true" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MUSI6106Exec/MUSI6106Exec.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2265">
+          <caret line="151" column="2" lean-forward="false" selection-start-line="151" selection-start-column="2" selection-end-line="151" selection-end-column="2" />
+          <folding>
+            <element signature="e#1#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CombFilter/CombFilterIf.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -255,7 +282,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -263,7 +289,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -287,7 +312,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -295,7 +319,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -359,7 +382,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -367,30 +389,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CombFilter/CombFilter.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="38" column="10" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/inc/CombFilter.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CombFilter/CombFilter.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-713">
-          <caret line="37" column="61" lean-forward="true" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
+        <state relative-caret-position="400">
+          <caret line="40" column="21" lean-forward="false" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MUSI6106Exec/MUSI6106Exec.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="75" column="53" lean-forward="true" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
+        <state relative-caret-position="509">
+          <caret line="118" column="34" lean-forward="false" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
           <folding>
             <element signature="e#1#20#0" expanded="true" />
           </folding>

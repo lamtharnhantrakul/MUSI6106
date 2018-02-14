@@ -16,7 +16,10 @@ void    showClInfo ();
 void    initOutput(float**& ppfOutputSignal, int iNumChannels, int iTestSignalLength, bool bAutoPrint);
 void    generateTestImpulseSignal(float**& ppfInputSignal, int iNumChannels, int iTestSignalLength, bool bAutoPrint);
 void    printOutput(float**& ppfOutputSignal, int iNumChannels, int iTestSignalLength);
-void    testImpulseOutputFIR(float**& ppfOutputSignal, int iNumChannels, int delay, float gain);
+void    testImpulseOutputFIR(float**& ppfOutputSignal, int iNumChannels, int delay, float fGain);
+void    testImpulseOutputIIR(float**& ppfOutputSignal, int iNumChannels, int iDelay, float fGain, float fMaxDelay);
+
+void    generateTestImpulseTrailSignal(float**& ppfInputSignal, int iNumChannels, int iTestSignalLength, bool bAutoPrint);
 /////////////////////////////////////////////////////////////////////////////////
 // main function
 int main(int argc, char* argv[])
@@ -43,59 +46,69 @@ int main(int argc, char* argv[])
     float                   **ppfOutputSignal = 0;
     int                     iNumChannels = 2;
     int                     iDelay = 0;
-    float                   iGain = 0.0;
+    float                   fGain = 0.0;
+    float                   fMaxDelay = 10.0f;
 
     /////////////////////////////////////////////////////////////////////////////
 
     initOutput(ppfOutputSignal, iNumChannels, iTestSignalLength, false);
     printOutput(ppfOutputSignal, iNumChannels, iTestSignalLength);
 
-    generateTestImpulseSignal(ppfInputSignal, iNumChannels, iTestSignalLength, true);
+    /*
+     * TEST 1: TESTING COMB FILTER WITH UNIT IMPULSE
+     */
 
-    // Define a simple delay line where the sampling rate is 1 Hz
+    generateTestImpulseSignal(ppfInputSignal, iNumChannels, iTestSignalLength, false);
+
+    // Define a simple FIR delay line where the sampling rate is 1 Hz
     CCombFilterIf::create(pInstance);
-    iDelay = 1; iGain = 0.8;
-    pInstance->init(CCombFilterIf::kCombFIR, 10.0f, 1.0f, iNumChannels);
+    iDelay = 4; fGain = 0.8;
+    pInstance->init(CCombFilterIf::kCombFIR, fMaxDelay, 1.0f, iNumChannels);
     pInstance->setParam(CCombFilterIf::kParamDelay, iDelay);
-    pInstance->setParam(CCombFilterIf::kParamGain, iGain);
+    pInstance->setParam(CCombFilterIf::kParamGain, fGain);
     pInstance->process(ppfInputSignal, ppfOutputSignal, iTestSignalLength);
-
+    // Check output
     printOutput(ppfOutputSignal, iNumChannels, iTestSignalLength);
-    testImpulseOutputFIR(ppfOutputSignal, iNumChannels, iDelay, iGain);
+    testImpulseOutputFIR(ppfOutputSignal, iNumChannels, iDelay, fGain);
 
+    // Reset output array for next test
     initOutput(ppfOutputSignal, iNumChannels, iTestSignalLength, false);
 
-    pInstance->init(CCombFilterIf::kCombFIR, 10.0f, 1.0f, iNumChannels);
+    // Define a simple IIR delay line where the sampling rate is 1 Hz
+    pInstance->init(CCombFilterIf::kCombIIR, fMaxDelay, 1.0f, iNumChannels);
     pInstance->setParam(CCombFilterIf::kParamDelay, iDelay);
-    pInstance->setParam(CCombFilterIf::kParamGain, iGain);
+    pInstance->setParam(CCombFilterIf::kParamGain, fGain);
     pInstance->process(ppfInputSignal, ppfOutputSignal, iTestSignalLength);
+    // Check output
+    printOutput(ppfOutputSignal, iNumChannels, iTestSignalLength);
+    testImpulseOutputIIR(ppfOutputSignal, iNumChannels, iDelay, fGain, fMaxDelay);
+
+    /*
+    * TEST 2: TESTING COMB FILTER WITH IMPULSE TRAIL
+    */
+    generateTestImpulseTrailSignal(ppfInputSignal, iNumChannels, iTestSignalLength, true);
+
+    pInstance->init(CCombFilterIf::kCombFIR, fMaxDelay, 1.0f, iNumChannels);
+    pInstance->setParam(CCombFilterIf::kParamDelay, iDelay);
+    pInstance->setParam(CCombFilterIf::kParamGain, fGain);
+    pInstance->process(ppfInputSignal, ppfOutputSignal, iTestSignalLength);
+
+    // Check output
+    printOutput(ppfOutputSignal, iNumChannels, iTestSignalLength);
+    testImpulseOutputFIR(ppfOutputSignal, iNumChannels, iDelay, fGain);
+
+
 
 
     /*
-    for (int l = 0; l < 2; ++l) {
-        for (int i = 0; i < iTestSignalLength; ++i) {
-            cout << ppfOutputSignal[l][i] << ' ';
-        }
-        cout << endl;
-    }
-    pInstance->reset();
-    pInstance->init(CCombFilterIf::kCombIIR, 10.0f, 1.0f, 2);
-    pInstance->setParam(CCombFilterIf::kParamDelay, 1);
-    pInstance->setParam(CCombFilterIf::kParamGain, 0.5);
-    pInstance->process(ppfInputSignal, ppfOutputSignal, 100);
-
-    cout << "********************" << endl;
-    for (int l = 0; l < 2; ++l) {
-        for (int i = 0; i < 100; ++i) {
-            cout << ppfOutputSignal[l][i] << ' ';
-        }
-        cout << endl;
-    }
-
-    return 0;
+    * TEST 3:
     */
+
 }
 
+/*
+ * Debugging function to initialize output buffer with dummy zeros
+ */
 void initOutput(float**& ppfOutputSignal, int iNumChannels, int iTestSignalLength, bool bAutoPrint) {
     ppfOutputSignal = new float*[iNumChannels];
     for (int c = 0; c < iNumChannels; c++) {
@@ -114,9 +127,7 @@ void initOutput(float**& ppfOutputSignal, int iNumChannels, int iTestSignalLengt
 }
 
 void generateTestImpulseSignal(float**& ppfInputSignal, int iNumChannels, int iTestSignalLength, bool bAutoPrint) {
-
     ppfInputSignal = new float *[iNumChannels];
-
     // init to 0
     for (int c = 0; c < iNumChannels; c++) {
         ppfInputSignal[c] = new float[iTestSignalLength]();
@@ -138,6 +149,35 @@ void generateTestImpulseSignal(float**& ppfInputSignal, int iNumChannels, int iT
     }
 }
 
+void generateTestImpulseTrailSignal(float**& ppfInputSignal, int iNumChannels, int iTestSignalLength, bool bAutoPrint) {
+    ppfInputSignal = new float *[iNumChannels];
+
+    // init to 0
+    for (int c = 0; c < iNumChannels; c++) {
+        ppfInputSignal[c] = new float[iTestSignalLength];
+    }
+    // put a 1 at start for impulse
+    for (int c = 0; c < iNumChannels; c++) {
+        for (int i = 0; i < iTestSignalLength; i++){
+            ppfInputSignal[c][i] = 1;
+        }
+    }
+
+    if (bAutoPrint) {
+        cout << "Test Signal: " << endl;
+        for (int c = 0; c < iNumChannels; c++) {
+            for (int i = 0; i < iTestSignalLength; i++) {
+                cout << ppfInputSignal[c][i] << " ";
+            }
+            cout << endl;
+        }
+        cout << endl;
+    }
+}
+
+/*
+ * Debugging function for printing out the output buffer
+ */
 void printOutput(float**& ppfOutputSignal, int iNumChannels, int iTestSignalLength){
     cout << "Current Output Signal: " << endl;
     for (int c = 0; c < iNumChannels; c++) {
@@ -150,11 +190,22 @@ void printOutput(float**& ppfOutputSignal, int iNumChannels, int iTestSignalLeng
 }
 
 /*
- * Tests if a simple unit impulse through the delay line yields a delayed `1*iGain` at a location offset by `iDelay`
+ * Tests if a simple unit impulse through the FIR yields a delayed `1*iGain` at a location offset by `iDelay`
  */
-void testImpulseOutputFIR(float**& ppfOutputSignal, int iNumChannels, int iDelay, float iGain) {
+void testImpulseOutputFIR(float**& ppfOutputSignal, int iNumChannels, int iDelay, float fGain) {
     for (int c = 0; c < iNumChannels; c++) {
-        assert(ppfOutputSignal[c][iDelay] = iGain*ppfOutputSignal[c][0]);
+        assert(ppfOutputSignal[c][iDelay] = fGain*ppfOutputSignal[c][0]);
+    }
+}
+
+/*
+ * Tests if a simple unit impulse through the IIR yields a delayed `1*iGain` at a location offset by `iDelay`, and a subsequent location
+ */
+void testImpulseOutputIIR(float**& ppfOutputSignal, int iNumChannels, int iDelay, float fGain, float fMaxDelay){
+    for (int c = 0; c < iNumChannels; c++) {
+        assert(ppfOutputSignal[c][iDelay] = fGain * ppfOutputSignal[c][0]);
+        assert(ppfOutputSignal[c][2*iDelay] = fGain * ppfOutputSignal[c][iDelay]);
+        assert(ppfOutputSignal[c][3*iDelay] = fGain * ppfOutputSignal[c][2*iDelay]);
     }
 }
 
