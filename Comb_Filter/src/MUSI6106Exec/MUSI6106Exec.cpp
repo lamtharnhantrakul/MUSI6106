@@ -17,8 +17,10 @@ struct TestSpec_t
     int                     iTestSignalLength;
     int                     iNumChannels;
     int                     iDelay;
+    float                   fDelaySecs;
     float                   fGain;
     float                   fMaxDelay;
+    float                   fMaxDelaySecs;
     float                   fSamplingRate;
     bool                    bAutoPrint;
 } structTestSpec;
@@ -59,13 +61,7 @@ int main(int argc, char* argv[])
     float                   **ppfInputSignal = 0;
     float                   **ppfOutputSignal = 0;
 
-    structTestSpec.iTestSignalLength = 10;
-    structTestSpec.iNumChannels = 2;
-    structTestSpec.iDelay = 3;
-    structTestSpec.fGain = 0.8;
-    structTestSpec.fMaxDelay = 10.0f;
-    structTestSpec.fSamplingRate = 1.0f;
-    structTestSpec.bAutoPrint = false;
+
 
     /////////////////////////////////////////////////////////////////////////////
     /*
@@ -108,11 +104,19 @@ int main(int argc, char* argv[])
         ppfAudioDataOutput[i] = new float[kBlockSize]();
 
     time = clock();
+
+    // Configure `structTestSpec` with parameters for reading an audio file
+    structTestSpec.iNumChannels = 2;
+    structTestSpec.fDelaySecs = 0.5F;
+    structTestSpec.fGain = 0.5;
+    structTestSpec.fMaxDelaySecs = 1.0F;
+    structTestSpec.fSamplingRate = stFileSpec.fSampleRateInHz;
+
     // get audio data and write it to the output file
     CCombFilterIf::create(pInstance);
-    pInstance->init(CCombFilterIf::kCombIIR, 1, stFileSpec.fSampleRateInHz, 2);
-    pInstance->setParam(CCombFilterIf::kParamGain, 0.5);
-    pInstance->setParam(CCombFilterIf::kParamDelay, 0.5);
+    pInstance->init(CCombFilterIf::kCombIIR, structTestSpec.fMaxDelaySecs, structTestSpec.fSamplingRate, structTestSpec.iNumChannels);
+    pInstance->setParam(CCombFilterIf::kParamGain, structTestSpec.fGain);
+    pInstance->setParam(CCombFilterIf::kParamDelay, structTestSpec.fDelaySecs);
 
     int iii = 1;
     while (!phAudioFile->isEof())
@@ -137,6 +141,14 @@ int main(int argc, char* argv[])
 
 
     /////////////////////////////////////////////////////////////////////////////
+    // Configure `structTestSpec` with parameters for reading for test signals
+    structTestSpec.iTestSignalLength = 10;
+    structTestSpec.iNumChannels = 3;
+    structTestSpec.iDelay = 3;
+    structTestSpec.fGain = 0.8;
+    structTestSpec.fMaxDelay = 10.0f;
+    structTestSpec.fSamplingRate = 1.0f;
+    structTestSpec.bAutoPrint = false;
 
     /*
      * TEST 1: IMPULSE SIGNAL
@@ -223,15 +235,7 @@ int main(int argc, char* argv[])
     delete [] ppfInputSignal;
     ppfInputSignal = nullptr;
 
-    // Delete struct
-    structTestSpec.iTestSignalLength = 0;
-    structTestSpec.iNumChannels = 0;
-    structTestSpec.iDelay = 0;
-    structTestSpec.fGain = 0;
-    structTestSpec.fMaxDelay = 0.0f;
-    structTestSpec.fSamplingRate = 0.0f;
-    structTestSpec.bAutoPrint = true;
-    //delete structTestSpec; // How to delete a struct???
+    // Struct will be automatically deleted when it is no longer in scope
 }
 
 /*
