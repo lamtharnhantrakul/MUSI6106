@@ -60,11 +60,11 @@ int main(int argc, char* argv[])
 
     structTestSpec.iTestSignalLength = 10;
     structTestSpec.iNumChannels = 2;
-    structTestSpec.iDelay = 2;
+    structTestSpec.iDelay = 3;
     structTestSpec.fGain = 0.8;
     structTestSpec.fMaxDelay = 10.0f;
     structTestSpec.fSamplingRate = 1.0f;
-    structTestSpec.bAutoPrint = true;
+    structTestSpec.bAutoPrint = false;
 
     /////////////////////////////////////////////////////////////////////////////
 
@@ -73,14 +73,15 @@ int main(int argc, char* argv[])
      */
     generateTestImpulseSignal(ppfInputSignal, structTestSpec);
 
+    // Initialize output array to 0
     initOutput(ppfOutputSignal, structTestSpec);
     // Define a simple FIR delay line where the sampling rate is 1 Hz
     processCombFilter(pInstance, CCombFilterIf::kCombFIR, ppfInputSignal, ppfOutputSignal, structTestSpec);
-    // Check output
+    // Print output
     if (structTestSpec.bAutoPrint) {printOutput(ppfOutputSignal, structTestSpec);}
+    // Run the test
     testImpulseOutputFIR(ppfOutputSignal, structTestSpec);
 
-    // Reset output array for next test
     initOutput(ppfOutputSignal, structTestSpec);
     processCombFilter(pInstance, CCombFilterIf::kCombIIR, ppfInputSignal, ppfOutputSignal, structTestSpec);
     if (structTestSpec.bAutoPrint) {printOutput(ppfOutputSignal, structTestSpec);}
@@ -106,6 +107,40 @@ int main(int argc, char* argv[])
     * TEST 3:
     */
 
+
+    //////////////////////////////////////////////////
+    // Clean up
+    // Delete Combfilter Interface
+    CCombFilterIf::destroy(pInstance);
+    // Delete Audio IO Interface
+    CAudioFileIf::destroy(phAudioFile);
+    hOutputFile.close();
+
+    // Delete output signal array
+    for (int c = 0; c < structTestSpec.iNumChannels; c++)
+    {
+        delete[] ppfOutputSignal[c];
+    }
+    delete [] ppfOutputSignal;
+    ppfOutputSignal = nullptr;
+
+    // Delete input signal array
+    for (int c = 0; c < structTestSpec.iNumChannels; c++)
+    {
+        delete[] ppfInputSignal[c];
+    }
+    delete [] ppfInputSignal;
+    ppfInputSignal = nullptr;
+
+    // Delete struct
+    structTestSpec.iTestSignalLength = 0;
+    structTestSpec.iNumChannels = 0;
+    structTestSpec.iDelay = 0;
+    structTestSpec.fGain = 0;
+    structTestSpec.fMaxDelay = 0.0f;
+    structTestSpec.fSamplingRate = 0.0f;
+    structTestSpec.bAutoPrint = true;
+    //delete structTestSpec; // How to delete a struct???
 }
 
 /*
@@ -201,14 +236,13 @@ void testImpulseOutputFIR(float**& ppfOutputSignal, TestSpec_t structTestSpec) {
 }
 
 /*
- * Tests if a simple unit impulse produces the first 3 expected values in the output
+ * Tests if a simple unit impulse produces the first few expected values in the output
  */
 void testImpulseOutputIIR(float**& ppfOutputSignal, TestSpec_t structTestSpec) {
     for (int c = 0; c < structTestSpec.iNumChannels; c++) {
         for (int c = 0; c < structTestSpec.iNumChannels; c++) {
             assert(ppfOutputSignal[c][1 * structTestSpec.iDelay] == structTestSpec.fGain * ppfOutputSignal[c][0]);
             assert(ppfOutputSignal[c][2 * structTestSpec.iDelay] == structTestSpec.fGain * ppfOutputSignal[c][1 * structTestSpec.iDelay]);
-            assert(ppfOutputSignal[c][3 * structTestSpec.iDelay] == structTestSpec.fGain * ppfOutputSignal[c][2 * structTestSpec.iDelay]);
         }
     }
 }
@@ -223,11 +257,15 @@ void testImpulseTrailOutputFIR(float**& ppfInputSignal, float**& ppfOutputSignal
 
 void testImpulseTrailOutputIIR(float**& ppfInputSignal, float**& ppfOutputSignal, TestSpec_t structTestSpec) {
     for (int c = 0; c < structTestSpec.iNumChannels; c++) {
-        assert(ppfOutputSignal[c][2] == ppfInputSignal[c][2] + structTestSpec.fGain * ppfOutputSignal[c][0]);
-        assert(ppfOutputSignal[c][3] == ppfInputSignal[c][3] + structTestSpec.fGain * ppfOutputSignal[c][1]);
+        for (int i = 0; i < structTestSpec.iDelay; i++) {
+            int idx = structTestSpec.iDelay;
+            assert(ppfOutputSignal[c][idx + i]     == ppfInputSignal[c][idx] + structTestSpec.fGain * ppfOutputSignal[c][i]);
+            assert(ppfOutputSignal[c][idx + i + 1] == ppfInputSignal[c][idx + 1] + structTestSpec.fGain * ppfOutputSignal[c][i + 1]);
 
-        assert(ppfOutputSignal[c][4] == ppfInputSignal[c][4] + structTestSpec.fGain * ppfOutputSignal[c][2]);
-        assert(ppfOutputSignal[c][5] == ppfInputSignal[c][5] + structTestSpec.fGain * ppfOutputSignal[c][3]);
+            assert(ppfOutputSignal[c][2*idx + i]     == ppfInputSignal[c][2*idx] + structTestSpec.fGain * ppfOutputSignal[c][idx]);
+            assert(ppfOutputSignal[c][2*idx + i + 1] == ppfInputSignal[c][2*idx + i] + structTestSpec.fGain * ppfOutputSignal[c][idx + i + 1]);
+        }
+
     }
 }
 
