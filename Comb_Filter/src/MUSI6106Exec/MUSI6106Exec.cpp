@@ -132,7 +132,6 @@ int main(int argc, char* argv[])
     time = clock();
 
     // Configure `structTestSpec` with parameters for reading an audio file
-    structTestSpec.iNumChannels = 2;
     structTestSpec.fDelaySecs = 0.5F;
     structTestSpec.fGain = 0.5;
     structTestSpec.fMaxDelaySecs = 1.0F;
@@ -140,7 +139,7 @@ int main(int argc, char* argv[])
 
     // get audio data and write it to the output file
     CCombFilterIf::create(pInstance);
-    pInstance->init(CCombFilterIf::kCombIIR, structTestSpec.fMaxDelaySecs, structTestSpec.fSamplingRate, structTestSpec.iNumChannels);
+    pInstance->init(CCombFilterIf::kCombIIR, structTestSpec.fMaxDelaySecs, structTestSpec.fSamplingRate, stFileSpec.iNumChannels);
     pInstance->setParam(CCombFilterIf::kParamGain, structTestSpec.fGain);
     pInstance->setParam(CCombFilterIf::kParamDelay, structTestSpec.fDelaySecs);
 
